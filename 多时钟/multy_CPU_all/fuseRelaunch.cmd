@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/ISE/multy_CPU_all/test_freq_isim_beh.exe" -prj "E:/ISE/multy_CPU_all/test_freq_beh.prj" "work.test_freq" "work.glbl" 

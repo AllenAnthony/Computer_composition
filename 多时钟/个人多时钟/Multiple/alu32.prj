@@ -1,0 +1,4 @@
+verilog work "or32.v"
+verilog work "and32.v"
+verilog work "adder32b.v"
+verilog work "alu32.v"

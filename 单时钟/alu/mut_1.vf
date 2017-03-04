@@ -1,0 +1,71 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : mut_1.vf
+// /___/   /\     Timestamp : 04/07/2016 15:42:09
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/Richard/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog C:/Users/Richard/Desktop/ADD/mut_1.vf -w C:/Users/Richard/Desktop/ADD/mut_1.sch
+//Design Name: mut_1
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module mut_1(a0, 
+             a1, 
+             b0, 
+             b1, 
+             C0, 
+             C1, 
+             C2, 
+             C3);
+
+    input a0;
+    input a1;
+    input b0;
+    input b1;
+   output C0;
+   output C1;
+   output C2;
+   output C3;
+   
+   wire XLXN_1;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire C0_DUMMY;
+   
+   assign C0 = C0_DUMMY;
+   AND2  XLXI_1 (.I0(b0), 
+                .I1(a0), 
+                .O(C0_DUMMY));
+   AND2  XLXI_2 (.I0(b1), 
+                .I1(a1), 
+                .O(XLXN_11));
+   AND2  XLXI_3 (.I0(XLXN_11), 
+                .I1(C0_DUMMY), 
+                .O(C3));
+   AND2  XLXI_4 (.I0(XLXN_11), 
+                .I1(XLXN_1), 
+                .O(C2));
+   AND2  XLXI_5 (.I0(b1), 
+                .I1(a0), 
+                .O(XLXN_12));
+   AND2  XLXI_6 (.I0(b0), 
+                .I1(a1), 
+                .O(XLXN_13));
+   INV  XLXI_7 (.I(C0_DUMMY), 
+               .O(XLXN_1));
+   XOR2  XLXI_8 (.I0(XLXN_13), 
+                .I1(XLXN_12), 
+                .O(C1));
+endmodule

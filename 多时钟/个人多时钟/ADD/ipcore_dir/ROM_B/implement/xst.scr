@@ -1,0 +1,14 @@
+
+run
+-ifmt VHDL
+-ent ROM_B_exdes 
+-p xc3s200-ft256-5
+-ifn xst.prj
+-write_timing_constraints No
+-iobuf YES
+-max_fanout 100
+-ofn ROM_B_exdes 
+-ofmt NGC
+-bus_delimiter ()
+-hierarchy_separator /
+-case Maintain

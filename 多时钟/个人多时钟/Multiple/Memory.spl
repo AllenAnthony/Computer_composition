@@ -1,0 +1,12 @@
+[Inputs]
+clk
+memread
+memwrite
+=addr[14:0]=
+=wdata[31:0]=
+[Outputs]
+=Ins[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Memory
+

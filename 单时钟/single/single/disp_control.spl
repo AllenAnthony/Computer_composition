@@ -1,0 +1,13 @@
+[Inputs]
+clk
+pc
+ch
+=d[31:0]=
+=pcd[31:0]=
+[Outputs]
+=node[3:0]=
+=segment[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel disp_control
+

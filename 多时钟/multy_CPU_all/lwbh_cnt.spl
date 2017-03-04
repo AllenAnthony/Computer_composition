@@ -1,0 +1,9 @@
+[Inputs]
+=cnt[1:0]=
+=data[31:0]=
+[Outputs]
+=result[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel lwbh_cnt
+

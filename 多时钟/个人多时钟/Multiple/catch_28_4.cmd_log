@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/asus/Desktop/Multiple/catch_28_4.v -lang verilog -prj Multiple -o catch_28_4.spl -module catch_28_4 -template E:/ISE14-4/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 catch_28_4.spl C:/Users/asus/Desktop/Multiple/catch_28_4.sym 

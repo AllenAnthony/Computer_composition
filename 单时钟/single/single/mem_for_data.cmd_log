@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/ISE/work/single/mem_for_data.v -lang verilog -prj single -o mem_for_data.spl -module mem_for_data -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 mem_for_data.spl E:/ISE/work/single/mem_for_data.sym 

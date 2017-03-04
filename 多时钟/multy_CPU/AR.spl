@@ -1,0 +1,9 @@
+[Inputs]
+clk
+=A[31:0]=
+[Outputs]
+=B[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel AR
+

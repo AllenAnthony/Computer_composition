@@ -1,0 +1,92 @@
+xst -intstyle ise -ifn "E:/ISE/work/multy_CPU/top_for_multy_CPU.xst" -ofn "E:/ISE/work/multy_CPU/top_for_multy_CPU.syr" 
+xst -intstyle ise -ifn "E:/ISE/work/multy_CPU/top_for_multy_CPU.xst" -ofn "E:/ISE/work/multy_CPU/top_for_multy_CPU.syr" 
+xst -intstyle ise -ifn "E:/ISE/work/multy_CPU/top_for_multy_CPU.xst" -ofn "E:/ISE/work/multy_CPU/top_for_multy_CPU.syr" 
+xst -intstyle ise -ifn "E:/ISE/work/multy_CPU/top_for_multy_CPU.xst" -ofn "E:/ISE/work/multy_CPU/top_for_multy_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L top_for_multy_CPU.ngc top_for_multy_CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_multy_CPU_map.ncd top_for_multy_CPU.ngd top_for_multy_CPU.pcf 
+par -w -intstyle ise -ol high -mt off top_for_multy_CPU_map.ncd top_for_multy_CPU.ncd top_for_multy_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_for_multy_CPU.twx top_for_multy_CPU.ncd -o top_for_multy_CPU.twr top_for_multy_CPU.pcf 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 
+xst -intstyle ise -ifn "E:/ISE/work/multy_CPU/top_for_multy_CPU.xst" -ofn "E:/ISE/work/multy_CPU/top_for_multy_CPU.syr" 
+xst -intstyle ise -ifn "E:/ISE/work/multy_CPU/top_for_multy_CPU.xst" -ofn "E:/ISE/work/multy_CPU/top_for_multy_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L top_for_multy_CPU.ngc top_for_multy_CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_multy_CPU_map.ncd top_for_multy_CPU.ngd top_for_multy_CPU.pcf 
+par -w -intstyle ise -ol high -mt off top_for_multy_CPU_map.ncd top_for_multy_CPU.ncd top_for_multy_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_for_multy_CPU.twx top_for_multy_CPU.ncd -o top_for_multy_CPU.twr top_for_multy_CPU.pcf 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 
+xst -intstyle ise -ifn "E:/ISE/work/multy_CPU/top_for_multy_CPU.xst" -ofn "E:/ISE/work/multy_CPU/top_for_multy_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L top_for_multy_CPU.ngc top_for_multy_CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_multy_CPU_map.ncd top_for_multy_CPU.ngd top_for_multy_CPU.pcf 
+par -w -intstyle ise -ol high -mt off top_for_multy_CPU_map.ncd top_for_multy_CPU.ncd top_for_multy_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_for_multy_CPU.twx top_for_multy_CPU.ncd -o top_for_multy_CPU.twr top_for_multy_CPU.pcf 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L top_for_multy_CPU.ngc top_for_multy_CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_multy_CPU_map.ncd top_for_multy_CPU.ngd top_for_multy_CPU.pcf 
+par -w -intstyle ise -ol high -mt off top_for_multy_CPU_map.ncd top_for_multy_CPU.ncd top_for_multy_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_for_multy_CPU.twx top_for_multy_CPU.ncd -o top_for_multy_CPU.twr top_for_multy_CPU.pcf 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L top_for_multy_CPU.ngc top_for_multy_CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_multy_CPU_map.ncd top_for_multy_CPU.ngd top_for_multy_CPU.pcf 
+par -w -intstyle ise -ol high -mt off top_for_multy_CPU_map.ncd top_for_multy_CPU.ncd top_for_multy_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_for_multy_CPU.twx top_for_multy_CPU.ncd -o top_for_multy_CPU.twr top_for_multy_CPU.pcf 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 
+xst -intstyle ise -ifn "E:/ISE/work/multy_CPU/top_for_multy_CPU.xst" -ofn "E:/ISE/work/multy_CPU/top_for_multy_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L top_for_multy_CPU.ngc top_for_multy_CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_multy_CPU_map.ncd top_for_multy_CPU.ngd top_for_multy_CPU.pcf 
+par -w -intstyle ise -ol high -mt off top_for_multy_CPU_map.ncd top_for_multy_CPU.ncd top_for_multy_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_for_multy_CPU.twx top_for_multy_CPU.ncd -o top_for_multy_CPU.twr top_for_multy_CPU.pcf 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 
+xst -intstyle ise -ifn "E:/ISE/work/multy_CPU/top_for_multy_CPU.xst" -ofn "E:/ISE/work/multy_CPU/top_for_multy_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L top_for_multy_CPU.ngc top_for_multy_CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_multy_CPU_map.ncd top_for_multy_CPU.ngd top_for_multy_CPU.pcf 
+par -w -intstyle ise -ol high -mt off top_for_multy_CPU_map.ncd top_for_multy_CPU.ncd top_for_multy_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_for_multy_CPU.twx top_for_multy_CPU.ncd -o top_for_multy_CPU.twr top_for_multy_CPU.pcf 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 
+xst -intstyle ise -ifn "E:/ISE/work/multy_CPU/top_for_multy_CPU.xst" -ofn "E:/ISE/work/multy_CPU/top_for_multy_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L top_for_multy_CPU.ngc top_for_multy_CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_multy_CPU_map.ncd top_for_multy_CPU.ngd top_for_multy_CPU.pcf 
+par -w -intstyle ise -ol high -mt off top_for_multy_CPU_map.ncd top_for_multy_CPU.ncd top_for_multy_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_for_multy_CPU.twx top_for_multy_CPU.ncd -o top_for_multy_CPU.twr top_for_multy_CPU.pcf 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L top_for_multy_CPU.ngc top_for_multy_CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_multy_CPU_map.ncd top_for_multy_CPU.ngd top_for_multy_CPU.pcf 
+par -w -intstyle ise -ol high -mt off top_for_multy_CPU_map.ncd top_for_multy_CPU.ncd top_for_multy_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_for_multy_CPU.twx top_for_multy_CPU.ncd -o top_for_multy_CPU.twr top_for_multy_CPU.pcf 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 
+xst -intstyle ise -ifn "E:/ISE/work/multy_CPU/top_for_multy_CPU.xst" -ofn "E:/ISE/work/multy_CPU/top_for_multy_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L top_for_multy_CPU.ngc top_for_multy_CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_multy_CPU_map.ncd top_for_multy_CPU.ngd top_for_multy_CPU.pcf 
+par -w -intstyle ise -ol high -mt off top_for_multy_CPU_map.ncd top_for_multy_CPU.ncd top_for_multy_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_for_multy_CPU.twx top_for_multy_CPU.ncd -o top_for_multy_CPU.twr top_for_multy_CPU.pcf 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 
+xst -intstyle ise -ifn "E:/ISE/work/multy_CPU/top_for_multy_CPU.xst" -ofn "E:/ISE/work/multy_CPU/top_for_multy_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L top_for_multy_CPU.ngc top_for_multy_CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_multy_CPU_map.ncd top_for_multy_CPU.ngd top_for_multy_CPU.pcf 
+par -w -intstyle ise -ol high -mt off top_for_multy_CPU_map.ncd top_for_multy_CPU.ncd top_for_multy_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_for_multy_CPU.twx top_for_multy_CPU.ncd -o top_for_multy_CPU.twr top_for_multy_CPU.pcf 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 
+xst -intstyle ise -ifn "E:/ISE/work/multy_CPU/top_for_multy_CPU.xst" -ofn "E:/ISE/work/multy_CPU/top_for_multy_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L top_for_multy_CPU.ngc top_for_multy_CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_multy_CPU_map.ncd top_for_multy_CPU.ngd top_for_multy_CPU.pcf 
+par -w -intstyle ise -ol high -mt off top_for_multy_CPU_map.ncd top_for_multy_CPU.ncd top_for_multy_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_for_multy_CPU.twx top_for_multy_CPU.ncd -o top_for_multy_CPU.twr top_for_multy_CPU.pcf 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 
+xst -intstyle ise -ifn "E:/ISE/work/multy_CPU/top_for_multy_CPU.xst" -ofn "E:/ISE/work/multy_CPU/top_for_multy_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L top_for_multy_CPU.ngc top_for_multy_CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_multy_CPU_map.ncd top_for_multy_CPU.ngd top_for_multy_CPU.pcf 
+par -w -intstyle ise -ol high -mt off top_for_multy_CPU_map.ncd top_for_multy_CPU.ncd top_for_multy_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_for_multy_CPU.twx top_for_multy_CPU.ncd -o top_for_multy_CPU.twr top_for_multy_CPU.pcf 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc7k160t-ffg676-2L top_for_multy_CPU.ngc top_for_multy_CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_multy_CPU_map.ncd top_for_multy_CPU.ngd top_for_multy_CPU.pcf 
+par -w -intstyle ise -ol high -mt off top_for_multy_CPU_map.ncd top_for_multy_CPU.ncd top_for_multy_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_for_multy_CPU.twx top_for_multy_CPU.ncd -o top_for_multy_CPU.twr top_for_multy_CPU.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 
+xst -intstyle ise -ifn "E:/ISE/multy_CPU_all/top_for_multy_CPU.xst" -ofn "E:/ISE/multy_CPU_all/top_for_multy_CPU.syr" 
+xst -intstyle ise -ifn "E:/ISE/multy_CPU_all/top_for_multy_CPU.xst" -ofn "E:/ISE/multy_CPU_all/top_for_multy_CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc7k160t-ffg676-2L top_for_multy_CPU.ngc top_for_multy_CPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_multy_CPU_map.ncd top_for_multy_CPU.ngd top_for_multy_CPU.pcf 
+par -w -intstyle ise -ol high -mt off top_for_multy_CPU_map.ncd top_for_multy_CPU.ncd top_for_multy_CPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top_for_multy_CPU.twx top_for_multy_CPU.ncd -o top_for_multy_CPU.twr top_for_multy_CPU.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f top_for_multy_CPU.ut top_for_multy_CPU.ncd 

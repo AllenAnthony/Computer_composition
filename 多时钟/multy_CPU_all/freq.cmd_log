@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/ISE/multy_CPU_all/freq.v -lang verilog -prj multy_CPU -o freq.spl -module freq -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 freq.spl E:/ISE/multy_CPU_all/freq.sym 

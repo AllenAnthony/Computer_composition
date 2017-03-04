@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/asus/Desktop/multy_CPU/multy_CPU/top_for_multy_CPU_top_for_multy_CPU_sch_tb_isim_beh.exe" -prj "C:/Users/asus/Desktop/multy_CPU/multy_CPU/top_for_multy_CPU_top_for_multy_CPU_sch_tb_beh.prj" "work.top_for_multy_CPU_top_for_multy_CPU_sch_tb" "work.glbl" 

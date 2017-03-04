@@ -1,0 +1,8 @@
+sch2hdl -sympath C:/Users/asus/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog MUTI_drc.vf -w C:/Users/asus/Desktop/ADD/MUTI.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUTI C:/Users/asus/Desktop/ADD/MUTI.sch C:/Users/asus/Desktop/ADD/MUTI.sym 
+sch2hdl -sympath C:/Users/asus/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog MUTI_drc.vf -w C:/Users/asus/Desktop/ADD/MUTI.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUTI C:/Users/asus/Desktop/ADD/MUTI.sch C:/Users/asus/Desktop/ADD/MUTI.sym 
+sch2hdl -sympath C:/Users/asus/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog MUTI_drc.vf -w C:/Users/asus/Desktop/ADD/MUTI.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUTI C:/Users/asus/Desktop/ADD/MUTI.sch C:/Users/asus/Desktop/ADD/MUTI.sym 
+sch2hdl -sympath C:/Users/asus/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog MUTI_drc.vf -w C:/Users/asus/Desktop/ADD/MUTI.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUTI C:/Users/asus/Desktop/ADD/MUTI.sch C:/Users/asus/Desktop/ADD/MUTI.sym 

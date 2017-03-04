@@ -1,0 +1,45 @@
+Release 14.4 Drc P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Thu Jun 16 01:23:35 2016
+
+drc -z ALU.ncd ALU.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_53/ALU/_n0254<2> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_3/push is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <XLXI_53/REGF/Mram_m11_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_53/REGF/Mram_m12_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_53/REGF/Mram_m2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_53/REGF/Mram_m3_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_53/REGF/Mram_m13_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_53/REGF/Mram_m4_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_53/REGF/Mram_m14_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_53/REGF/Mram_m5_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_53/REGF/Mram_m21_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_53/REGF/Mram_m25_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_53/REGF/Mram_m6_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_53/REGF/Mram_m23_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_53/REGF/Mram_m24_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_53/REGF/Mram_m15_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_53/REGF/Mram_m22_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+DRC detected 0 errors and 17 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

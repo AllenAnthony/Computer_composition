@@ -1,0 +1,4 @@
+verilog isim_temp "orig32.v"
+verilog isim_temp "comple32.v"
+verilog isim_temp "comple32_test.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

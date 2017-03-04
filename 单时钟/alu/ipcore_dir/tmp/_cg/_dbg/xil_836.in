@@ -1,0 +1,35 @@
+SET_FLAG DEBUG FALSE
+SET_FLAG MODE INTERACTIVE
+SET_FLAG STANDALONE_MODE FALSE
+SET_PREFERENCE devicefamily kintex7
+SET_PREFERENCE device xc7k160t
+SET_PREFERENCE speedgrade -2l
+SET_PREFERENCE package ffg676
+SET_PREFERENCE verilogsim true
+SET_PREFERENCE vhdlsim false
+SET_PREFERENCE simulationfiles Behavioral
+SET_PREFERENCE busformat BusFormatAngleBracketNotRipped
+SET_PREFERENCE outputdirectory C:/Users/asus/Desktop/alu/ipcore_dir/
+SET_PREFERENCE workingdirectory C:/Users/asus/Desktop/alu/ipcore_dir/tmp/
+SET_PREFERENCE subworkingdirectory C:/Users/asus/Desktop/alu/ipcore_dir/tmp/_cg/
+SET_PREFERENCE transientdirectory C:/Users/asus/Desktop/alu/ipcore_dir/tmp/_cg/_dbg/
+SET_PREFERENCE designentry Verilog
+SET_PREFERENCE flowvendor Other
+SET_PREFERENCE addpads false
+SET_PREFERENCE projectname coregen
+SET_PREFERENCE formalverification false
+SET_PREFERENCE asysymbol false
+SET_PREFERENCE implementationfiletype Ngc
+SET_PREFERENCE foundationsym false
+SET_PREFERENCE createndf false
+SET_PREFERENCE removerpms false
+SET_PARAMETER Component_Name RAM_32_32
+SET_CORE_NAME Distributed Memory Generator
+SET_CORE_VERSION 7.2
+SET_CORE_VLNV xilinx.com:ip:dist_mem_gen:7.2
+SET_CORE_CLASS com.xilinx.ip.dist_mem_gen_v7_2.dist_mem_gen_v7_2
+SET_CORE_PATH E:/ISE14-4/14.4/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/dist_mem_gen_v7_2
+SET_CORE_GUIPATH E:/ISE14-4/14.4/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/dist_mem_gen_v7_2/gui/dist_mem_gen_v7_2.tcl
+SET_CORE_DATASHEET E:\ISE14-4\14.4\ISE_DS\ISE\coregen\ip\xilinx\primary\com\xilinx\ip\dist_mem_gen_v7_2\doc\pg063-dist-mem-gen.pdf
+ADD_CORE_DOCUMENT <E:\ISE14-4\14.4\ISE_DS\ISE\coregen\ip\xilinx\primary\com\xilinx\ip\dist_mem_gen_v7_2\doc\dist_mem_gen_v7_2_vinfo.html><dist_mem_gen_v7_2_vinfo.html>
+ADD_CORE_DOCUMENT <E:\ISE14-4\14.4\ISE_DS\ISE\coregen\ip\xilinx\primary\com\xilinx\ip\dist_mem_gen_v7_2\doc\pg063-dist-mem-gen.pdf><pg063-dist-mem-gen.pdf>

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/ISE/work/single_all/number_11111.v -lang verilog -prj single -o number_11111.spl -module number_11111 -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 number_11111.spl E:/ISE/work/single_all/number_11111.sym 

@@ -1,0 +1,3 @@
+MODULE compare
+	SUBMODULE comp_ori
+		INSTANCE XLXI_1

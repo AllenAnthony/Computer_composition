@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="single" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/MUX32_4x1 E:|ISE|work|single|MUX32_4x1.v</ClosedNode>
+         <ClosedNode>/alu32 E:|ISE|work|single_all|alu32.v/m1 - adder32b</ClosedNode>
+         <ClosedNode>/alu32 E:|ISE|work|single|alu32.v</ClosedNode>
+         <ClosedNode>/memory E:|ISE|work|single|memory.v</ClosedNode>
+         <ClosedNode>/top_for_single E:|ISE|work|single_all|top_for_single.sch/XLXI_12 - alu32</ClosedNode>
+         <ClosedNode>/top_for_single E:|ISE|work|single_all|top_for_single.sch/XLXI_13 - adder32b</ClosedNode>
+         <ClosedNode>/top_for_single E:|ISE|work|single_all|top_for_single.sch/XLXI_19 - adder32b</ClosedNode>
+         <ClosedNode>/top_for_single E:|ISE|work|single_all|top_for_single.sch/XLXI_39 - MUX32_4x1</ClosedNode>
+         <ClosedNode>/top_for_single E:|ISE|work|single_all|top_for_single.sch/XLXI_74 - alu32</ClosedNode>
+         <ClosedNode>/top_for_single E:|ISE|work|single|top_for_single.sch</ClosedNode>
+         <ClosedNode>/top_for_single E:|ISE|work|single|top_for_single.sch/XLXI_12 - alu32</ClosedNode>
+         <ClosedNode>/top_for_single E:|ISE|work|single|top_for_single.sch/XLXI_13 - adder32b</ClosedNode>
+         <ClosedNode>/top_for_single E:|ISE|work|single|top_for_single.sch/XLXI_19 - adder32b</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>top_for_single (E:/ISE/work/single_all/top_for_single.sch)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e3000000020000000000000000000000000200000064ffffffff000000810000000300000002000001e30000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>top_for_single (E:/ISE/work/single_all/top_for_single.sch)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000115000000010000000100000000000000000000000064ffffffff000000810000000000000001000001150000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000013d000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d0000000100000000000000240000000100000000000000780000000100000000000000640000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>E:\ISE\work\single_all\adder32b.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000104000000010001000100000000000000000000000064ffffffff000000810000000000000001000001040000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000012d0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000115000000010000000100000000000000000000000064ffffffff000000810000000000000001000001150000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/mem_for_data E:|ISE|work|single_all|mem_for_data.v</ClosedNode>
+         <ClosedNode>/test_ALUcontrol E:|ISE|work|single_all|test_ALUcontrol.v</ClosedNode>
+         <ClosedNode>/test_ALUcontrol E:|ISE|work|single|test_ALUcontrol.v</ClosedNode>
+         <ClosedNode>/test_Control E:|ISE|work|single_all|test_Control.v</ClosedNode>
+         <ClosedNode>/test_Control E:|ISE|work|single|test_Control.v</ClosedNode>
+         <ClosedNode>/test_MUX32_2x1 E:|ISE|work|single_all|test_MUX32_2x1.v</ClosedNode>
+         <ClosedNode>/test_MUX32_2x1 E:|ISE|work|single|test_MUX32_2x1.v</ClosedNode>
+         <ClosedNode>/test_MUX32_4x1 E:|ISE|work|single_all|test_MUX32_4x1.v</ClosedNode>
+         <ClosedNode>/test_MUX32_4x1 E:|ISE|work|single|test_MUX32_4x1.v</ClosedNode>
+         <ClosedNode>/test_MUX5_2x1 E:|ISE|work|single_all|test_MUX5_2x1.v</ClosedNode>
+         <ClosedNode>/test_MUX5_2x1 E:|ISE|work|single|test_MUX5_2x1.v</ClosedNode>
+         <ClosedNode>/test_SignExtend E:|ISE|work|single_all|test_SignExtend.v</ClosedNode>
+         <ClosedNode>/test_SignExtend E:|ISE|work|single|test_SignExtend.v</ClosedNode>
+         <ClosedNode>/test_control E:|ISE|work|single|test_control.v</ClosedNode>
+         <ClosedNode>/test_shiftleft2 E:|ISE|work|single|test_shiftleft2.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>top_for_single_top_for_single_sch_tb (E:/ISE/work/single_all/test_for_top.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000231000000020000000000000000000000000200000064ffffffff000000810000000300000002000002310000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>top_for_single_top_for_single_sch_tb (E:/ISE/work/single_all/test_for_top.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000115000000010000000100000000000000000000000064ffffffff000000810000000000000001000001150000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000115000000010000000100000000000000000000000064ffffffff000000810000000000000001000001150000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>CORE Generator</ClosedNode>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000104000000010000000100000000000000000000000064ffffffff000000810000000000000001000001040000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>CORE Generator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000115000000010000000100000000000000000000000064ffffffff000000810000000000000001000001150000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000115000000010000000100000000000000000000000064ffffffff000000810000000000000001000001150000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

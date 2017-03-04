@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Multiple/Multiple_CPU_TOP.xst" -ofn "C:/Users/asus/Desktop/Multiple/Multiple_CPU_TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Multiple/Multiple_CPU_TOP.xst" -ofn "C:/Users/asus/Desktop/Multiple/Multiple_CPU_TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Multiple/Multiple_CPU_TOP.xst" -ofn "C:/Users/asus/Desktop/Multiple/Multiple_CPU_TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/asus/Desktop/Multiple/Multiple_CPU_TOP.xst" -ofn "C:/Users/asus/Desktop/Multiple/Multiple_CPU_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L Multiple_CPU_TOP.ngc Multiple_CPU_TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Multiple_CPU_TOP_map.ncd Multiple_CPU_TOP.ngd Multiple_CPU_TOP.pcf 
+par -w -intstyle ise -ol high -mt off Multiple_CPU_TOP_map.ncd Multiple_CPU_TOP.ncd Multiple_CPU_TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Multiple_CPU_TOP.twx Multiple_CPU_TOP.ncd -o Multiple_CPU_TOP.twr Multiple_CPU_TOP.pcf 
+bitgen -intstyle ise -f Multiple_CPU_TOP.ut Multiple_CPU_TOP.ncd 

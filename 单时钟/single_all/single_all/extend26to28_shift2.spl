@@ -1,0 +1,8 @@
+[Inputs]
+=A[25:0]=
+[Outputs]
+=B[27:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel extend26to28_shift2
+

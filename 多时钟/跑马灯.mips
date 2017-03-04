@@ -1,0 +1,7 @@
+addi $t0 $zero 1    //$t0=1
+addi $t1 $zero 1    //$t1=1
+addi $t2 $zero 12   //$t2=12
+add $s0 $t1 $t0
+add $t1 $s0 $zero
+beq $t1 $t2 -6
+j   3

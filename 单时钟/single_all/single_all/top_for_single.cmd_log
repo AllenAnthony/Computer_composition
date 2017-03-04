@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "E:/ISE/work/single_all/top_for_single.xst" -ofn "E:/ISE/work/single_all/top_for_single.syr" 
+xst -intstyle ise -ifn "E:/ISE/work/single_all/top_for_single.xst" -ofn "E:/ISE/work/single_all/top_for_single.syr" 
+xst -intstyle ise -ifn "E:/ISE/work/single_all/top_for_single.xst" -ofn "E:/ISE/work/single_all/top_for_single.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L top_for_single.ngc top_for_single.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_single_map.ncd top_for_single.ngd top_for_single.pcf 
+xst -intstyle ise -ifn "E:/ISE/work/single_all/top_for_single.xst" -ofn "E:/ISE/work/single_all/top_for_single.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-2L top_for_single.ngc top_for_single.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_single_map.ncd top_for_single.ngd top_for_single.pcf 
+xst -intstyle ise -ifn "E:/ISE/work/single_all/top_for_single.xst" -ofn "E:/ISE/work/single_all/top_for_single.syr" 
+xst -intstyle ise -ifn "E:/ISE/work/single_all/top_for_single.xst" -ofn "E:/ISE/work/single_all/top_for_single.syr" 
+xst -intstyle ise -ifn "E:/ISE/work/single_all/top_for_single.xst" -ofn "E:/ISE/work/single_all/top_for_single.syr" 
+xst -intstyle ise -ifn "E:/ISE/work/single_all/top_for_single.xst" -ofn "E:/ISE/work/single_all/top_for_single.syr" 
+xst -intstyle ise -ifn "E:/ISE/work/single_all/top_for_single.xst" -ofn "E:/ISE/work/single_all/top_for_single.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc7k160t-ffg676-2L top_for_single.ngc top_for_single.ngd  
+xst -intstyle ise -ifn "E:/ISE/work/single_all/top_for_single.xst" -ofn "E:/ISE/work/single_all/top_for_single.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc7k160t-ffg676-2L top_for_single.ngc top_for_single.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_single_map.ncd top_for_single.ngd top_for_single.pcf 
+xst -intstyle ise -ifn "E:/ISE/work/single_all/top_for_single.xst" -ofn "E:/ISE/work/single_all/top_for_single.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc7k160t-ffg676-2L top_for_single.ngc top_for_single.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_single_map.ncd top_for_single.ngd top_for_single.pcf 
+xst -intstyle ise -ifn "E:/ISE/work/single_all/top_for_single.xst" -ofn "E:/ISE/work/single_all/top_for_single.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc7k160t-ffg676-2L top_for_single.ngc top_for_single.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_single_map.ncd top_for_single.ngd top_for_single.pcf 
+xst -intstyle ise -ifn "E:/ISE/work/single_all/top_for_single.xst" -ofn "E:/ISE/work/single_all/top_for_single.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc7k160t-ffg676-2L top_for_single.ngc top_for_single.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_for_single_map.ncd top_for_single.ngd top_for_single.pcf 
+xst -intstyle ise -ifn "E:/ISE/work/single_all/top_for_single.xst" -ofn "E:/ISE/work/single_all/top_for_single.syr" 
+xst -intstyle ise -ifn "E:/ISE/work/single_all/top_for_single.xst" -ofn "E:/ISE/work/single_all/top_for_single.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc7k160t-ffg676-2L top_for_single.ngc top_for_single.ngd  

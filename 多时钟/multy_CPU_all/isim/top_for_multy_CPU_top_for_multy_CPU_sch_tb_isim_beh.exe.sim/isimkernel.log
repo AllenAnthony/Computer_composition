@@ -1,0 +1,28 @@
+Command line:
+   top_for_multy_CPU_top_for_multy_CPU_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  14212
+
+Sat Jun 18 20:30:10 2016
+
+
+ Elaboration Time: 0.265201 sec
+
+ Current Memory Usage: 682.144 Meg
+
+ Total Signals          : 2655
+ Total Nets             : 2560
+ Total Signal Drivers   : 1036
+ Total Blocks           : 605
+ Total Primitive Blocks : 531
+ Total Processes        : 1095
+ Total Traceable Variables  : 280
+ Total Scalar Nets and Variables : 75326
+
+ Total Simulation Time: 0.514803 sec
+
+ Current Memory Usage: 682.144 Meg
+
+Sat Jun 18 20:38:06 2016
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="Multiple_CPU_TOP">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-6-13T16:11:21</timestamp>
+    <pin polarity="Input" x="0" y="-96" name="in_addr(4:0)" />
+    <pin polarity="Input" x="0" y="-32" name="clk_100Mhz" />
+    <pin polarity="Output" x="432" y="-96" name="out_data(31:0)" />
+    <graph>
+        <rect width="304" x="64" y="-128" height="128" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="216" y="-136" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin in_addr(4:0)" />
+        <rect width="64" x="0" y="-108" height="24" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin clk_100Mhz" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-96" type="pin out_data(31:0)" />
+        <rect width="64" x="368" y="-108" height="24" />
+        <line x2="432" y1="-96" y2="-96" x1="368" />
+    </graph>
+</symbol>

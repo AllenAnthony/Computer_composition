@@ -1,0 +1,6 @@
+vhdtdtfi -lib work E:/ISE/work/single/pcreg.v -lang verilog -prj single -o pcreg.spl -module pcreg -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 pcreg.spl E:/ISE/work/single/pcreg.sym 
+vhdtdtfi -lib work E:/ISE/work/single_all/pcreg.v -lang verilog -prj single -o pcreg.spl -module pcreg -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 pcreg.spl E:/ISE/work/single_all/pcreg.sym 
+vhdtdtfi -lib work E:/ISE/work/single_all/pcreg.v -lang verilog -prj single -o pcreg.spl -module pcreg -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 pcreg.spl E:/ISE/work/single_all/pcreg.sym 

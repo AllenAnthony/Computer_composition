@@ -1,0 +1,4 @@
+vhdtdtfi -lib work E:/ISE/work/single/MUX32_4x1.v -lang verilog -prj single -o MUX32_4x1.spl -module MUX32_4x1 -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 MUX32_4x1.spl E:/ISE/work/single/MUX32_4x1.sym 
+vhdtdtfi -lib work E:/ISE/work/single/MUX32_4x1.v -lang verilog -prj single -o MUX32_4x1.spl -module MUX32_4x1 -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 MUX32_4x1.spl E:/ISE/work/single/MUX32_4x1.sym 

@@ -1,0 +1,8 @@
+[Inputs]
+clk
+[Outputs]
+Clk_CPU
+[BiDir]
+[ATTRIBUTES]
+VeriModel freq
+

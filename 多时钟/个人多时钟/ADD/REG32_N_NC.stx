@@ -1,0 +1,66 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/asus/Desktop/ADD/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.44 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/asus/Desktop/ADD/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.44 secs
+ 
+--> Reading design: REG32_N_NC.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\asus\Desktop\ADD\REG32.v" into library work
+Parsing module <REG32>.
+Parsing module <REG32_N>.
+Parsing module <REG32_NC>.
+Parsing module <REG32_N_NC>.
+Analyzing Verilog file "C:\Users\asus\Desktop\ADD\ADD_4.vf" into library work
+Parsing module <XOR_bit_MUSER_ADD_4>.
+Parsing module <ADD_4>.
+Analyzing Verilog file "C:\Users\asus\Desktop\ADD\ADD_4_plus.vf" into library work
+Parsing module <XOR_bit_MUSER_ADD_4_plus>.
+Parsing module <ADD_4_MUSER_ADD_4_plus>.
+Parsing module <ADD_4_plus>.
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.35 secs
+ 
+--> 
+
+Total memory usage is 212072 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

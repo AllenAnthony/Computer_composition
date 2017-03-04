@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/ADD/clk_div.v -lang verilog -prj ADD -o clk_div.spl -module clk_div -template E:/ISE14-4/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 clk_div.spl E:/ADD/clk_div.sym 

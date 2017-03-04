@@ -1,0 +1,90 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : DMUX2_4.vf
+// /___/   /\     Timestamp : 03/30/2016 18:45:23
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/asus/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog C:/Users/asus/Desktop/ADD/DMUX2_4.vf -w C:/Users/asus/Desktop/ADD/DMUX2_4.sch
+//Design Name: DMUX2_4
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module I4_tem_MUSER_DMUX2_4(I, 
+                            JJJ, 
+                            O);
+
+    input [3:0] I;
+    input JJJ;
+   output [3:0] O;
+   
+   
+   AND2  XLXI_15 (.I0(JJJ), 
+                 .I1(I[3]), 
+                 .O(O[3]));
+   AND2  XLXI_16 (.I0(JJJ), 
+                 .I1(I[2]), 
+                 .O(O[2]));
+   AND2  XLXI_17 (.I0(JJJ), 
+                 .I1(I[1]), 
+                 .O(O[1]));
+   AND2  XLXI_18 (.I0(JJJ), 
+                 .I1(I[0]), 
+                 .O(O[0]));
+endmodule
+`timescale 1ns / 1ps
+
+module DMUX2_4(I, 
+               NUM, 
+               O);
+
+    input [1:0] I;
+    input [3:0] NUM;
+   output [15:0] O;
+   
+   wire XLXN_13;
+   wire XLXN_18;
+   wire XLXN_19;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire XLXN_28;
+   
+   INV  XLXI_1 (.I(I[1]), 
+               .O(XLXN_28));
+   INV  XLXI_2 (.I(I[0]), 
+               .O(XLXN_13));
+   AND2  XLXI_3 (.I0(I[0]), 
+                .I1(I[1]), 
+                .O(XLXN_18));
+   AND2  XLXI_4 (.I0(XLXN_13), 
+                .I1(I[1]), 
+                .O(XLXN_19));
+   AND2  XLXI_6 (.I0(I[0]), 
+                .I1(XLXN_28), 
+                .O(XLXN_20));
+   AND2  XLXI_7 (.I0(XLXN_13), 
+                .I1(XLXN_28), 
+                .O(XLXN_21));
+   I4_tem_MUSER_DMUX2_4  XLXI_8 (.I(NUM[3:0]), 
+                                .JJJ(XLXN_18), 
+                                .O(O[15:12]));
+   I4_tem_MUSER_DMUX2_4  XLXI_9 (.I(NUM[3:0]), 
+                                .JJJ(XLXN_19), 
+                                .O(O[11:8]));
+   I4_tem_MUSER_DMUX2_4  XLXI_10 (.I(NUM[3:0]), 
+                                 .JJJ(XLXN_20), 
+                                 .O(O[7:4]));
+   I4_tem_MUSER_DMUX2_4  XLXI_11 (.I(NUM[3:0]), 
+                                 .JJJ(XLXN_21), 
+                                 .O(O[3:0]));
+endmodule

@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "E:/ADD/ADD_4_plus.xst" -ofn "E:/ADD/ADD_4_plus.syr" 
+sch2hdl -intstyle ise -family spartan3 -verilog ADD_4_plus_drc.vf -w E:/ADD/ADD_4_plus.sch 
+sch2sym -intstyle ise -family spartan3 -refsym ADD_4_plus E:/ADD/ADD_4_plus.sch E:/ADD/ADD_4_plus.sym 
+sch2hdl -intstyle ise -family spartan3 -verilog ADD_4_plus_drc.vf -w E:/ADD/ADD_4_plus.sch 
+sch2hdl -intstyle ise -family spartan3 -verilog ADD_4_plus_drc.vf -w E:/ADD/ADD_4_plus.sch 
+sch2sym -intstyle ise -family spartan3 -refsym ADD_4_plus E:/ADD/ADD_4_plus.sch E:/ADD/ADD_4_plus.sym 
+sch2sym -intstyle ise -family spartan3 -refsym ADD_4_plus E:/ADD/ADD_4_plus.sch E:/ADD/ADD_4_plus.sym 
+sch2sym -intstyle ise -family spartan3 -refsym ADD_4_plus E:/ADD/ADD_4_plus.sch E:/ADD/ADD_4_plus.sym 
+sch2sym -intstyle ise -family spartan3 -refsym ADD_4_plus E:/ADD/ADD_4_plus.sch E:/ADD/ADD_4_plus.sym 
+sch2sym -intstyle ise -family spartan3 -refsym ADD_4_plus E:/ADD/ADD_4_plus.sch E:/ADD/ADD_4_plus.sym 
+sch2hdl -intstyle ise -family spartan3 -verilog ADD_4_plus_drc.vf -w E:/ADD/ADD_4_plus.sch 
+sch2hdl -intstyle ise -family spartan3 -verilog ADD_4_plus_drc.vf -w E:/ADD/ADD_4_plus.sch 
+sch2sym -intstyle ise -family spartan3 -refsym ADD_4_plus E:/ADD/ADD_4_plus.sch E:/ADD/ADD_4_plus.sym 
+sch2sym -intstyle ise -family spartan3 -refsym ADD_4_plus E:/ADD/ADD_4_plus.sch E:/ADD/ADD_4_plus.sym 
+sch2hdl -intstyle ise -family spartan3 -verilog ADD_4_plus_drc.vf -w E:/ADD/ADD_4_plus.sch 
+sch2sym -intstyle ise -family spartan3 -refsym ADD_4_plus E:/ADD/ADD_4_plus.sch E:/ADD/ADD_4_plus.sym 

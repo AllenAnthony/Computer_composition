@@ -1,0 +1,11 @@
+[Inputs]
+=ins[2:0]=
+=A[31:0]=
+=B[31:0]=
+[Outputs]
+Z
+=O[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel alu32
+

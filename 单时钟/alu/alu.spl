@@ -1,0 +1,12 @@
+[Inputs]
+clk
+rst
+=sw[4:0]=
+=op1[63:0]=
+=op2[31:0]=
+[Outputs]
+=result[63:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel alu
+

@@ -1,0 +1,141 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : comp_ori.vf
+// /___/   /\     Timestamp : 03/30/2016 18:45:32
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/asus/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog C:/Users/asus/Desktop/ADD/comp_ori.vf -w C:/Users/asus/Desktop/ADD/comp_ori.sch
+//Design Name: comp_ori
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module compa_MUSER_comp_ori(A, 
+                            B, 
+                            equ, 
+                            Lar, 
+                            Big, 
+                            E);
+
+    input A;
+    input B;
+    input equ;
+    input Lar;
+   output Big;
+   output E;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_21;
+   wire XLXN_22;
+   wire XLXN_24;
+   
+   XOR2  XLXI_1 (.I0(Lar), 
+                .I1(A), 
+                .O(XLXN_4));
+   INV  XLXI_2 (.I(B), 
+               .O(XLXN_3));
+   AND2  XLXI_3 (.I0(XLXN_3), 
+                .I1(XLXN_4), 
+                .O(XLXN_1));
+   AND2  XLXI_4 (.I0(Lar), 
+                .I1(A), 
+                .O(XLXN_2));
+   OR2  XLXI_5 (.I0(XLXN_2), 
+               .I1(XLXN_1), 
+               .O(Big));
+   OR2  XLXI_8 (.I0(XLXN_13), 
+               .I1(XLXN_14), 
+               .O(XLXN_12));
+   AND2  XLXI_9 (.I0(A), 
+                .I1(B), 
+                .O(XLXN_14));
+   AND2  XLXI_10 (.I0(XLXN_22), 
+                 .I1(XLXN_21), 
+                 .O(XLXN_13));
+   INV  XLXI_11 (.I(B), 
+                .O(XLXN_21));
+   INV  XLXI_12 (.I(A), 
+                .O(XLXN_22));
+   INV  XLXI_13 (.I(Lar), 
+                .O(XLXN_24));
+   AND3  XLXI_14 (.I0(equ), 
+                 .I1(XLXN_24), 
+                 .I2(XLXN_12), 
+                 .O(E));
+endmodule
+`timescale 1ns / 1ps
+
+module comp_ori(A, 
+                B, 
+                equal, 
+                larger, 
+                smaller);
+
+    input [3:0] A;
+    input [3:0] B;
+   output equal;
+   output larger;
+   output smaller;
+   
+   wire N0;
+   wire V5;
+   wire XLXN_19;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_27;
+   wire larger_DUMMY;
+   wire equal_DUMMY;
+   
+   assign equal = equal_DUMMY;
+   assign larger = larger_DUMMY;
+   compa_MUSER_comp_ori  XLXI_1 (.A(A[0]), 
+                                .B(B[0]), 
+                                .equ(V5), 
+                                .Lar(N0), 
+                                .Big(XLXN_19), 
+                                .E(XLXN_20));
+   compa_MUSER_comp_ori  XLXI_2 (.A(A[1]), 
+                                .B(B[1]), 
+                                .equ(XLXN_20), 
+                                .Lar(XLXN_19), 
+                                .Big(XLXN_21), 
+                                .E(XLXN_22));
+   compa_MUSER_comp_ori  XLXI_3 (.A(A[2]), 
+                                .B(B[2]), 
+                                .equ(XLXN_22), 
+                                .Lar(XLXN_21), 
+                                .Big(XLXN_23), 
+                                .E(XLXN_24));
+   compa_MUSER_comp_ori  XLXI_4 (.A(A[3]), 
+                                .B(B[3]), 
+                                .equ(XLXN_24), 
+                                .Lar(XLXN_23), 
+                                .Big(larger_DUMMY), 
+                                .E(equal_DUMMY));
+   GND  XLXI_5 (.G(N0));
+   VCC  XLXI_6 (.P(V5));
+   OR2  XLXI_7 (.I0(equal_DUMMY), 
+               .I1(larger_DUMMY), 
+               .O(XLXN_27));
+   INV  XLXI_8 (.I(XLXN_27), 
+               .O(smaller));
+endmodule

@@ -1,0 +1,34 @@
+ISim log file
+Running: C:\Users\asus\Desktop\single\single\top_for_single_top_for_single_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/asus/Desktop/single/single/top_for_single_top_for_single_sch_tb_isim_beh.wdb 
+ISim P.49d (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Finished circuit initialization process.
+# restart
+# run 100.00us
+Simulator is doing circuit initialization process.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Finished circuit initialization process.
+ERROR: at 1300 ns(10000): Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation can not advance in time because signals can not resolve to a stable value in File "C:/Users/asus/Desktop/single/single/alu32.v" Line 51. Please correct this code in order to advance past the current simulation time.
+ in File "C:/Users/asus/Desktop/single/single/alu32.v" Line 51 
+ERROR: 
+INFO: Simulator is stopped.

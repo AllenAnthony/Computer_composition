@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/asus/Desktop/Multiple/REG32.v -lang verilog -prj Multiple -o REG32_N.spl -module REG32_N -template E:/ISE14-4/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 REG32_N.spl C:/Users/asus/Desktop/Multiple/REG32_N.sym 

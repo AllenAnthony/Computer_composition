@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/Richard/Desktop/123/ADD/mut_u.v -lang verilog -prj ADD -o orig32.spl -module orig32 -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 orig32.spl C:/Users/Richard/Desktop/123/ADD/orig32.sym 

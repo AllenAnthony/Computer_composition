@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="multy_CPU.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ALUcontrol.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="ALUout.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ALUout.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="AR.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="AR.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="BR.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BR.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Control.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="IR.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="IR.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="MDR.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="MDR.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="MUX32_2x1.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="MUX32_4x1.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="MUX3_2x1.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="MUX5_2x1.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SignExtend.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="adder32b.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="alu32.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="catch_28_4.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="disp_control.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="extend26to28_shift2.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="mem_for_data.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="memory.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="null.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="number_110.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="number_4.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="pcreg.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="pcreg.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="read_mem.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="read_mem.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="regfile.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="shiftleft2.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="state_control.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="state_control.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="top_for_multy_CPU.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="top_for_multy_CPU.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="top_for_multy_CPU.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="top_for_multy_CPU.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="top_for_multy_CPU.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="top_for_multy_CPU.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="top_for_multy_CPU.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="top_for_multy_CPU.syr"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="top_for_multy_CPU.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="top_for_multy_CPU.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="top_for_multy_CPU_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="top_for_multy_CPU_summary.html"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="top_for_multy_CPU_top_for_multy_CPU_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="top_for_multy_CPU_top_for_multy_CPU_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="top_for_multy_CPU_top_for_multy_CPU_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="top_for_multy_CPU_top_for_multy_CPU_sch_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="top_for_multy_CPU_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="zongxian.sym" xil_pn:origination="imported"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1465737763" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1465737763">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1465979655" xil_pn:in_ck="5887330978925914962" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1465979654">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ALUcontrol.v"/>
+      <outfile xil_pn:name="ALUout.v"/>
+      <outfile xil_pn:name="AR.v"/>
+      <outfile xil_pn:name="BR.v"/>
+      <outfile xil_pn:name="Control.v"/>
+      <outfile xil_pn:name="IR.v"/>
+      <outfile xil_pn:name="MDR.v"/>
+      <outfile xil_pn:name="MUX32_2x1.v"/>
+      <outfile xil_pn:name="MUX32_4x1.v"/>
+      <outfile xil_pn:name="MUX3_2x1.v"/>
+      <outfile xil_pn:name="MUX5_2x1.v"/>
+      <outfile xil_pn:name="SignExtend.v"/>
+      <outfile xil_pn:name="adder32b.v"/>
+      <outfile xil_pn:name="alu32.v"/>
+      <outfile xil_pn:name="and32.v"/>
+      <outfile xil_pn:name="catch_28_4.v"/>
+      <outfile xil_pn:name="disp.v"/>
+      <outfile xil_pn:name="extend26to32.v"/>
+      <outfile xil_pn:name="mem_for_data.v"/>
+      <outfile xil_pn:name="memory.v"/>
+      <outfile xil_pn:name="null.v"/>
+      <outfile xil_pn:name="number_110.v"/>
+      <outfile xil_pn:name="number_4.v"/>
+      <outfile xil_pn:name="or32.v"/>
+      <outfile xil_pn:name="pcreg.v"/>
+      <outfile xil_pn:name="read_mem.v"/>
+      <outfile xil_pn:name="regfile.v"/>
+      <outfile xil_pn:name="shiftleft2.v"/>
+      <outfile xil_pn:name="state_control.v"/>
+      <outfile xil_pn:name="test_for_mul_CPU.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1465978485" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7629077194420722571" xil_pn:start_ts="1465978485">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1465979659" xil_pn:in_ck="2941547524054321382" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8671471565553979689" xil_pn:start_ts="1465979655">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="top_for_multy_CPU.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1465989326" xil_pn:in_ck="-1071075515361790814" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4389434109652611683" xil_pn:start_ts="1465989324">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/mem1.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/mem1.v"/>
+      <outfile xil_pn:name="ipcore_dir/mem2.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/mem2.v"/>
+      <outfile xil_pn:name="ipcore_dir/mem3.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/mem3.v"/>
+      <outfile xil_pn:name="ipcore_dir/mem4.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/mem4.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1465989326" xil_pn:in_ck="4559123854513876360" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1465989326">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ALUcontrol.v"/>
+      <outfile xil_pn:name="ALUout.v"/>
+      <outfile xil_pn:name="AR.v"/>
+      <outfile xil_pn:name="BR.v"/>
+      <outfile xil_pn:name="Control.v"/>
+      <outfile xil_pn:name="IR.v"/>
+      <outfile xil_pn:name="MDR.v"/>
+      <outfile xil_pn:name="MUX32_2x1.v"/>
+      <outfile xil_pn:name="MUX32_4x1.v"/>
+      <outfile xil_pn:name="MUX3_2x1.v"/>
+      <outfile xil_pn:name="MUX5_2x1.v"/>
+      <outfile xil_pn:name="SignExtend.v"/>
+      <outfile xil_pn:name="adder32b.v"/>
+      <outfile xil_pn:name="alu32.v"/>
+      <outfile xil_pn:name="and32.v"/>
+      <outfile xil_pn:name="catch_28_4.v"/>
+      <outfile xil_pn:name="disp.v"/>
+      <outfile xil_pn:name="extend26to32.v"/>
+      <outfile xil_pn:name="ipcore_dir/mem1.v"/>
+      <outfile xil_pn:name="ipcore_dir/mem2.v"/>
+      <outfile xil_pn:name="ipcore_dir/mem3.v"/>
+      <outfile xil_pn:name="ipcore_dir/mem4.v"/>
+      <outfile xil_pn:name="mem_for_data.v"/>
+      <outfile xil_pn:name="memory.v"/>
+      <outfile xil_pn:name="null.v"/>
+      <outfile xil_pn:name="number_110.v"/>
+      <outfile xil_pn:name="number_4.v"/>
+      <outfile xil_pn:name="or32.v"/>
+      <outfile xil_pn:name="pcreg.v"/>
+      <outfile xil_pn:name="read_mem.v"/>
+      <outfile xil_pn:name="regfile.v"/>
+      <outfile xil_pn:name="shiftleft2.v"/>
+      <outfile xil_pn:name="state_control.v"/>
+      <outfile xil_pn:name="test_for_mul_CPU.v"/>
+      <outfile xil_pn:name="top_for_multy_CPU.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1465989348" xil_pn:in_ck="4559123854513876360" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2415544167957931541" xil_pn:start_ts="1465989326">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="top_for_multy_CPU_top_for_multy_CPU_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="top_for_multy_CPU_top_for_multy_CPU_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1465989349" xil_pn:in_ck="-2999231815151344012" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7870904010995447854" xil_pn:start_ts="1465989348">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="top_for_multy_CPU_top_for_multy_CPU_sch_tb_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1465569064" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1465569064">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1465737583" xil_pn:in_ck="2941547524054321382" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-4815584851346705986" xil_pn:start_ts="1465737578">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="top_for_multy_CPU.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1465737584" xil_pn:in_ck="-1071075515361790814" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4389434109652611683" xil_pn:start_ts="1465737583">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1465569070" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1465569070">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1465569070" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-7404294352409712310" xil_pn:start_ts="1465569070">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1465569070" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-679146238375871736" xil_pn:start_ts="1465569070">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1465569070" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5739121650898089447" xil_pn:start_ts="1465569070">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1465737614" xil_pn:in_ck="-6831726458435888884" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-1861580888873603458" xil_pn:start_ts="1465737584">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+  </transforms>
+
+</generated_project>

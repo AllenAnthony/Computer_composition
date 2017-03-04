@@ -1,0 +1,264 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'top_for_single'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off
+-power off -o top_for_single_map.ncd top_for_single.ngd top_for_single.pcf 
+Target Device  : xc7k160t
+Target Package : ffg676
+Target Speed   : -2l
+Mapper Version : kintex7 -- $Revision: 1.55 $
+Mapped Date    : Thu May 19 15:47:48 2016
+
+Mapping design into LUTs...
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl"
+   (output
+   signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl) has input signal "XLXI_69/m1/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1"
+   (output
+   signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl1) has input signal "XLXI_69/m1/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2"
+   (output
+   signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl2) has input signal "XLXI_69/m1/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3"
+   (output
+   signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl3) has input signal "XLXI_69/m1/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl"
+   (output
+   signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl) has input signal "XLXI_69/m2/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1"
+   (output
+   signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl1) has input signal "XLXI_69/m2/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2"
+   (output
+   signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl2) has input signal "XLXI_69/m2/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3"
+   (output
+   signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl3) has input signal "XLXI_69/m2/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl"
+   (output
+   signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl) has input signal "XLXI_69/m3/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1"
+   (output
+   signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl1) has input signal "XLXI_69/m3/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2"
+   (output
+   signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl2) has input signal "XLXI_69/m3/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3"
+   (output
+   signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl3) has input signal "XLXI_69/m3/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl"
+   (output
+   signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl) has input signal "XLXI_69/m4/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1"
+   (output
+   signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl1) has input signal "XLXI_69/m4/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2"
+   (output
+   signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl2) has input signal "XLXI_69/m4/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:979 - LUT3 symbol
+   "XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3"
+   (output
+   signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl3) has input signal "XLXI_69/m4/we" which will be trimmed. See Section 5 of
+   the Map Report File for details about why the input signal will become
+   undriven.
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl"
+   (output
+   signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl) has an equation that uses input pin I0, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1"
+   (output
+   signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl1) has an equation that uses input pin I2, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2"
+   (output
+   signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl2) has an equation that uses input pin I2, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3"
+   (output
+   signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl3) has an equation that uses input pin I2, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl"
+   (output
+   signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl) has an equation that uses input pin I0, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1"
+   (output
+   signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl1) has an equation that uses input pin I2, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2"
+   (output
+   signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl2) has an equation that uses input pin I2, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3"
+   (output
+   signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl3) has an equation that uses input pin I2, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl"
+   (output
+   signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl) has an equation that uses input pin I0, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1"
+   (output
+   signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl1) has an equation that uses input pin I2, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2"
+   (output
+   signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl2) has an equation that uses input pin I2, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3"
+   (output
+   signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl3) has an equation that uses input pin I2, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl"
+   (output
+   signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl) has an equation that uses input pin I0, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1"
+   (output
+   signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl1) has an equation that uses input pin I2, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2"
+   (output
+   signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl2) has an equation that uses input pin I2, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT3 symbol
+   "XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3"
+   (output
+   signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ct
+   rl3) has an equation that uses input pin I2, which no longer has a connected
+   signal. Please ensure that all the pins used in the equation for this LUT
+   have signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+
+Error found in mapping process, exiting...
+Errors found during the mapping phase.  Please see map report file for more
+details.  Output files will not be written.
+
+Design Summary
+--------------
+Number of errors   :  32
+Number of warnings :   0

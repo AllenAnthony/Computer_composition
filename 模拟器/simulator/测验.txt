@@ -1,0 +1,19 @@
+addi $sp $zero 200
+lui $t0 2
+slti $t1 $t0 123
+addi $s0 $t1 1
+add $t1 $s0 $zero
+addi $t2 $zero 12
+andi $t3 $t2 3
+ori $t3 $t2 15
+xori $t3 $t2 15
+sub $t3 $t2 $t1
+and $t1 $t2 $t3
+addi $a0 $t1 1
+xor $s0 $t1 $a0
+add $t1 $s0 $zero
+add $ra $zero $zero
+j 18
+or $s0 $t2 $t1
+add $t2 $s0 $zero
+bne $t1 $t2 2

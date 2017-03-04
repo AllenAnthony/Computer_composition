@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/ISE/work/single/slower1to10.v -lang verilog -prj single -o slower1to10.spl -module slower1to10 -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 slower1to10.spl E:/ISE/work/single/slower1to10.sym 

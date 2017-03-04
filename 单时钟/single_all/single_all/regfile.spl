@@ -1,0 +1,16 @@
+[Inputs]
+clk
+wr
+=a1[4:0]=
+=a2[4:0]=
+=a3[4:0]=
+=wreg[4:0]=
+=wdata[31:0]=
+[Outputs]
+=d1[31:0]=
+=d2[31:0]=
+=d3[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel regfile
+

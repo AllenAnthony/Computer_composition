@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/CST/Desktop/alu_new/alu_new/alu/comple32.v -lang verilog -prj ADD -o comple32.spl -module comple32 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 comple32.spl C:/Users/CST/Desktop/alu_new/alu_new/alu/comple32.sym 

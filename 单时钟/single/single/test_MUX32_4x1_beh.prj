@@ -1,0 +1,4 @@
+verilog work "MUX32_2x1.v"
+verilog work "MUX32_4x1.v"
+verilog work "test_MUX32_4x1.v"
+verilog work "E:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v"

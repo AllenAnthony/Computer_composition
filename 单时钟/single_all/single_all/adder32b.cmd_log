@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/ISE/work/single/adder32b.v -lang verilog -prj single -o adder32b.spl -module adder32b -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 adder32b.spl E:/ISE/work/single/adder32b.sym 

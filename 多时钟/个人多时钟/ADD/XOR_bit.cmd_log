@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3 -refsym XOR_bit E:/ADD/XOR_bit.sch E:/ADD/XOR_bit.sym 
+sch2hdl -intstyle ise -family spartan3 -verilog XOR_bit_drc.vf -w E:/ADD/XOR_bit.sch 

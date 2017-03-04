@@ -1,0 +1,10 @@
+vhdtdtfi -lib work E:/ISE/work/single/alu32.v -lang verilog -prj single -o alu32.spl -module alu32 -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 alu32.spl E:/ISE/work/single/alu32.sym 
+vhdtdtfi -lib work E:/ISE/work/single_all/alu32.v -lang verilog -prj single -o alu32.spl -module alu32 -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 alu32.spl E:/ISE/work/single_all/alu32.sym 
+vhdtdtfi -lib work E:/ISE/work/single_all/alu32.v -lang verilog -prj single -o alu32.spl -module alu32 -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 alu32.spl E:/ISE/work/single_all/alu32.sym 
+vhdtdtfi -lib work E:/ISE/work/single_all/alu32.v -lang verilog -prj single -o alu32.spl -module alu32 -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 alu32.spl E:/ISE/work/single_all/alu32.sym 
+vhdtdtfi -lib work E:/ISE/work/single_all/alu32.v -lang verilog -prj single -o alu32.spl -module alu32 -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 alu32.spl E:/ISE/work/single_all/alu32.sym 

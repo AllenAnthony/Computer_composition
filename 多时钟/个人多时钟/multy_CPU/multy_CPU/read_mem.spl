@@ -1,0 +1,9 @@
+[Inputs]
+MemRead
+=ninst[31:0]=
+[Outputs]
+=inst[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel read_mem
+

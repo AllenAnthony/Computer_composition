@@ -1,0 +1,255 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ALU.vf
+// /___/   /\     Timestamp : 04/14/2016 17:12:03
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/CST/Desktop/alu_new/alu_new/alu/ipcore_dir -intstyle ise -family kintex7 -verilog C:/Users/CST/Desktop/alu_new/alu_new/alu/ALU.vf -w C:/Users/CST/Desktop/alu_new/alu_new/alu/ALU.sch
+//Design Name: ALU
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module mut_1_MUSER_ALU(a0, 
+                       a1, 
+                       b0, 
+                       b1, 
+                       C0, 
+                       C1, 
+                       C2, 
+                       C3);
+
+    input a0;
+    input a1;
+    input b0;
+    input b1;
+   output C0;
+   output C1;
+   output C2;
+   output C3;
+   
+   wire XLXN_1;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire C0_DUMMY;
+   
+   assign C0 = C0_DUMMY;
+   AND2  XLXI_1 (.I0(b0), 
+                .I1(a0), 
+                .O(C0_DUMMY));
+   AND2  XLXI_2 (.I0(b1), 
+                .I1(a1), 
+                .O(XLXN_11));
+   AND2  XLXI_3 (.I0(XLXN_11), 
+                .I1(C0_DUMMY), 
+                .O(C3));
+   AND2  XLXI_4 (.I0(XLXN_11), 
+                .I1(XLXN_1), 
+                .O(C2));
+   AND2  XLXI_5 (.I0(b1), 
+                .I1(a0), 
+                .O(XLXN_12));
+   AND2  XLXI_6 (.I0(b0), 
+                .I1(a1), 
+                .O(XLXN_13));
+   INV  XLXI_7 (.I(C0_DUMMY), 
+               .O(XLXN_1));
+   XOR2  XLXI_8 (.I0(XLXN_13), 
+                .I1(XLXN_12), 
+                .O(C1));
+endmodule
+`timescale 1ns / 1ps
+
+module MUTI_MUSER_ALU(A, 
+                      O);
+
+    input [3:0] A;
+   output [7:0] O;
+   
+   
+   mut_1_MUSER_ALU  XLXI_1 (.a0(A[2]), 
+                           .a1(A[3]), 
+                           .b0(A[0]), 
+                           .b1(A[1]), 
+                           .C0(O[4]), 
+                           .C1(O[5]), 
+                           .C2(O[6]), 
+                           .C3(O[7]));
+   mut_2  XLXI_2 (.a0(A[2]), 
+                 .a1(A[3]), 
+                 .b0(A[0]), 
+                 .b1(A[1]), 
+                 .c0(O[0]), 
+                 .c1(O[1]), 
+                 .c2(O[2]), 
+                 .c3(O[3]));
+endmodule
+`timescale 1ns / 1ps
+
+module ALU(btn, 
+           BTN_y, 
+           clk_100mhz, 
+           RSTN, 
+           SW, 
+           AN, 
+           BTN_x, 
+           Buzzer, 
+           CR, 
+           LED, 
+           RDY, 
+           readn, 
+           SEGMENT, 
+           seg_clk, 
+           seg_clrn, 
+           SEG_PEN, 
+           seg_sout);
+
+    input btn;
+    input [3:0] BTN_y;
+    input clk_100mhz;
+    input RSTN;
+    input [15:0] SW;
+   output [3:0] AN;
+   output [4:0] BTN_x;
+   output Buzzer;
+   output CR;
+   output [7:0] LED;
+   output RDY;
+   output readn;
+   output [7:0] SEGMENT;
+   output seg_clk;
+   output seg_clrn;
+   output SEG_PEN;
+   output seg_sout;
+   
+   wire [31:0] Ai;
+   wire [31:0] Bi;
+   wire [7:0] blink;
+   wire [3:0] BTN_OK;
+   wire clk_cpu;
+   wire [31:0] Div;
+   wire [7:0] LE_out;
+   wire [63:0] mur;
+   wire N0;
+   wire [7:0] OM;
+   wire [63:0] op1;
+   wire [3:0] Pluse;
+   wire [7:0] point_out;
+   wire [63:0] result;
+   wire rst;
+   wire [15:0] SW_OK;
+   wire V5;
+   wire [4:0] XLXN_60;
+   wire [7:0] XLXN_117;
+   wire [7:0] XLXN_118;
+   wire [31:0] XLXN_120;
+   wire [4:0] XLXN_126;
+   wire XLXN_132;
+   wire [31:0] XLXN_137;
+   wire RDY_DUMMY;
+   wire readn_DUMMY;
+   
+   assign RDY = RDY_DUMMY;
+   assign readn = readn_DUMMY;
+   SSeg7_Dev  XLXI_2 (.clk(clk_100mhz), 
+                     .flash(XLXN_132), 
+                     .Hexs(XLXN_120[31:0]), 
+                     .LES(XLXN_117[7:0]), 
+                     .point(XLXN_118[7:0]), 
+                     .rst(rst), 
+                     .Start(Div[20]), 
+                     .SW0(V5), 
+                     .seg_clk(seg_clk), 
+                     .seg_clrn(seg_clrn), 
+                     .SEG_PEN(SEG_PEN), 
+                     .seg_sout(seg_sout));
+   SEnter_2_32  XLXI_3 (.BTN(BTN_OK[2:0]), 
+                       .clk(clk_100mhz), 
+                       .Ctrl({SW_OK[7:5], SW_OK[15], SW_OK[0]}), 
+                       .Din(XLXN_60[4:0]), 
+                       .D_ready(RDY_DUMMY), 
+                       .Ai(Ai[31:0]), 
+                       .Bi(Bi[31:0]), 
+                       .blink(blink[7:0]), 
+                       .readn(readn_DUMMY));
+   SAnti_jitter  XLXI_4 (.clk(clk_100mhz), 
+                        .Key_y(BTN_y[3:0]), 
+                        .readn(readn_DUMMY), 
+                        .RSTN(RSTN), 
+                        .SW(SW[15:0]), 
+                        .BTN_OK(BTN_OK[3:0]), 
+                        .CR(CR), 
+                        .Key_out(XLXN_60[4:0]), 
+                        .Key_ready(RDY_DUMMY), 
+                        .Key_x(BTN_x[4:0]), 
+                        .pulse_out(Pluse[3:0]), 
+                        .rst(rst), 
+                        .SW_OK(SW_OK[15:0]));
+   clk_div  XLXI_6 (.clk(clk_100mhz), 
+                   .rst(rst), 
+                   .SW2(SW_OK[3]), 
+                   .clkdiv(Div[31:0]), 
+                   .Clk_CPU(clk_cpu));
+   GND  XLXI_7 (.G(N0));
+   VCC  XLXI_8 (.P(V5));
+   Multi_8CH32  XLXI_15 (.clk(clk_100mhz), 
+                        .Data0(result[31:0]), 
+                        .data1(result[63:32]), 
+                        .data2(mur[31:0]), 
+                        .data3(mur[63:32]), 
+                        .data4(Ai[31:0]), 
+                        .data5(Bi[31:0]), 
+                        .data6(), 
+                        .data7(), 
+                        .EN(V5), 
+                        .LES(), 
+                        .point_in(), 
+                        .rst(rst), 
+                        .Test(SW_OK[10:8]), 
+                        .Disp_num(XLXN_120[31:0]), 
+                        .LE_out(XLXN_117[7:0]), 
+                        .point_out(XLXN_118[7:0]));
+   VCC  XLXI_16 (.P(Buzzer));
+   Seg7_Dev  XLXI_25 (.flash(Div[25]), 
+                     .Hexs({N0, N0, SW_OK[15:14], N0, N0, SW_OK[13:12], 
+         OM[7:0], N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
+         N0}), 
+                     .LES(LE_out[7:0]), 
+                     .point(point_out[7:0]), 
+                     .Scan({SW_OK[1], Div[19:18]}), 
+                     .SW0(V5), 
+                     .AN(AN[3:0]), 
+                     .SEGMENT(SEGMENT[7:0]));
+   MUTI_MUSER_ALU  XLXI_26 (.A(SW_OK[15:12]), 
+                           .O(OM[7:0]));
+   GND  XLXI_31 (.G(XLXN_132));
+   control_unit  XLXI_32 (.btn(btn), 
+                         .clk_100mhz(clk_100mhz), 
+                         .SW(SW[15:0]), 
+                         .con(XLXN_126[4:0]), 
+                         .LED(LED[7:0]), 
+                         .op1(op1[63:0]), 
+                         .op2(XLXN_137[31:0]));
+   alu  XLXI_37 (.clk(Div[20]), 
+                .op1(op1[63:0]), 
+                .op2(XLXN_137[31:0]), 
+                .rst(rst), 
+                .sw(XLXN_126[4:0]), 
+                .result(result[63:0]));
+   comple32  XLXI_38 (.a(Ai[31:0]), 
+                     .b(Bi[31:0]), 
+                     .clk(Div[20]), 
+                     .c(mur[63:0]), 
+                     .done());
+endmodule

@@ -1,0 +1,2496 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : xc7k160t-2L-ffg676
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : No
+Global Optimization                : Max_Delay
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 20
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\mux_8.vf" into library work
+Parsing module <mux_8>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32b.v" into library work
+Parsing module <AND8_HXILINX_adder32>.
+Parsing module <add1_MUSER_add4>.
+Parsing module <add4b>.
+Parsing module <zero_4_MUSER_adder32>.
+Parsing module <xor_4bit_MUSER_adder32>.
+Parsing module <adder32b>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_left1.v" into library work
+Parsing module <shift_left1>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\mux_32.vf" into library work
+Parsing module <mux_8_MUSER_mux_32>.
+Parsing module <mux_32>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\bit1to32.v" into library work
+Parsing module <bit1to32>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32.v" into library work
+Parsing module <add4_MUSER_adder32>.
+Parsing module <adder32>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_rignt4.v" into library work
+Parsing module <shift_rignt4>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_rignt1.v" into library work
+Parsing module <shift_rignt1>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_right8.v" into library work
+Parsing module <shift_right8>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_right32.v" into library work
+Parsing module <shift_right32>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_right2.v" into library work
+Parsing module <shift_right2>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_right16.v" into library work
+Parsing module <shift_right16>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_left.vf" into library work
+Parsing module <mux_8_MUSER_shift_left>.
+Parsing module <mux_32_MUSER_shift_left>.
+Parsing module <shift_left>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\zhenghe.v" into library work
+Parsing module <zhenghe>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\zero.v" into library work
+Parsing module <zero>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_right.vf" into library work
+Parsing module <mux_8_MUSER_shift_right>.
+Parsing module <mux_32_MUSER_shift_right>.
+Parsing module <shift_right>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_leftist.vf" into library work
+Parsing module <mux_8_MUSER_shift_leftist>.
+Parsing module <mux_32_MUSER_shift_leftist>.
+Parsing module <shift_left_MUSER_shift_leftist>.
+Parsing module <shift_leftist>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\prepare32.v" into library work
+Parsing module <prepare32>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\compare_32.v" into library work
+Parsing module <comparer32>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\check_cin.vf" into library work
+Parsing module <mux_8_MUSER_check_cin>.
+Parsing module <mux_32_MUSER_check_cin>.
+Parsing module <check_cin>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\bit8to32.v" into library work
+Parsing module <bit8to32>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\bit32to8.v" into library work
+Parsing module <bit32to8>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\bit31to32.v" into library work
+Parsing module <bit31to32>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\numinf.v" into library work
+Parsing module <numinf>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\num0.v" into library work
+Parsing module <num0>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\ifinf.v" into library work
+Parsing module <ifinf>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\if0.v" into library work
+Parsing module <if0>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add1.vf" into library work
+Parsing module <mux_8_MUSER_float_add1>.
+Parsing module <mux_32_MUSER_float_add1>.
+Parsing module <shift_left_MUSER_float_add1>.
+Parsing module <shift_leftist_MUSER_float_add1>.
+Parsing module <check_cin_MUSER_float_add1>.
+Parsing module <shift_right_MUSER_float_add1>.
+Parsing module <float_add1>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add0.vf" into library work
+Parsing module <mux_8_MUSER_float_add0>.
+Parsing module <mux_32_MUSER_float_add0>.
+Parsing module <check_cin_MUSER_float_add0>.
+Parsing module <shift_right_MUSER_float_add0>.
+Parsing module <float_add0>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\orig32.v" into library work
+Parsing module <orig33>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\num_7F.v" into library work
+Parsing module <num_7F>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\mut_u.v" into library work
+Parsing module <mut_u>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" into library work
+Parsing module <mux_8_MUSER_float_add_all>.
+Parsing module <mux_32_MUSER_float_add_all>.
+Parsing module <shift_left_MUSER_float_add_all>.
+Parsing module <shift_leftist_MUSER_float_add_all>.
+Parsing module <check_cin_MUSER_float_add_all>.
+Parsing module <shift_right_MUSER_float_add_all>.
+Parsing module <float_add1_MUSER_float_add_all>.
+Parsing module <float_add0_MUSER_float_add_all>.
+Parsing module <float_add_all>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\buff.v" into library work
+Parsing module <buff>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\bit23to32.v" into library work
+Parsing module <bit23to32>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\or32.v" into library work
+Parsing module <or32>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\mut_2.v" into library work
+Parsing module <mut_2>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\mut_1.vf" into library work
+Parsing module <mut_1>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf" into library work
+Parsing module <mux_8_MUSER_loat_mul>.
+Parsing module <mux_32_MUSER_loat_mul>.
+Parsing module <check_cin_MUSER_loat_mul>.
+Parsing module <loat_mul>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\inv32.v" into library work
+Parsing module <inv32>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" into library work
+Parsing module <mux_8_MUSER_float_sub>.
+Parsing module <mux_32_MUSER_float_sub>.
+Parsing module <shift_left_MUSER_float_sub>.
+Parsing module <shift_leftist_MUSER_float_sub>.
+Parsing module <check_cin_MUSER_float_sub>.
+Parsing module <shift_right_MUSER_float_sub>.
+Parsing module <float_add1_MUSER_float_sub>.
+Parsing module <float_add0_MUSER_float_sub>.
+Parsing module <float_add_all_MUSER_float_sub>.
+Parsing module <float_sub>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\floatingpointdividerxx32.v" into library work
+Parsing module <singlefloatingpointdiv>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\diver.v" into library work
+Parsing module <divide>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\counter_1ms.v" into library work
+Parsing module <timer_1ms>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\comple32.v" into library work
+Parsing module <comple32>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\and32.v" into library work
+Parsing module <and32>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\SSeg7_Dev_IO.v" into library work
+Parsing module <SSeg7_Dev>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\SEnter_2_32_IO.v" into library work
+Parsing module <SEnter_2_32>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\Seg7_Dev_IO.v" into library work
+Parsing module <Seg7_Dev>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\SAnti_jitter_IO.v" into library work
+Parsing module <SAnti_jitter>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\MUTI.vf" into library work
+Parsing module <mut_1_MUSER_MUTI>.
+Parsing module <MUTI>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\Multi_8CH32.v" into library work
+Parsing module <Multi_8CH32>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\controlunit.v" into library work
+Parsing module <control_unit>.
+Parsing module <pbdebounce>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\clk_div.v" into library work
+Parsing module <clk_div>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\allu.v" into library work
+Parsing module <alu>.
+Analyzing Verilog file "C:\Users\CST\Desktop\alu_new\alu_new\alu\ALU.vf" into library work
+Parsing module <mut_1_MUSER_ALU>.
+Parsing module <MUTI_MUSER_ALU>.
+Parsing module <ALU>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ALU>.
+
+Elaborating module <SSeg7_Dev>.
+WARNING:HDLCompiler:1499 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\SSeg7_Dev_IO.v" Line 21: Empty module <SSeg7_Dev> remains a black box.
+
+Elaborating module <SEnter_2_32>.
+WARNING:HDLCompiler:1499 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\SEnter_2_32_IO.v" Line 21: Empty module <SEnter_2_32> remains a black box.
+WARNING:HDLCompiler:1127 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\ALU.vf" Line 184: Assignment to blink ignored, since the identifier is never used
+
+Elaborating module <SAnti_jitter>.
+WARNING:HDLCompiler:1499 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\SAnti_jitter_IO.v" Line 21: Empty module <SAnti_jitter> remains a black box.
+WARNING:HDLCompiler:1127 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\ALU.vf" Line 196: Assignment to Pluse ignored, since the identifier is never used
+
+Elaborating module <clk_div>.
+WARNING:HDLCompiler:1127 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\ALU.vf" Line 203: Assignment to clk_cpu ignored, since the identifier is never used
+
+Elaborating module <GND>.
+
+Elaborating module <VCC>.
+
+Elaborating module <Multi_8CH32>.
+WARNING:HDLCompiler:1499 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\Multi_8CH32.v" Line 21: Empty module <Multi_8CH32> remains a black box.
+
+Elaborating module <Seg7_Dev>.
+WARNING:HDLCompiler:1499 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\Seg7_Dev_IO.v" Line 21: Empty module <Seg7_Dev> remains a black box.
+
+Elaborating module <MUTI_MUSER_ALU>.
+
+Elaborating module <mut_1_MUSER_ALU>.
+
+Elaborating module <AND2>.
+
+Elaborating module <INV>.
+
+Elaborating module <XOR2>.
+
+Elaborating module <mut_2>.
+
+Elaborating module <control_unit>.
+
+Elaborating module <pbdebounce>.
+
+Elaborating module <timer_1ms>.
+WARNING:HDLCompiler:413 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\counter_1ms.v" Line 16: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\controlunit.v" Line 45: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <alu>.
+
+Elaborating module <loat_mul>.
+
+Elaborating module <bit8to32>.
+
+Elaborating module <num_7F>.
+
+Elaborating module <adder32>.
+
+Elaborating module <xor_4bit_MUSER_adder32>.
+
+Elaborating module <BUF>.
+
+Elaborating module <zero_4_MUSER_adder32>.
+
+Elaborating module <OR4>.
+
+Elaborating module <AND8_HXILINX_adder32>.
+
+Elaborating module <add4_MUSER_adder32>.
+
+Elaborating module <add1_MUSER_add4>.
+
+Elaborating module <OR3>.
+
+Elaborating module <bit23to32>.
+
+Elaborating module <check_cin_MUSER_loat_mul>.
+
+Elaborating module <mux_32_MUSER_loat_mul>.
+
+Elaborating module <mux_8_MUSER_loat_mul>.
+
+Elaborating module <OR2>.
+
+Elaborating module <bit1to32>.
+
+Elaborating module <shift_rignt1>.
+
+Elaborating module <zhenghe>.
+
+Elaborating module <ifinf>.
+
+Elaborating module <numinf>.
+
+Elaborating module <if0>.
+
+Elaborating module <num0>.
+
+Elaborating module <mut_u>.
+
+Elaborating module <float_add_all>.
+
+Elaborating module <mux_32_MUSER_float_add_all>.
+
+Elaborating module <mux_8_MUSER_float_add_all>.
+
+Elaborating module <float_add0_MUSER_float_add_all>.
+
+Elaborating module <bit31to32>.
+
+Elaborating module <comparer32>.
+
+Elaborating module <prepare32>.
+
+Elaborating module <shift_right_MUSER_float_add_all>.
+
+Elaborating module <shift_right2>.
+
+Elaborating module <shift_rignt4>.
+
+Elaborating module <shift_right8>.
+
+Elaborating module <shift_right16>.
+
+Elaborating module <shift_right32>.
+
+Elaborating module <check_cin_MUSER_float_add_all>.
+
+Elaborating module <bit32to8>.
+
+Elaborating module <float_add1_MUSER_float_add_all>.
+
+Elaborating module <shift_leftist_MUSER_float_add_all>.
+
+Elaborating module <shift_left_MUSER_float_add_all>.
+
+Elaborating module <shift_left1>.
+
+Elaborating module <zero>.
+
+Elaborating module <float_sub>.
+
+Elaborating module <mux_32_MUSER_float_sub>.
+
+Elaborating module <mux_8_MUSER_float_sub>.
+
+Elaborating module <float_add_all_MUSER_float_sub>.
+
+Elaborating module <float_add0_MUSER_float_sub>.
+
+Elaborating module <shift_right_MUSER_float_sub>.
+
+Elaborating module <check_cin_MUSER_float_sub>.
+
+Elaborating module <float_add1_MUSER_float_sub>.
+
+Elaborating module <shift_leftist_MUSER_float_sub>.
+
+Elaborating module <shift_left_MUSER_float_sub>.
+
+Elaborating module <buff>.
+
+Elaborating module <comple32>.
+
+Elaborating module <orig33>.
+WARNING:HDLCompiler:91 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\comple32.v" Line 34: Signal <a> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\comple32.v" Line 38: Signal <f> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\comple32.v" Line 39: Signal <result> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\comple32.v" Line 41: Signal <result> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:1127 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\allu.v" Line 99: Assignment to comple32_done ignored, since the identifier is never used
+
+Elaborating module <divide>.
+
+Elaborating module <singlefloatingpointdiv>.
+WARNING:HDLCompiler:413 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\floatingpointdividerxx32.v" Line 78: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:189 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\allu.v" Line 113: Size mismatch in connection of port <do_fdiv>. Formal port size is 1-bit while actual signal size is 32-bit.
+
+Elaborating module <adder32b>.
+
+Elaborating module <add4b>.
+
+Elaborating module <AND3>.
+
+Elaborating module <AND4>.
+
+Elaborating module <AND5>.
+
+Elaborating module <OR5>.
+WARNING:HDLCompiler:189 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\allu.v" Line 115: Size mismatch in connection of port <mode>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\allu.v" Line 116: Size mismatch in connection of port <mode>. Formal port size is 1-bit while actual signal size is 32-bit.
+
+Elaborating module <and32>.
+
+Elaborating module <or32>.
+
+Elaborating module <inv32>.
+WARNING:HDLCompiler:634 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\ALU.vf" Line 142: Net <LE_out[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\ALU.vf" Line 148: Net <point_out[7]> does not have a driver.
+WARNING:HDLCompiler:552 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\ALU.vf" Line 206: Input port point_in[63] is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\ALU.vf".
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\ALU.vf" line 177: Output port <blink> of the instance <XLXI_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\ALU.vf" line 186: Output port <pulse_out> of the instance <XLXI_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\ALU.vf" line 199: Output port <Clk_CPU> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\ALU.vf" line 250: Output port <done> of the instance <XLXI_38> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <LE_out> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <point_out> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <ALU> synthesized.
+
+Synthesizing Unit <clk_div>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\clk_div.v".
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_5_o_add_0_OUT> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <clk_div> synthesized.
+
+Synthesizing Unit <MUTI_MUSER_ALU>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\ALU.vf".
+    Summary:
+	no macro.
+Unit <MUTI_MUSER_ALU> synthesized.
+
+Synthesizing Unit <mut_1_MUSER_ALU>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\ALU.vf".
+    Summary:
+	no macro.
+Unit <mut_1_MUSER_ALU> synthesized.
+
+Synthesizing Unit <mut_2>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\mut_2.v".
+    Summary:
+Unit <mut_2> synthesized.
+
+Synthesizing Unit <control_unit>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\controlunit.v".
+    Found 1-bit register for signal <op1<63>>.
+    Found 1-bit register for signal <op1<62>>.
+    Found 1-bit register for signal <op1<61>>.
+    Found 1-bit register for signal <op1<60>>.
+    Found 1-bit register for signal <op1<59>>.
+    Found 1-bit register for signal <op1<58>>.
+    Found 1-bit register for signal <op1<57>>.
+    Found 1-bit register for signal <op1<56>>.
+    Found 1-bit register for signal <op1<55>>.
+    Found 1-bit register for signal <op1<54>>.
+    Found 1-bit register for signal <op1<53>>.
+    Found 1-bit register for signal <op1<52>>.
+    Found 1-bit register for signal <op1<51>>.
+    Found 1-bit register for signal <op1<50>>.
+    Found 1-bit register for signal <op1<49>>.
+    Found 1-bit register for signal <op1<48>>.
+    Found 1-bit register for signal <op1<47>>.
+    Found 1-bit register for signal <op1<46>>.
+    Found 1-bit register for signal <op1<45>>.
+    Found 1-bit register for signal <op1<44>>.
+    Found 1-bit register for signal <op1<43>>.
+    Found 1-bit register for signal <op1<42>>.
+    Found 1-bit register for signal <op1<41>>.
+    Found 1-bit register for signal <op1<40>>.
+    Found 1-bit register for signal <op1<39>>.
+    Found 1-bit register for signal <op1<38>>.
+    Found 1-bit register for signal <op1<37>>.
+    Found 1-bit register for signal <op1<36>>.
+    Found 1-bit register for signal <op1<35>>.
+    Found 1-bit register for signal <op1<34>>.
+    Found 1-bit register for signal <op1<33>>.
+    Found 1-bit register for signal <op1<32>>.
+    Found 1-bit register for signal <op1<31>>.
+    Found 1-bit register for signal <op1<30>>.
+    Found 1-bit register for signal <op1<29>>.
+    Found 1-bit register for signal <op1<28>>.
+    Found 1-bit register for signal <op1<27>>.
+    Found 1-bit register for signal <op1<26>>.
+    Found 1-bit register for signal <op1<25>>.
+    Found 1-bit register for signal <op1<24>>.
+    Found 1-bit register for signal <op1<23>>.
+    Found 1-bit register for signal <op1<22>>.
+    Found 1-bit register for signal <op1<21>>.
+    Found 1-bit register for signal <op1<20>>.
+    Found 1-bit register for signal <op1<19>>.
+    Found 1-bit register for signal <op1<18>>.
+    Found 1-bit register for signal <op1<17>>.
+    Found 1-bit register for signal <op1<16>>.
+    Found 1-bit register for signal <op1<15>>.
+    Found 1-bit register for signal <op1<14>>.
+    Found 1-bit register for signal <op1<13>>.
+    Found 1-bit register for signal <op1<12>>.
+    Found 1-bit register for signal <op1<11>>.
+    Found 1-bit register for signal <op1<10>>.
+    Found 1-bit register for signal <op1<9>>.
+    Found 1-bit register for signal <op1<8>>.
+    Found 1-bit register for signal <op1<7>>.
+    Found 1-bit register for signal <op1<6>>.
+    Found 1-bit register for signal <op1<5>>.
+    Found 1-bit register for signal <op1<4>>.
+    Found 1-bit register for signal <op1<3>>.
+    Found 1-bit register for signal <op1<2>>.
+    Found 1-bit register for signal <op1<1>>.
+    Found 1-bit register for signal <op1<0>>.
+    Found 1-bit register for signal <op2<31>>.
+    Found 1-bit register for signal <op2<30>>.
+    Found 1-bit register for signal <op2<29>>.
+    Found 1-bit register for signal <op2<28>>.
+    Found 1-bit register for signal <op2<27>>.
+    Found 1-bit register for signal <op2<26>>.
+    Found 1-bit register for signal <op2<25>>.
+    Found 1-bit register for signal <op2<24>>.
+    Found 1-bit register for signal <op2<23>>.
+    Found 1-bit register for signal <op2<22>>.
+    Found 1-bit register for signal <op2<21>>.
+    Found 1-bit register for signal <op2<20>>.
+    Found 1-bit register for signal <op2<19>>.
+    Found 1-bit register for signal <op2<18>>.
+    Found 1-bit register for signal <op2<17>>.
+    Found 1-bit register for signal <op2<16>>.
+    Found 1-bit register for signal <op2<15>>.
+    Found 1-bit register for signal <op2<14>>.
+    Found 1-bit register for signal <op2<13>>.
+    Found 1-bit register for signal <op2<12>>.
+    Found 1-bit register for signal <op2<11>>.
+    Found 1-bit register for signal <op2<10>>.
+    Found 1-bit register for signal <op2<9>>.
+    Found 1-bit register for signal <op2<8>>.
+    Found 1-bit register for signal <op2<7>>.
+    Found 1-bit register for signal <op2<6>>.
+    Found 1-bit register for signal <op2<5>>.
+    Found 1-bit register for signal <op2<4>>.
+    Found 1-bit register for signal <op2<3>>.
+    Found 1-bit register for signal <op2<2>>.
+    Found 1-bit register for signal <op2<1>>.
+    Found 1-bit register for signal <op2<0>>.
+    Found 5-bit register for signal <con>.
+    Found 4-bit register for signal <state>.
+    Found 8-bit register for signal <LED>.
+    Found 4-bit adder for signal <state[3]_GND_16_o_add_17_OUT> created at line 45.
+    Found 8x8-bit Read Only RAM for signal <_n0162>
+    Found 64-bit 7-to-1 multiplexer for signal <_n0180> created at line 8.
+    Found 4-bit comparator greater for signal <GND_16_o_state[3]_LessThan_19_o> created at line 46
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred 113 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   9 Multiplexer(s).
+Unit <control_unit> synthesized.
+
+Synthesizing Unit <pbdebounce>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\controlunit.v".
+    Found 1-bit register for signal <pbreg>.
+    Found 7-bit register for signal <pbshift<6:0>>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <pbdebounce> synthesized.
+
+Synthesizing Unit <timer_1ms>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\counter_1ms.v".
+    Found 1-bit register for signal <clk_1ms>.
+    Found 16-bit register for signal <cnt>.
+    Found 16-bit adder for signal <cnt[15]_GND_18_o_add_2_OUT> created at line 16.
+    Found 16-bit comparator greater for signal <n0000> created at line 11
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <timer_1ms> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\allu.v".
+        ADD_S = 0
+        ADD_U = 1
+        ADD_F = 2
+        MIN_S = 3
+        MIN_U = 4
+        MIN_F = 6
+        MUL_S = 5
+        MUL_U = 7
+        MUL_F = 8
+        DIV_S = 9
+        DIV_U = 10
+        DIV_F = 11
+        AND = 12
+        OR = 13
+        NOT = 14
+        LL = 15
+        LR = 16
+        AR = 17
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\allu.v" line 99: Output port <done> of the instance <mulcom> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\allu.v" line 115: Output port <CF> of the instance <aa> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\allu.v" line 115: Output port <SF> of the instance <aa> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\allu.v" line 115: Output port <ZF> of the instance <aa> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\allu.v" line 116: Output port <CF> of the instance <bb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\allu.v" line 116: Output port <SF> of the instance <bb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\allu.v" line 116: Output port <ZF> of the instance <bb> is unconnected or connected to loadless signal.
+    Found 64-bit register for signal <result>.
+    Found 32-bit shifter logical left for signal <op1[31]_op2[31]_shift_left_5_OUT> created at line 80
+    Found 32-bit shifter logical right for signal <op1[31]_op2[31]_shift_right_7_OUT> created at line 86
+    Summary:
+	inferred  64 D-type flip-flop(s).
+	inferred  17 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <alu> synthesized.
+
+Synthesizing Unit <loat_mul>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf".
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf" line 241: Output port <CF> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf" line 241: Output port <overflow> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf" line 241: Output port <SF> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf" line 241: Output port <ZF> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf" line 250: Output port <CF> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf" line 250: Output port <overflow> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf" line 250: Output port <SF> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf" line 250: Output port <ZF> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf" line 296: Output port <done> of the instance <XLXI_37> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <loat_mul> synthesized.
+
+Synthesizing Unit <bit8to32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\bit8to32.v".
+    Summary:
+	no macro.
+Unit <bit8to32> synthesized.
+
+Synthesizing Unit <num_7F>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\num_7F.v".
+    Summary:
+	no macro.
+Unit <num_7F> synthesized.
+
+Synthesizing Unit <adder32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32.v".
+    Set property "HU_SET = XLXI_35_0" for instance <XLXI_35>.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32.v" line 173: Output port <overflow> of the instance <XLXI_36> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32.v" line 179: Output port <overflow> of the instance <XLXI_37> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32.v" line 185: Output port <overflow> of the instance <XLXI_38> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32.v" line 191: Output port <overflow> of the instance <XLXI_39> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32.v" line 203: Output port <overflow> of the instance <XLXI_41> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32.v" line 209: Output port <overflow> of the instance <XLXI_42> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32.v" line 215: Output port <overflow> of the instance <XLXI_43> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <adder32> synthesized.
+
+Synthesizing Unit <xor_4bit_MUSER_adder32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32b.v".
+    Summary:
+	no macro.
+Unit <xor_4bit_MUSER_adder32> synthesized.
+
+Synthesizing Unit <zero_4_MUSER_adder32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32b.v".
+    Summary:
+	no macro.
+Unit <zero_4_MUSER_adder32> synthesized.
+
+Synthesizing Unit <AND8_HXILINX_adder32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32b.v".
+    Summary:
+	no macro.
+Unit <AND8_HXILINX_adder32> synthesized.
+
+Synthesizing Unit <add4_MUSER_adder32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32.v".
+    Summary:
+	no macro.
+Unit <add4_MUSER_adder32> synthesized.
+
+Synthesizing Unit <add1_MUSER_add4>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32b.v".
+    Summary:
+	no macro.
+Unit <add1_MUSER_add4> synthesized.
+
+Synthesizing Unit <bit23to32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\bit23to32.v".
+    Summary:
+	no macro.
+Unit <bit23to32> synthesized.
+
+Synthesizing Unit <check_cin_MUSER_loat_mul>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf".
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf" line 185: Output port <CF> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf" line 185: Output port <overflow> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf" line 185: Output port <SF> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf" line 185: Output port <ZF> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <check_cin_MUSER_loat_mul> synthesized.
+
+Synthesizing Unit <mux_32_MUSER_loat_mul>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf".
+    Summary:
+	no macro.
+Unit <mux_32_MUSER_loat_mul> synthesized.
+
+Synthesizing Unit <mux_8_MUSER_loat_mul>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\loat_mul.vf".
+    Summary:
+	no macro.
+Unit <mux_8_MUSER_loat_mul> synthesized.
+
+Synthesizing Unit <bit1to32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\bit1to32.v".
+    Summary:
+	no macro.
+Unit <bit1to32> synthesized.
+
+Synthesizing Unit <shift_rignt1>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_rignt1.v".
+WARNING:Xst:647 - Input <A<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <shift_rignt1> synthesized.
+
+Synthesizing Unit <zhenghe>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\zhenghe.v".
+WARNING:Xst:647 - Input <FE<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <FM<31:23>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <zhenghe> synthesized.
+
+Synthesizing Unit <ifinf>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\ifinf.v".
+    Summary:
+	no macro.
+Unit <ifinf> synthesized.
+
+Synthesizing Unit <numinf>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\numinf.v".
+    Summary:
+	no macro.
+Unit <numinf> synthesized.
+
+Synthesizing Unit <if0>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\if0.v".
+    Summary:
+	no macro.
+Unit <if0> synthesized.
+
+Synthesizing Unit <num0>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\num0.v".
+    Summary:
+	no macro.
+Unit <num0> synthesized.
+
+Synthesizing Unit <mut_u>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\mut_u.v".
+    Found 32-bit register for signal <areg>.
+    Found 33-bit register for signal <breg>.
+    Found 65-bit register for signal <yout_r>.
+    Found 6-bit register for signal <i>.
+    Found 1-bit register for signal <done_r>.
+    Found 32-bit register for signal <an>.
+    Found 32-bit register for signal <bn>.
+    Found 1-bit register for signal <rst_n>.
+    Found 6-bit adder for signal <i[5]_GND_46_o_add_2_OUT> created at line 22.
+    Found 33-bit adder for signal <yout_r[64]_breg[32]_add_16_OUT> created at line 64.
+    Found 5-bit subtractor for signal <GND_46_o_GND_46_o_sub_15_OUT<4:0>> created at line 61.
+    Found 1-bit 32-to-1 multiplexer for signal <GND_46_o_areg[31]_Mux_15_o> created at line 61.
+    Found 32-bit comparator not equal for signal <n0005> created at line 32
+    Found 32-bit comparator not equal for signal <n0007> created at line 32
+    Found 6-bit comparator lessequal for signal <n0019> created at line 59
+    Found 6-bit comparator lessequal for signal <n0021> created at line 59
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 202 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred  34 Multiplexer(s).
+Unit <mut_u> synthesized.
+
+Synthesizing Unit <float_add_all>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf".
+    Summary:
+	no macro.
+Unit <float_add_all> synthesized.
+
+Synthesizing Unit <mux_32_MUSER_float_add_all>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf".
+    Summary:
+	no macro.
+Unit <mux_32_MUSER_float_add_all> synthesized.
+
+Synthesizing Unit <mux_8_MUSER_float_add_all>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf".
+    Summary:
+	no macro.
+Unit <mux_8_MUSER_float_add_all> synthesized.
+
+Synthesizing Unit <float_add0_MUSER_float_add_all>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf".
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 669: Output port <CF> of the instance <XLXI_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 669: Output port <overflow> of the instance <XLXI_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 669: Output port <SF> of the instance <XLXI_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 669: Output port <ZF> of the instance <XLXI_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 693: Output port <CF> of the instance <XLXI_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 693: Output port <overflow> of the instance <XLXI_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 693: Output port <SF> of the instance <XLXI_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 693: Output port <ZF> of the instance <XLXI_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 711: Output port <CF> of the instance <XLXI_28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 711: Output port <overflow> of the instance <XLXI_28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 711: Output port <SF> of the instance <XLXI_28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 711: Output port <ZF> of the instance <XLXI_28> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <float_add0_MUSER_float_add_all> synthesized.
+
+Synthesizing Unit <bit31to32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\bit31to32.v".
+    Summary:
+	no macro.
+Unit <bit31to32> synthesized.
+
+Synthesizing Unit <comparer32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\compare_32.v".
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\compare_32.v" line 27: Output port <S> of the instance <m0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\compare_32.v" line 27: Output port <overflow> of the instance <m0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\compare_32.v" line 27: Output port <SF> of the instance <m0> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <comparer32> synthesized.
+
+Synthesizing Unit <prepare32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\prepare32.v".
+    Summary:
+	no macro.
+Unit <prepare32> synthesized.
+
+Synthesizing Unit <shift_right_MUSER_float_add_all>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf".
+    Summary:
+	no macro.
+Unit <shift_right_MUSER_float_add_all> synthesized.
+
+Synthesizing Unit <shift_right2>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_right2.v".
+WARNING:Xst:647 - Input <A<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <shift_right2> synthesized.
+
+Synthesizing Unit <shift_rignt4>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_rignt4.v".
+WARNING:Xst:647 - Input <A<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <shift_rignt4> synthesized.
+
+Synthesizing Unit <shift_right8>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_right8.v".
+WARNING:Xst:647 - Input <A<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <shift_right8> synthesized.
+
+Synthesizing Unit <shift_right16>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_right16.v".
+WARNING:Xst:647 - Input <A<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <shift_right16> synthesized.
+
+Synthesizing Unit <shift_right32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_right32.v".
+WARNING:Xst:647 - Input <A> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <shift_right32> synthesized.
+
+Synthesizing Unit <check_cin_MUSER_float_add_all>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf".
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 396: Output port <CF> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 396: Output port <overflow> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 396: Output port <SF> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 396: Output port <ZF> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <check_cin_MUSER_float_add_all> synthesized.
+
+Synthesizing Unit <bit32to8>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\bit32to8.v".
+WARNING:Xst:647 - Input <A<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <bit32to8> synthesized.
+
+Synthesizing Unit <float_add1_MUSER_float_add_all>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf".
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 549: Output port <CF> of the instance <XLXI_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 549: Output port <overflow> of the instance <XLXI_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 549: Output port <SF> of the instance <XLXI_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 549: Output port <ZF> of the instance <XLXI_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 571: Output port <CF> of the instance <XLXI_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 571: Output port <overflow> of the instance <XLXI_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 571: Output port <SF> of the instance <XLXI_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 584: Output port <CF> of the instance <XLXI_32> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 584: Output port <overflow> of the instance <XLXI_32> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 584: Output port <SF> of the instance <XLXI_32> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 584: Output port <ZF> of the instance <XLXI_32> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <float_add1_MUSER_float_add_all> synthesized.
+
+Synthesizing Unit <shift_leftist_MUSER_float_add_all>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf".
+    Summary:
+	no macro.
+Unit <shift_leftist_MUSER_float_add_all> synthesized.
+
+Synthesizing Unit <shift_left_MUSER_float_add_all>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf".
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 183: Output port <CF> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 183: Output port <overflow> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 183: Output port <SF> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_add_all.vf" line 183: Output port <ZF> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <shift_left_MUSER_float_add_all> synthesized.
+
+Synthesizing Unit <shift_left1>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\shift_left1.v".
+WARNING:Xst:647 - Input <A<31:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <shift_left1> synthesized.
+
+Synthesizing Unit <zero>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\zero.v".
+    Summary:
+	no macro.
+Unit <zero> synthesized.
+
+Synthesizing Unit <float_sub>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf".
+    Summary:
+	no macro.
+Unit <float_sub> synthesized.
+
+Synthesizing Unit <mux_32_MUSER_float_sub>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf".
+    Summary:
+	no macro.
+Unit <mux_32_MUSER_float_sub> synthesized.
+
+Synthesizing Unit <mux_8_MUSER_float_sub>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf".
+    Summary:
+	no macro.
+Unit <mux_8_MUSER_float_sub> synthesized.
+
+Synthesizing Unit <float_add_all_MUSER_float_sub>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf".
+    Summary:
+	no macro.
+Unit <float_add_all_MUSER_float_sub> synthesized.
+
+Synthesizing Unit <float_add0_MUSER_float_sub>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf".
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 669: Output port <CF> of the instance <XLXI_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 669: Output port <overflow> of the instance <XLXI_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 669: Output port <SF> of the instance <XLXI_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 669: Output port <ZF> of the instance <XLXI_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 693: Output port <CF> of the instance <XLXI_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 693: Output port <overflow> of the instance <XLXI_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 693: Output port <SF> of the instance <XLXI_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 693: Output port <ZF> of the instance <XLXI_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 711: Output port <CF> of the instance <XLXI_28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 711: Output port <overflow> of the instance <XLXI_28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 711: Output port <SF> of the instance <XLXI_28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 711: Output port <ZF> of the instance <XLXI_28> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <float_add0_MUSER_float_sub> synthesized.
+
+Synthesizing Unit <shift_right_MUSER_float_sub>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf".
+    Summary:
+	no macro.
+Unit <shift_right_MUSER_float_sub> synthesized.
+
+Synthesizing Unit <check_cin_MUSER_float_sub>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf".
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 396: Output port <CF> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 396: Output port <overflow> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 396: Output port <SF> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 396: Output port <ZF> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <check_cin_MUSER_float_sub> synthesized.
+
+Synthesizing Unit <float_add1_MUSER_float_sub>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf".
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 549: Output port <CF> of the instance <XLXI_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 549: Output port <overflow> of the instance <XLXI_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 549: Output port <SF> of the instance <XLXI_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 549: Output port <ZF> of the instance <XLXI_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 571: Output port <CF> of the instance <XLXI_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 571: Output port <overflow> of the instance <XLXI_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 571: Output port <SF> of the instance <XLXI_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 584: Output port <CF> of the instance <XLXI_32> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 584: Output port <overflow> of the instance <XLXI_32> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 584: Output port <SF> of the instance <XLXI_32> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 584: Output port <ZF> of the instance <XLXI_32> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <float_add1_MUSER_float_sub> synthesized.
+
+Synthesizing Unit <shift_leftist_MUSER_float_sub>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf".
+    Summary:
+	no macro.
+Unit <shift_leftist_MUSER_float_sub> synthesized.
+
+Synthesizing Unit <shift_left_MUSER_float_sub>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf".
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 183: Output port <CF> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 183: Output port <overflow> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 183: Output port <SF> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\float_sub.vf" line 183: Output port <ZF> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <shift_left_MUSER_float_sub> synthesized.
+
+Synthesizing Unit <buff>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\buff.v".
+    Summary:
+	no macro.
+Unit <buff> synthesized.
+
+Synthesizing Unit <comple32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\comple32.v".
+        N = 32
+    Found 32-bit adder for signal <n0033> created at line 26.
+    Found 32-bit adder for signal <n0035> created at line 27.
+    Found 63-bit adder for signal <result[62]_GND_78_o_add_12_OUT> created at line 41.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred   4 Multiplexer(s).
+Unit <comple32> synthesized.
+
+Synthesizing Unit <orig33>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\orig32.v".
+    Found 32-bit register for signal <areg>.
+    Found 33-bit register for signal <breg>.
+    Found 65-bit register for signal <yout_r>.
+    Found 6-bit register for signal <i>.
+    Found 1-bit register for signal <done_r>.
+    Found 32-bit register for signal <an>.
+    Found 32-bit register for signal <bn>.
+    Found 1-bit register for signal <rst_n>.
+    Found 6-bit adder for signal <i[5]_GND_79_o_add_2_OUT> created at line 44.
+    Found 33-bit adder for signal <yout_r[64]_breg[32]_add_16_OUT> created at line 88.
+    Found 5-bit subtractor for signal <GND_79_o_GND_79_o_sub_15_OUT<4:0>> created at line 85.
+    Found 1-bit 32-to-1 multiplexer for signal <GND_79_o_areg[31]_Mux_15_o> created at line 85.
+    Found 32-bit comparator not equal for signal <n0005> created at line 57
+    Found 32-bit comparator not equal for signal <n0007> created at line 57
+    Found 6-bit comparator lessequal for signal <n0019> created at line 83
+    Found 6-bit comparator lessequal for signal <n0021> created at line 83
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 202 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred  34 Multiplexer(s).
+Unit <orig33> synthesized.
+
+Synthesizing Unit <divide>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\diver.v".
+    Found 32-bit register for signal <quotient>.
+    Found 32-bit register for signal <quotient_temp>.
+    Found 128-bit register for signal <dividend_copy>.
+    Found 128-bit register for signal <divider_copy>.
+    Found 1-bit register for signal <negative_output>.
+    Found 7-bit register for signal <bit>.
+    Found 128-bit subtractor for signal <dividend_copy[127]_divider_copy[127]_sub_13_OUT> created at line 37.
+    Found 7-bit subtractor for signal <bit[6]_GND_80_o_sub_18_OUT> created at line 51.
+    Found 32-bit adder for signal <dividend_copy[31]_GND_80_o_add_1_OUT> created at line 15.
+    Found 64-bit adder for signal <dividend[63]_GND_80_o_add_6_OUT> created at line 30.
+    Found 32-bit adder for signal <divider[31]_GND_80_o_add_9_OUT> created at line 31.
+    Found 32-bit adder for signal <quotient_temp[30]_GND_80_o_add_15_OUT> created at line 48.
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred 328 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+Unit <divide> synthesized.
+
+Synthesizing Unit <singlefloatingpointdiv>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\floatingpointdividerxx32.v".
+        ST_IDLE = 4'b0000
+        ST_UNPACK = 4'b0001
+        ST_DIV = 4'b0010
+        ST_NORMAL = 4'b0011
+        ST_ERROR = 4'b0100
+    Found 5-bit register for signal <cnt>.
+    Found 1-bit register for signal <sign>.
+    Found 25-bit register for signal <rA>.
+    Found 25-bit register for signal <rM>.
+    Found 25-bit register for signal <rQ>.
+    Found 9-bit register for signal <exponent>.
+    Found 1-bit register for signal <_valid>.
+    Found 4-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit subtractor for signal <BUS_0002_GND_81_o_sub_58_OUT> created at line 154.
+    Found 9-bit subtractor for signal <exponent[8]_GND_81_o_sub_61_OUT> created at line 159.
+    Found 5-bit adder for signal <cnt[4]_GND_81_o_add_16_OUT> created at line 78.
+    Found 9-bit adder for signal <n0108> created at line 154.
+    Found 24-bit subtractor for signal <rAsubrM<23:0>> created at line 21.
+    Found 5-bit comparator greater for signal <cnt[4]_PWR_81_o_LessThan_7_o> created at line 60
+    Found 25-bit comparator lessequal for signal <n0025> created at line 103
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  91 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  11 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <singlefloatingpointdiv> synthesized.
+
+Synthesizing Unit <adder32b>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32b.v".
+    Set property "HU_SET = XLXI_35_0" for instance <XLXI_35>.
+    Summary:
+	no macro.
+Unit <adder32b> synthesized.
+
+Synthesizing Unit <add4b>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32b.v".
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32b.v" line 135: Output port <C1> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32b.v" line 140: Output port <C1> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32b.v" line 145: Output port <C1> of the instance <XLXI_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CST\Desktop\alu_new\alu_new\alu\adder32b.v" line 150: Output port <C1> of the instance <XLXI_4> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <add4b> synthesized.
+
+Synthesizing Unit <and32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\and32.v".
+    Summary:
+	no macro.
+Unit <and32> synthesized.
+
+Synthesizing Unit <or32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\or32.v".
+    Summary:
+	no macro.
+Unit <or32> synthesized.
+
+Synthesizing Unit <inv32>.
+    Related source file is "C:\Users\CST\Desktop\alu_new\alu_new\alu\inv32.v".
+    Summary:
+	no macro.
+Unit <inv32> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x8-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 37
+ 128-bit subtractor                                    : 2
+ 16-bit adder                                          : 1
+ 24-bit subtractor                                     : 1
+ 32-bit adder                                          : 11
+ 33-bit adder                                          : 4
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 4
+ 6-bit adder                                           : 4
+ 63-bit adder                                          : 2
+ 64-bit adder                                          : 2
+ 7-bit subtractor                                      : 2
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 62
+ 1-bit register                                        : 14
+ 128-bit register                                      : 4
+ 16-bit register                                       : 1
+ 25-bit register                                       : 3
+ 32-bit register                                       : 18
+ 33-bit register                                       : 4
+ 4-bit register                                        : 1
+ 5-bit register                                        : 2
+ 6-bit register                                        : 4
+ 64-bit register                                       : 2
+ 65-bit register                                       : 4
+ 7-bit register                                        : 3
+ 8-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 20
+ 16-bit comparator greater                             : 1
+ 25-bit comparator lessequal                           : 1
+ 32-bit comparator not equal                           : 8
+ 4-bit comparator greater                              : 1
+ 5-bit comparator greater                              : 1
+ 6-bit comparator lessequal                            : 8
+# Multiplexers                                         : 196
+ 1-bit 2-to-1 multiplexer                              : 133
+ 1-bit 32-to-1 multiplexer                             : 4
+ 128-bit 2-to-1 multiplexer                            : 8
+ 25-bit 2-to-1 multiplexer                             : 6
+ 32-bit 2-to-1 multiplexer                             : 17
+ 5-bit 2-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 20
+ 64-bit 7-to-1 multiplexer                             : 1
+ 7-bit 2-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 4
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# FSMs                                                 : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <SAnti_jitter.ngc>.
+Reading core <SSeg7_Dev.ngc>.
+Reading core <SEnter_2_32.ngc>.
+Reading core <Multi_8CH32.ngc>.
+Reading core <Seg7_Dev.ngc>.
+Loading core <SAnti_jitter> for timing and area information for instance <XLXI_4>.
+Loading core <SSeg7_Dev> for timing and area information for instance <XLXI_2>.
+Loading core <SEnter_2_32> for timing and area information for instance <XLXI_3>.
+Loading core <Multi_8CH32> for timing and area information for instance <XLXI_15>.
+Loading core <Seg7_Dev> for timing and area information for instance <XLXI_25>.
+WARNING:Xst:2404 -  FFs/Latches <yout_r<64:64>> (without init value) have a constant value of 0 in block <mut_u>.
+WARNING:Xst:2404 -  FFs/Latches <breg<32:32>> (without init value) have a constant value of 0 in block <mut_u>.
+WARNING:Xst:2404 -  FFs/Latches <yout_r<64:64>> (without init value) have a constant value of 0 in block <orig33>.
+WARNING:Xst:2404 -  FFs/Latches <breg<32:32>> (without init value) have a constant value of 0 in block <orig33>.
+
+Synthesizing (advanced) Unit <clk_div>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+Unit <clk_div> synthesized (advanced).
+
+Synthesizing (advanced) Unit <control_unit>.
+The following registers are absorbed into counter <state>: 1 register on signal <state>.
+INFO:Xst:3226 - The RAM <Mram__n0162> will be implemented as a BLOCK RAM, absorbing the following register(s): <LED>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk_100mhz>    | rise     |
+    |     enA            | connected to signal <state<3>>      | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <state<2:0>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <LED>           |          |
+    -----------------------------------------------------------------------
+    | optimization       | area                                |          |
+    -----------------------------------------------------------------------
+Unit <control_unit> synthesized (advanced).
+
+Synthesizing (advanced) Unit <divide>.
+The following registers are absorbed into counter <bit>: 1 register on signal <bit>.
+Unit <divide> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mut_u>.
+The following registers are absorbed into counter <i>: 1 register on signal <i>.
+Unit <mut_u> synthesized (advanced).
+
+Synthesizing (advanced) Unit <orig33>.
+The following registers are absorbed into counter <i>: 1 register on signal <i>.
+Unit <orig33> synthesized (advanced).
+
+Synthesizing (advanced) Unit <singlefloatingpointdiv>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <singlefloatingpointdiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <timer_1ms>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <timer_1ms> synthesized (advanced).
+WARNING:Xst:2677 - Node <quotient_temp_31> of sequential type is unconnected in block <divide>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x8-bit single-port block Read Only RAM               : 1
+# Adders/Subtractors                                   : 27
+ 128-bit subtractor                                    : 2
+ 24-bit subtractor                                     : 1
+ 32-bit adder                                          : 10
+ 33-bit adder                                          : 4
+ 5-bit subtractor                                      : 4
+ 63-bit adder                                          : 2
+ 64-bit adder                                          : 2
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 10
+ 16-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+ 6-bit up counter                                      : 4
+ 7-bit down counter                                    : 2
+# Registers                                            : 1676
+ Flip-Flops                                            : 1676
+# Comparators                                          : 20
+ 16-bit comparator greater                             : 1
+ 25-bit comparator lessequal                           : 1
+ 32-bit comparator not equal                           : 8
+ 4-bit comparator greater                              : 1
+ 5-bit comparator greater                              : 1
+ 6-bit comparator lessequal                            : 8
+# Multiplexers                                         : 454
+ 1-bit 2-to-1 multiplexer                              : 397
+ 1-bit 32-to-1 multiplexer                             : 4
+ 128-bit 2-to-1 multiplexer                            : 6
+ 25-bit 2-to-1 multiplexer                             : 6
+ 32-bit 2-to-1 multiplexer                             : 17
+ 64-bit 2-to-1 multiplexer                             : 20
+ 64-bit 7-to-1 multiplexer                             : 1
+ 9-bit 2-to-1 multiplexer                              : 3
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# FSMs                                                 : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <an_23> in Unit <mut_u> is equivalent to the following FF/Latch, which will be removed : <bn_23> 
+INFO:Xst:2261 - The FF/Latch <an_24> in Unit <mut_u> is equivalent to the following 15 FFs/Latches, which will be removed : <an_25> <an_26> <an_27> <an_28> <an_29> <an_30> <an_31> <bn_24> <bn_25> <bn_26> <bn_27> <bn_28> <bn_29> <bn_30> <bn_31> 
+INFO:Xst:2261 - The FF/Latch <areg_23> in Unit <mut_u> is equivalent to the following FF/Latch, which will be removed : <breg_23> 
+INFO:Xst:2261 - The FF/Latch <areg_24> in Unit <mut_u> is equivalent to the following 15 FFs/Latches, which will be removed : <areg_25> <areg_26> <areg_27> <areg_28> <areg_29> <areg_30> <areg_31> <breg_24> <breg_25> <breg_26> <breg_27> <breg_28> <breg_29> <breg_30> <breg_31> 
+WARNING:Xst:1293 - FF/Latch <div1/negative_output> has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2973 - All outputs of instance <bb/XLXI_35> of block <AND8_HXILINX_adder32> are unconnected in block <alu>. Underlying logic will be removed.
+WARNING:Xst:2973 - All outputs of instance <aa/XLXI_35> of block <AND8_HXILINX_adder32> are unconnected in block <alu>. Underlying logic will be removed.
+WARNING:Xst:1710 - FF/Latch <an_23> (without init value) has a constant value of 1 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <an_24> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_24> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_37/fml/FSM_0> on signal <state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 000
+ 0001  | 001
+ 0010  | 011
+ 0100  | 010
+ 0011  | 110
+-------------------
+WARNING:Xst:1710 - FF/Latch <div1/divider_copy_127> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_126> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_125> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_124> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_123> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_122> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_121> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_120> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_119> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_118> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_117> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_116> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_115> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_114> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_113> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_112> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_95> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_96> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_97> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_98> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_99> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_100> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_101> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_102> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_103> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_104> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_105> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_106> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_107> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_108> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_109> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_110> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div1/divider_copy_111> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_127> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_126> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_125> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_124> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_123> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_122> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_121> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_120> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_119> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_118> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_117> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_116> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_115> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_114> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_113> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_112> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_95> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_96> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_97> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_98> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_99> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_100> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_101> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_102> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_103> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_104> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_105> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_106> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_107> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_108> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_109> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_110> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <div2/divider_copy_111> (without init value) has a constant value of 0 in block <alu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rM_24> (without init value) has a constant value of 0 in block <singlefloatingpointdiv>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <exponent_8> of sequential type is unconnected in block <singlefloatingpointdiv>.
+WARNING:Xst:2677 - Node <XLXI_6/clkdiv_26> of sequential type is unconnected in block <ALU>.
+WARNING:Xst:2677 - Node <XLXI_6/clkdiv_27> of sequential type is unconnected in block <ALU>.
+WARNING:Xst:2677 - Node <XLXI_6/clkdiv_28> of sequential type is unconnected in block <ALU>.
+WARNING:Xst:2677 - Node <XLXI_6/clkdiv_29> of sequential type is unconnected in block <ALU>.
+WARNING:Xst:2677 - Node <XLXI_6/clkdiv_30> of sequential type is unconnected in block <ALU>.
+WARNING:Xst:2677 - Node <XLXI_6/clkdiv_31> of sequential type is unconnected in block <ALU>.
+INFO:Xst:2261 - The FF/Latch <div1/quotient_16> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_16> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_21> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_21> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_1> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_1> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_27> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_27> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_7> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_7> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_11> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_11> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_17> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_17> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_22> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_22> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_2> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_2> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_28> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_28> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_8> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_8> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_12> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_12> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_18> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_18> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_23> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_23> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_3> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_3> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_29> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_29> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_9> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_9> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_13> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_13> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_19> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_19> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_24> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_24> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_4> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_4> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_30> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_30> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_10> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_10> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_14> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_14> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_0> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_0> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_20> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_20> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_25> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_25> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_5> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_5> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_15> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_15> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_26> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_26> 
+INFO:Xst:2261 - The FF/Latch <div1/quotient_6> in Unit <alu> is equivalent to the following FF/Latch, which will be removed : <div1/quotient_temp_6> 
+
+Optimizing unit <adder32> ...
+
+Optimizing unit <mux_8_MUSER_loat_mul> ...
+
+Optimizing unit <float_add1_MUSER_float_add_all> ...
+
+Optimizing unit <shift_right_MUSER_float_add_all> ...
+
+Optimizing unit <shift_leftist_MUSER_float_add_all> ...
+
+Optimizing unit <float_add0_MUSER_float_add_all> ...
+
+Optimizing unit <float_add1_MUSER_float_sub> ...
+
+Optimizing unit <shift_right_MUSER_float_sub> ...
+
+Optimizing unit <shift_leftist_MUSER_float_sub> ...
+
+Optimizing unit <float_add0_MUSER_float_sub> ...
+
+Optimizing unit <add4b> ...
+
+Optimizing unit <inv32> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <control_unit> ...
+
+Optimizing unit <pbdebounce> ...
+
+Optimizing unit <alu> ...
+
+Optimizing unit <mut_u> ...
+
+Optimizing unit <AND8_HXILINX_adder32> ...
+
+Optimizing unit <float_add_all_MUSER_float_sub> ...
+
+Optimizing unit <singlefloatingpointdiv> ...
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_22> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_21> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_20> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_19> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_18> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_17> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_16> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_15> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_14> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_13> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_12> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_11> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_10> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_9> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_8> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_7> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_6> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_5> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_4> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_3> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_2> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_1> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:2677 - Node <fmul/XLXI_37/yout_r_0> of sequential type is unconnected in block <XLXI_37>.
+WARNING:Xst:1290 - Hierarchical block <fmul/XLXI_7/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fmul/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fmul/XLXI_15/XLXI_6/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_34/XLXI_6/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_32/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_18/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_1/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_2/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_3/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_4/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_5/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_6/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_7/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_8/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_9/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_10/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_11/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_12/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_13/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_14/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_15/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_16/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_17/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_18/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_19/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_25/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_27/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_20/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_21/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_22/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_23/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_24/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_9/XLXI_36/XLXI_26/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_8/XLXI_23/XLXI_6/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_8/XLXI_29/XLXI_6/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_8/XLXI_28/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_8/XLXI_13/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fadd/XLXI_8/XLXI_21/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_34/XLXI_6/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_32/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_18/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_1/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_2/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_3/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_4/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_5/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_6/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_7/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_8/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_9/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_10/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_11/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_12/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_13/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_14/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_15/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_16/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_17/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_18/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_19/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_25/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_27/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_20/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_21/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_22/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_23/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_24/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_9/XLXI_36/XLXI_26/XLXI_5/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_8/XLXI_23/XLXI_6/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_8/XLXI_29/XLXI_6/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_8/XLXI_28/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_8/XLXI_13/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fsub/XLXI_16/XLXI_8/XLXI_21/XLXI_35> is unconnected in block <XLXI_37>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_106> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_105> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_104> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_103> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_102> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_101> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_100> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_99> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_98> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_97> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_96> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_95> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_94> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_93> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_92> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_91> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_90> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_123> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_122> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_121> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_120> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_119> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_118> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_117> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_116> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_115> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_114> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_113> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_112> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_111> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_110> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_109> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_108> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_107> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_72> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_71> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_70> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_69> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_68> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_67> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_66> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_65> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_64> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fmul/XLXI_37/yout_r_63> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fmul/XLXI_37/yout_r_62> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fmul/XLXI_37/yout_r_61> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fmul/XLXI_37/yout_r_60> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fmul/XLXI_37/yout_r_59> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fmul/XLXI_37/yout_r_58> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fmul/XLXI_37/yout_r_57> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fmul/XLXI_37/yout_r_56> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_89> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_88> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_87> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_86> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_85> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_84> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_83> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_82> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_81> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_80> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_79> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_78> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_77> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_76> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_75> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_74> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_73> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_110> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_109> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_108> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_107> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_106> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_105> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_104> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_103> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_102> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_101> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_100> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_99> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_98> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_97> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_96> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_95> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_94> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_127> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_126> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_125> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_124> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_123> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_122> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_121> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_120> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_119> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_118> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_117> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_116> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_115> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_114> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_113> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_112> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_111> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_76> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_75> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_74> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_73> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_72> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_71> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_70> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_69> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_68> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_67> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_66> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_65> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_64> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_127> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_126> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_125> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div1/dividend_copy_124> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_93> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_92> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_91> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_90> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_89> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_88> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_87> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_86> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_85> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_84> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_83> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_82> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_81> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_80> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_79> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_78> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <div2/dividend_copy_77> (without init value) has a constant value of 0 in block <XLXI_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <XLXI_32/p1/m0/cnt_15> has a constant value of 0 in block <ALU>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <mulcom/oi/bn_0> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <orig/bn_0> 
+INFO:Xst:2261 - The FF/Latch <mulcom/oi/an_0> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <orig/an_0> 
+INFO:Xst:2261 - The FF/Latch <orig/an_10> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_10> 
+INFO:Xst:2261 - The FF/Latch <orig/an_11> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_11> 
+INFO:Xst:2261 - The FF/Latch <orig/an_12> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_12> 
+INFO:Xst:2261 - The FF/Latch <orig/an_13> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_13> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_1> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_1> 
+INFO:Xst:2261 - The FF/Latch <orig/an_14> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_14> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_2> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_2> 
+INFO:Xst:2261 - The FF/Latch <orig/an_15> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_15> 
+INFO:Xst:2261 - The FF/Latch <orig/an_20> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_20> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_3> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_3> 
+INFO:Xst:2261 - The FF/Latch <orig/an_16> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_16> 
+INFO:Xst:2261 - The FF/Latch <orig/an_21> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_21> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_4> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_4> 
+INFO:Xst:2261 - The FF/Latch <orig/an_17> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_17> 
+INFO:Xst:2261 - The FF/Latch <orig/an_22> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_22> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_5> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_5> 
+INFO:Xst:2261 - The FF/Latch <orig/an_18> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_18> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_6> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_6> 
+INFO:Xst:2261 - The FF/Latch <orig/an_19> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_19> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_7> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_7> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_8> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_8> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_9> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_9> 
+INFO:Xst:2261 - The FF/Latch <div2/quotient_0> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <div2/quotient_temp_0> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_10> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_10> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_11> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_11> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_12> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_12> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_13> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_13> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_14> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_14> 
+INFO:Xst:2261 - The FF/Latch <div2/bit_0> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <div1/bit_0> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_15> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_15> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_20> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_20> 
+INFO:Xst:2261 - The FF/Latch <div2/bit_1> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <div1/bit_1> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_16> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_16> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_21> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_21> 
+INFO:Xst:2261 - The FF/Latch <div2/bit_2> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <div1/bit_2> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_17> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_17> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_22> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_22> 
+INFO:Xst:2261 - The FF/Latch <div2/bit_3> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <div1/bit_3> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_18> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_18> 
+INFO:Xst:2261 - The FF/Latch <div2/bit_4> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <div1/bit_4> 
+INFO:Xst:2261 - The FF/Latch <orig/bn_19> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/bn_19> 
+INFO:Xst:2261 - The FF/Latch <div2/bit_5> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <div1/bit_5> 
+INFO:Xst:2261 - The FF/Latch <div2/bit_6> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <div1/bit_6> 
+INFO:Xst:2261 - The FF/Latch <orig/an_1> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_1> 
+INFO:Xst:2261 - The FF/Latch <orig/an_2> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_2> 
+INFO:Xst:2261 - The FF/Latch <orig/an_3> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_3> 
+INFO:Xst:2261 - The FF/Latch <orig/an_4> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_4> 
+INFO:Xst:2261 - The FF/Latch <orig/an_5> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_5> 
+INFO:Xst:2261 - The FF/Latch <orig/an_6> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_6> 
+INFO:Xst:2261 - The FF/Latch <orig/an_7> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_7> 
+INFO:Xst:2261 - The FF/Latch <orig/an_8> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_8> 
+INFO:Xst:2261 - The FF/Latch <orig/an_9> in Unit <XLXI_37> is equivalent to the following FF/Latch, which will be removed : <fmul/XLXI_37/an_9> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1419
+ Flip-Flops                                            : 1419
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ALU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 38783
+#      AND2                        : 15715
+#      AND3                        : 147
+#      AND4                        : 113
+#      AND5                        : 16
+#      BUF                         : 713
+#      GND                         : 51
+#      INV                         : 1752
+#      LUT1                        : 113
+#      LUT2                        : 483
+#      LUT3                        : 583
+#      LUT4                        : 146
+#      LUT5                        : 387
+#      LUT6                        : 927
+#      MUXCY                       : 992
+#      MUXF7                       : 15
+#      OR2                         : 3878
+#      OR3                         : 2639
+#      OR4                         : 796
+#      OR5                         : 16
+#      VCC                         : 4
+#      XOR2                        : 8494
+#      XORCY                       : 803
+# FlipFlops/Latches                : 1740
+#      FD                          : 489
+#      FDC                         : 36
+#      FDCE                        : 492
+#      FDE                         : 489
+#      FDR                         : 23
+#      FDRE                        : 211
+# RAMS                             : 1
+#      RAMB18E1                    : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 55
+#      IBUF                        : 22
+#      OBUF                        : 33
+# Others                           : 144
+#      FMAP                        : 144
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-2l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1740  out of  202800     0%  
+ Number of Slice LUTs:                 4391  out of  101400     4%  
+    Number used as Logic:              4391  out of  101400     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   4914
+   Number with an unused Flip Flop:    3174  out of   4914    64%  
+   Number with an unused LUT:           523  out of   4914    10%  
+   Number of fully used LUT-FF pairs:  1217  out of   4914    24%  
+   Number of unique control sets:        50
+
+IO Utilization: 
+ Number of IOs:                          56
+ Number of bonded IOBs:                  56  out of    400    14%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    325     0%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)     | Load  |
+-----------------------------------+---------------------------+-------+
+XLXI_6/clkdiv_20                   | BUFG                      | 1264  |
+clk_100mhz                         | BUFGP                     | 421   |
+XLXI_32/p1/pbreg                   | NONE(XLXI_32/state_3)     | 4     |
+XLXI_32/p1/m0/clk_1ms              | NONE(XLXI_32/p1/pbshift_6)| 8     |
+XLXI_4/clk1                        | BUFG                      | 41    |
+XLXI_3/push(XLXI_3/push1:O)        | NONE(*)(XLXI_3/state_0)   | 3     |
+-----------------------------------+---------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+--------------------------+-------+
+Control Signal                     | Buffer(FF name)          | Load  |
+-----------------------------------+--------------------------+-------+
+XLXI_32/p1/m0/cnt<15>(XLXI_31:G)   | NONE(XLXI_32/Mram__n0162)| 2     |
+-----------------------------------+--------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 15.044ns (Maximum Frequency: 66.474MHz)
+   Minimum input arrival time before clock: 2.127ns
+   Maximum output required time after clock: 6.057ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_6/clkdiv_20'
+  Clock period: 15.044ns (frequency: 66.474MHz)
+  Total number of paths / destination ports: 80608 / 2258
+-------------------------------------------------------------------------
+Delay:               15.044ns (Levels of Logic = 23)
+  Source:            XLXI_37/fmul/XLXI_37/yout_r_47 (FF)
+  Destination:       XLXI_37/result_30 (FF)
+  Source Clock:      XLXI_6/clkdiv_20 rising
+  Destination Clock: XLXI_6/clkdiv_20 rising
+
+  Data Path: XLXI_37/fmul/XLXI_37/yout_r_47 to XLXI_37/result_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            79   0.236   0.742  fmul/XLXI_37/yout_r_47 (fmul/XLXI_37/yout_r_47)
+     AND2:I1->O            1   0.053   0.603  fmul/XLXI_15/XLXI_6/XLXI_36/XLXI_14/XLXI_4 (fmul/XLXI_15/XLXI_6/XLXI_36/XLXI_14/XLXN_15)
+     OR3:I1->O             3   0.053   0.625  fmul/XLXI_15/XLXI_6/XLXI_36/XLXI_14/XLXI_6 (fmul/XLXI_15/XLXI_6/XLXI_36/XLXN_42)
+     AND2:I0->O            1   0.043   0.613  fmul/XLXI_15/XLXI_6/XLXI_36/XLXI_15/XLXI_5 (fmul/XLXI_15/XLXI_6/XLXI_36/XLXI_15/XLXN_16)
+     OR3:I0->O             3   0.043   0.625  fmul/XLXI_15/XLXI_6/XLXI_36/XLXI_15/XLXI_6 (fmul/XLXI_15/XLXI_6/XLXI_36/XLXN_43)
+     AND2:I0->O            1   0.043   0.613  fmul/XLXI_15/XLXI_6/XLXI_36/XLXI_16/XLXI_5 (fmul/XLXI_15/XLXI_6/XLXI_36/XLXI_16/XLXN_16)
+     OR3:I0->O             4   0.043   0.630  fmul/XLXI_15/XLXI_6/XLXI_36/XLXI_16/XLXI_6 (fmul/XLXI_15/XLXI_6/XLXI_36/XLXN_44)
+     AND2:I0->O            1   0.043   0.613  fmul/XLXI_15/XLXI_6/XLXI_36/XLXI_17/XLXI_5 (fmul/XLXI_15/XLXI_6/XLXI_36/XLXI_17/XLXN_16)
+     OR3:I0->O             4   0.043   0.630  fmul/XLXI_15/XLXI_6/XLXI_36/XLXI_17/XLXI_6 (fmul/XLXI_15/XLXI_6/XLXN_28)
+     AND2:I0->O            1   0.043   0.613  fmul/XLXI_15/XLXI_6/XLXI_37/XLXI_14/XLXI_5 (fmul/XLXI_15/XLXI_6/XLXI_37/XLXI_14/XLXN_16)
+     OR3:I0->O             3   0.043   0.625  fmul/XLXI_15/XLXI_6/XLXI_37/XLXI_14/XLXI_6 (fmul/XLXI_15/XLXI_6/XLXI_37/XLXN_42)
+     AND2:I0->O            1   0.043   0.613  fmul/XLXI_15/XLXI_6/XLXI_37/XLXI_15/XLXI_5 (fmul/XLXI_15/XLXI_6/XLXI_37/XLXI_15/XLXN_16)
+     OR3:I0->O             3   0.043   0.625  fmul/XLXI_15/XLXI_6/XLXI_37/XLXI_15/XLXI_6 (fmul/XLXI_15/XLXI_6/XLXI_37/XLXN_43)
+     AND2:I0->O            1   0.043   0.613  fmul/XLXI_15/XLXI_6/XLXI_37/XLXI_16/XLXI_5 (fmul/XLXI_15/XLXI_6/XLXI_37/XLXI_16/XLXN_16)
+     OR3:I0->O             4   0.043   0.630  fmul/XLXI_15/XLXI_6/XLXI_37/XLXI_16/XLXI_6 (fmul/XLXI_15/XLXI_6/XLXI_37/XLXN_44)
+     XOR2:I0->O            2   0.043   0.608  fmul/XLXI_15/XLXI_6/XLXI_37/XLXI_17/XLXI_2 (fmul/XLXI_15/XLXN_9<7>)
+     AND2:I1->O            1   0.053   0.603  fmul/XLXI_15/XLXI_1/XLXI_1/XLXI_16 (fmul/XLXI_15/XLXI_1/XLXI_1/XLXN_54)
+     OR2:I1->O             1   0.053   0.603  fmul/XLXI_15/XLXI_1/XLXI_1/XLXI_25 (fmul/XLXN_34<7>)
+     AND2:I1->O            1   0.053   0.613  fmul/XLXI_18/XLXI_4/XLXI_7 (fmul/XLXI_18/XLXI_4/XLXN_45)
+     OR2:I0->O             1   0.043   0.603  fmul/XLXI_18/XLXI_4/XLXI_24 (fmul/XLXN_48<30>)
+     AND2:I1->O            1   0.053   0.613  fmul/XLXI_29/XLXI_4/XLXI_7 (fmul/XLXI_29/XLXI_4/XLXN_45)
+     OR2:I0->O             1   0.043   0.350  fmul/XLXI_29/XLXI_4/XLXI_24 (ruf<30>)
+     LUT6:I5->O            1   0.043   0.350  Mmux_sw[4]_result[63]_wide_mux_8_OUT1203 (Mmux_sw[4]_result[63]_wide_mux_8_OUT1202)
+     LUT6:I5->O            1   0.043   0.000  Mmux_sw[4]_result[63]_wide_mux_8_OUT12011 (sw[4]_result[63]_wide_mux_8_OUT<30>)
+     FDE:D                    -0.000          result_30
+    ----------------------------------------
+    Total                     15.044ns (1.285ns logic, 13.759ns route)
+                                       (8.5% logic, 91.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100mhz'
+  Clock period: 9.270ns (frequency: 107.870MHz)
+  Total number of paths / destination ports: 125859 / 448
+-------------------------------------------------------------------------
+Delay:               9.270ns (Levels of Logic = 19)
+  Source:            XLXI_3/Ai_1 (FF)
+  Destination:       XLXI_2/M2/buffer_60 (FF)
+  Source Clock:      clk_100mhz rising
+  Destination Clock: clk_100mhz rising
+
+  Data Path: XLXI_3/Ai_1 to XLXI_2/M2/buffer_60
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               8   0.236   0.652  Ai_1 (Ai<1>)
+     end scope: 'XLXI_3:Ai<1>'
+     LUT6:I0->O            1   0.043   0.405  XLXI_38/a[31]_b[31]_OR_183_o1 (XLXI_38/a[31]_b[31]_OR_183_o1)
+     LUT6:I4->O            1   0.043   0.405  XLXI_38/a[31]_b[31]_OR_183_o2 (XLXI_38/a[31]_b[31]_OR_183_o2)
+     LUT6:I4->O            1   0.043   0.405  XLXI_38/a[31]_b[31]_OR_183_o3 (XLXI_38/a[31]_b[31]_OR_183_o3)
+     LUT6:I4->O            1   0.043   0.405  XLXI_38/a[31]_b[31]_OR_183_o4 (XLXI_38/a[31]_b[31]_OR_183_o4)
+     LUT6:I4->O            1   0.043   0.405  XLXI_38/a[31]_b[31]_OR_183_o5 (XLXI_38/a[31]_b[31]_OR_183_o5)
+     LUT6:I4->O           64   0.043   0.749  XLXI_38/a[31]_b[31]_OR_183_o6 (XLXI_38/a[31]_b[31]_OR_183_o6)
+     LUT6:I0->O            1   0.043   0.613  XLXI_38/Mmux_res571 (mur<60>)
+     begin scope: 'XLXI_15:data3<28>'
+     AND2:I0->O            1   0.043   0.613  MUX1_DispData/MUX8183/XLXI_482 (MUX1_DispData/MUX8183/XLXN_1787)
+     begin scope: 'XLXI_15/MUX1_DispData/MUX8183/XLXI_511:I4'
+     OR4:I0->O             1   0.043   0.603  I_36_95 (S1)
+     OR2:I1->O            14   0.043   0.411  I_36_94 (O_DUMMY)
+     end scope: 'XLXI_15/MUX1_DispData/MUX8183/XLXI_511:O'
+     end scope: 'XLXI_15:Disp_num<28>'
+     begin scope: 'XLXI_2:Hexs<28>'
+     INV:I->O              6   0.054   0.641  SM1/HTS0/MSEG/XLXI_4 (SM1/HTS0/MSEG/XLXN_24)
+     AND4:I0->O            1   0.043   0.613  SM1/HTS0/MSEG/XLXI_28 (SM1/HTS0/MSEG/XLXN_141)
+     OR4:I0->O             1   0.043   0.603  SM1/HTS0/MSEG/XLXI_29 (SM1/HTS0/MSEG/XLXN_211)
+     OR2:I1->O             1   0.043   0.405  SM1/HTS0/MSEG/XLXI_50 (XLXN_390<4>)
+     LUT6:I4->O            1   0.043   0.405  M2/mux10811 (M2/state[1]_GND_3_o_wide_mux_15_OUT<4>)
+     LUT3:I1->O            1   0.043   0.000  M2/buffer_4_rstpot (M2/buffer_4_rstpot)
+     FD:D                     -0.000          M2/buffer_4
+    ----------------------------------------
+    Total                      9.270ns (0.935ns logic, 8.335ns route)
+                                       (10.1% logic, 89.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_32/p1/pbreg'
+  Clock period: 1.108ns (frequency: 902.222MHz)
+  Total number of paths / destination ports: 14 / 8
+-------------------------------------------------------------------------
+Delay:               1.108ns (Levels of Logic = 1)
+  Source:            XLXI_32/state_0 (FF)
+  Destination:       XLXI_32/state_0 (FF)
+  Source Clock:      XLXI_32/p1/pbreg rising
+  Destination Clock: XLXI_32/p1/pbreg rising
+
+  Data Path: XLXI_32/state_0 to XLXI_32/state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             88   0.236   0.479  XLXI_32/state_0 (XLXI_32/state_0)
+     INV:I->O              1   0.054   0.339  XLXI_32/Mcount_state_xor<0>11_INV_0 (XLXI_32/Result<0>)
+     FDR:D                    -0.000          XLXI_32/state_0
+    ----------------------------------------
+    Total                      1.108ns (0.290ns logic, 0.818ns route)
+                                       (26.2% logic, 73.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_32/p1/m0/clk_1ms'
+  Clock period: 1.357ns (frequency: 736.811MHz)
+  Total number of paths / destination ports: 21 / 7
+-------------------------------------------------------------------------
+Delay:               1.357ns (Levels of Logic = 3)
+  Source:            XLXI_32/p1/pbshift_3 (FF)
+  Destination:       XLXI_32/p1/pbreg (FF)
+  Source Clock:      XLXI_32/p1/m0/clk_1ms rising
+  Destination Clock: XLXI_32/p1/m0/clk_1ms rising
+
+  Data Path: XLXI_32/p1/pbshift_3 to XLXI_32/p1/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.236   0.507  XLXI_32/p1/pbshift_3 (XLXI_32/p1/pbshift_3)
+     LUT3:I0->O            1   0.043   0.350  XLXI_32/p1/pbshift[6]_PWR_17_o_equal_3_o<6>_SW0 (N11)
+     LUT6:I5->O            1   0.043   0.000  XLXI_32/p1/pbreg_rstpot_G (N14)
+     MUXF7:I1->O           1   0.178   0.000  XLXI_32/p1/pbreg_rstpot (XLXI_32/p1/pbreg_rstpot)
+     FD:D                     -0.000          XLXI_32/p1/pbreg
+    ----------------------------------------
+    Total                      1.357ns (0.500ns logic, 0.857ns route)
+                                       (36.8% logic, 63.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_4/clk1'
+  Clock period: 2.152ns (frequency: 464.587MHz)
+  Total number of paths / destination ports: 1454 / 90
+-------------------------------------------------------------------------
+Delay:               2.152ns (Levels of Logic = 7)
+  Source:            XLXI_4/counter_8 (FF)
+  Destination:       XLXI_4/Key_x_0 (FF)
+  Source Clock:      XLXI_4/clk1 rising
+  Destination Clock: XLXI_4/clk1 rising
+
+  Data Path: XLXI_4/counter_8 to XLXI_4/Key_x_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.236   0.615  counter_8 (counter<8>)
+     LUT5:I0->O            1   0.043   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_lut<0> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<0> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<1> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<2> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<3> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<3>)
+     MUXCY:CI->O           8   0.013   0.378  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<4> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<4>)
+     INV:I->O              7   0.054   0.373  _n0225_inv1_cepot_INV_0 (_n0225_inv1_cepot)
+     FDE:CE                    0.161          Key_x_0
+    ----------------------------------------
+    Total                      2.152ns (0.786ns logic, 1.366ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_3/push'
+  Clock period: 1.069ns (frequency: 935.060MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               1.069ns (Levels of Logic = 1)
+  Source:            XLXI_3/state_0 (FF)
+  Destination:       XLXI_3/state_0 (FF)
+  Source Clock:      XLXI_3/push rising
+  Destination Clock: XLXI_3/push rising
+
+  Data Path: XLXI_3/state_0 to XLXI_3/state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             19   0.236   0.440  state_0 (state<0>)
+     INV:I->O              1   0.054   0.339  Result<0>1_INV_0 (Result<0>)
+     FDE:D                    -0.000          state_0
+    ----------------------------------------
+    Total                      1.069ns (0.290ns logic, 0.779ns route)
+                                       (27.1% logic, 72.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 1296 / 201
+-------------------------------------------------------------------------
+Offset:              2.127ns (Levels of Logic = 10)
+  Source:            SW<2> (PAD)
+  Destination:       XLXI_4/SW_OK_0 (FF)
+  Destination Clock: clk_100mhz rising
+
+  Data Path: SW<2> to XLXI_4/SW_OK_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.000   0.663  SW_2_IBUF (SW_2_IBUF)
+     begin scope: 'XLXI_4:SW<2>'
+     LUT6:I0->O            1   0.043   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_lut<0> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<0> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<1> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<2> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<3> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<4> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<4>)
+     MUXCY:CI->O          43   0.013   0.471  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<5> (sw_temp[15]_SW[15]_not_equal_100_o)
+     INV:I->O             17   0.054   0.429  _n0243_inv1_cepot_cepot_INV_0 (_n0243_inv1_cepot_cepot)
+     FDE:CE                    0.161          SW_OK_0
+    ----------------------------------------
+    Total                      2.127ns (0.563ns logic, 1.563ns route)
+                                       (26.5% logic, 73.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_32/p1/m0/clk_1ms'
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Offset:              0.976ns (Levels of Logic = 4)
+  Source:            btn (PAD)
+  Destination:       XLXI_32/p1/pbreg (FF)
+  Destination Clock: XLXI_32/p1/m0/clk_1ms rising
+
+  Data Path: btn to XLXI_32/p1/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.362  btn_IBUF (btn_IBUF)
+     LUT3:I2->O            1   0.043   0.350  XLXI_32/p1/pbshift[6]_PWR_17_o_equal_3_o<6>_SW0 (N11)
+     LUT6:I5->O            1   0.043   0.000  XLXI_32/p1/pbreg_rstpot_G (N14)
+     MUXF7:I1->O           1   0.178   0.000  XLXI_32/p1/pbreg_rstpot (XLXI_32/p1/pbreg_rstpot)
+     FD:D                     -0.000          XLXI_32/p1/pbreg
+    ----------------------------------------
+    Total                      0.976ns (0.264ns logic, 0.712ns route)
+                                       (27.0% logic, 73.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_4/clk1'
+  Total number of paths / destination ports: 176 / 41
+-------------------------------------------------------------------------
+Offset:              2.109ns (Levels of Logic = 6)
+  Source:            BTN_y<3> (PAD)
+  Destination:       XLXI_4/Key_x_1 (FF)
+  Destination Clock: XLXI_4/clk1 rising
+
+  Data Path: BTN_y<3> to XLXI_4/Key_x_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.000   0.550  BTN_y_3_IBUF (BTN_y_3_IBUF)
+     begin scope: 'XLXI_4:Key_y<3>'
+     LUT4:I0->O           12   0.043   0.674  out1 (n0016)
+     LUT6:I0->O            3   0.043   0.362  _n0295<0>1 (_n0295<0>)
+     LUT6:I5->O            1   0.043   0.350  Key_x[4]_PWR_1_o_select_74_OUT<1>1 (Key_x[4]_PWR_1_o_select_74_OUT<4>)
+     LUT3:I2->O            1   0.043   0.000  Key_x_4_dpot (Key_x_4_dpot)
+     FDE:D                    -0.000          Key_x_4
+    ----------------------------------------
+    Total                      2.109ns (0.172ns logic, 1.937ns route)
+                                       (8.2% logic, 91.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 1234 / 25
+-------------------------------------------------------------------------
+Offset:              6.057ns (Levels of Logic = 13)
+  Source:            XLXI_4/SW_OK_12 (FF)
+  Destination:       SEGMENT<5> (PAD)
+  Source Clock:      clk_100mhz rising
+
+  Data Path: XLXI_4/SW_OK_12 to SEGMENT<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              9   0.236   0.658  SW_OK_12 (SW_OK<12>)
+     end scope: 'XLXI_4:SW_OK<12>'
+     AND2:I0->O            4   0.043   0.356  XLXI_26/XLXI_1/XLXI_1 (OM<4>)
+     INV:I->O              1   0.317   0.603  XLXI_26/XLXI_1/XLXI_7 (XLXI_26/XLXI_1/XLXN_1)
+     AND2:I1->O            2   0.053   0.410  XLXI_26/XLXI_1/XLXI_4 (OM<6>)
+     begin scope: 'XLXI_25:Hexs<22>'
+     LUT6:I4->O            1   0.043   0.000  M2/Mmux_Hexo_32 (M2/Mmux_Hexo_32)
+     MUXF7:I1->O          11   0.178   0.395  M2/Mmux_Hexo_2_f7_1 (Hex<2>)
+     INV:I->O              8   0.054   0.642  M1/XLXI_2 (M1/XLXN_61)
+     AND3:I1->O            1   0.043   0.603  M1/XLXI_38 (M1/XLXN_185)
+     OR4:I1->O             1   0.043   0.603  M1/XLXI_41 (M1/XLXN_213)
+     OR2:I1->O             1   0.043   0.350  M1/XLXI_52 (SEG_TXT<5>)
+     LUT3:I2->O            1   0.043   0.339  MUXHM/Mmux_o6 (SEGMENT<5>)
+     end scope: 'XLXI_25:SEGMENT<5>'
+     OBUF:I->O                 0.000          SEGMENT_5_OBUF (SEGMENT<5>)
+    ----------------------------------------
+    Total                      6.057ns (1.096ns logic, 4.961ns route)
+                                       (18.1% logic, 81.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_4/clk1'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              0.658ns (Levels of Logic = 2)
+  Source:            XLXI_4/Key_x_4 (FF)
+  Destination:       BTN_x<4> (PAD)
+  Source Clock:      XLXI_4/clk1 rising
+
+  Data Path: XLXI_4/Key_x_4 to BTN_x<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             16   0.236   0.422  Key_x_4 (Key_x<4>)
+     end scope: 'XLXI_4:Key_x<4>'
+     OBUF:I->O                 0.000          BTN_x_4_OBUF (BTN_x<4>)
+    ----------------------------------------
+    Total                      0.658ns (0.236ns logic, 0.422ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock XLXI_3/push
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXI_3/push    |    1.069|         |         |         |
+XLXI_4/clk1    |    0.818|         |         |         |
+clk_100mhz     |    1.264|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_32/p1/m0/clk_1ms
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+XLXI_32/p1/m0/clk_1ms|    1.357|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_32/p1/pbreg
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_32/p1/pbreg|    1.108|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_4/clk1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXI_4/clk1    |    2.152|         |         |         |
+clk_100mhz     |    1.292|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_6/clkdiv_20
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_6/clkdiv_20|   15.044|         |         |         |
+clk_100mhz      |  229.060|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_100mhz
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_3/push     |    1.928|         |         |         |
+XLXI_32/p1/pbreg|    1.589|         |         |         |
+XLXI_4/clk1     |    1.100|         |         |         |
+XLXI_6/clkdiv_20|    7.644|         |         |         |
+clk_100mhz      |    9.270|         |         |         |
+----------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 62.00 secs
+Total CPU time to Xst completion: 61.68 secs
+ 
+--> 
+
+Total memory usage is 381356 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  352 (   0 filtered)
+Number of infos    :  192 (   0 filtered)
+

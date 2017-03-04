@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\ISE\work\multy_CPU\top_for_multy_CPU.ncd
+OUTFILE=E:\ISE\work\multy_CPU\top_for_multy_CPU.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lffg676
+WORKINGDIR=E:\ISE\work\multy_CPU
+LICENSE=WebPack
+USER_INFO=__0_0_0

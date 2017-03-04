@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/codeff/Documents/Tencent Files/756184751/FileRecv/1234/alu/loat_mul.xst" -ofn "C:/Users/codeff/Documents/Tencent Files/756184751/FileRecv/1234/alu/loat_mul.syr" 

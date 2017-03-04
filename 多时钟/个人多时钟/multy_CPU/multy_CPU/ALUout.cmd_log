@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/ISE/work/multy_CPU/ALUout.v -lang verilog -prj multy_CPU -o ALUout.spl -module ALUout -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 ALUout.spl E:/ISE/work/multy_CPU/ALUout.sym 

@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : I4_tem.vf
+// /___/   /\     Timestamp : 03/30/2016 18:44:52
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/asus/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog C:/Users/asus/Desktop/ADD/I4_tem.vf -w C:/Users/asus/Desktop/ADD/I4_tem.sch
+//Design Name: I4_tem
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module I4_tem(I, 
+              JJJ, 
+              O);
+
+    input [3:0] I;
+    input JJJ;
+   output [3:0] O;
+   
+   
+   AND2  XLXI_15 (.I0(JJJ), 
+                 .I1(I[3]), 
+                 .O(O[3]));
+   AND2  XLXI_16 (.I0(JJJ), 
+                 .I1(I[2]), 
+                 .O(O[2]));
+   AND2  XLXI_17 (.I0(JJJ), 
+                 .I1(I[1]), 
+                 .O(O[1]));
+   AND2  XLXI_18 (.I0(JJJ), 
+                 .I1(I[0]), 
+                 .O(O[0]));
+endmodule

@@ -1,0 +1,28 @@
+Command line:
+   test_slower1to10_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  19530
+
+Mon May 16 16:53:39 2016
+
+
+ Elaboration Time: 0.140401 sec
+
+ Current Memory Usage: 670.335 Meg
+
+ Total Signals          : 15
+ Total Nets             : 15
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 11
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 101
+
+ Total Simulation Time: 0.202801 sec
+
+ Current Memory Usage: 984.908 Meg
+
+Mon May 16 16:54:11 2016
+

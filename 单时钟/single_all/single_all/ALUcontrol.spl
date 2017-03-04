@@ -1,0 +1,10 @@
+[Inputs]
+=ALUop[1:0]=
+=Func[5:0]=
+[Outputs]
+jr
+=ALUoper[2:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel ALUcontrol
+

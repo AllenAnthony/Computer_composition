@@ -1,0 +1,2 @@
+sch2hdl -sympath C:/Users/asus/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog compare_drc.vf -w C:/Users/asus/Desktop/ADD/compare.sch 
+sch2sym -intstyle ise -family kintex7 -refsym compare C:/Users/asus/Desktop/ADD/compare.sch C:/Users/asus/Desktop/ADD/compare.sym 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="srl32">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-3-29T7:15:46</timestamp>
+    <attr value="srl32" name="VeriModel" />
+    <pin polarity="Input" x="32" y="-96" name="A(31:0)" />
+    <pin polarity="Input" x="32" y="-32" name="B(31:0)" />
+    <pin polarity="Input" x="32" y="32" name="shift(4:0)" />
+    <pin polarity="Output" x="288" y="-64" name="res(31:0)" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:38;fontname:Arial" attrname="SymbolName" x="184" y="-80" type="symbol" />
+        <attrtext attrname="PinName" x="72" y="-96" type="pin A(31:0)" />
+        <attrtext attrname="PinName" x="72" y="-32" type="pin B(31:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="32" type="pin shift(4:0)" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="248" y="-64" type="pin res(31:0)" />
+        <rect width="32" x="32" y="20" height="24" />
+        <line x2="32" y1="32" y2="32" x1="64" />
+        <line x2="32" y1="-96" y2="-96" style="linewidth:W" x1="64" />
+        <line x2="32" y1="-32" y2="-32" style="linewidth:W" x1="64" />
+        <line x2="288" y1="-64" y2="-64" style="linewidth:W" x1="248" />
+        <rect width="184" x="64" y="-128" height="192" />
+    </graph>
+</symbol>

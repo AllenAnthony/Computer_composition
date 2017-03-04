@@ -1,0 +1,141 @@
+Release 14.4 ngdbuild P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: E:\ISE14-4\14.4\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -sd E:/ADD -nt timestamp -uc Exp01.ucf -p
+xc7k160t-ffg676-2L ALU.ngc ALU.ngd
+
+Reading NGO file "C:/Users/asus/Desktop/ADD/ALU.ngc" ...
+Loading design module "C:\Users\asus\Desktop\ADD/SAnti_jitter.ngc"...
+Loading design module "C:\Users\asus\Desktop\ADD/SSeg7_Dev.ngc"...
+Loading design module "C:\Users\asus\Desktop\ADD/SEnter_2_32.ngc"...
+Loading design module "C:\Users\asus\Desktop\ADD/Multi_8CH32.ngc"...
+Loading design module "C:\Users\asus\Desktop\ADD/Seg7_Dev.ngc"...
+Loading design module "ipcore_dir/mem1.ngc"...
+Loading design module "ipcore_dir/mem2.ngc"...
+Loading design module "ipcore_dir/mem3.ngc"...
+Loading design module "ipcore_dir/mem4.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "Exp01.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<31>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<30>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<29>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<28>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<27>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<26>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<25>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<24>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<23>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<22>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<21>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<20>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<19>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<18>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<17>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<16>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data4<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<31>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<30>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<29>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<28>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<27>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<26>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<25>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<24>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<23>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<22>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<21>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<20>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<19>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<18>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<17>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<16>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data5<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<31>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<30>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<29>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<28>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<27>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<26>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<25>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<24>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<23>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<22>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<21>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<20>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<19>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<18>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<17>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<16>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'XLXI_15/data7<0>' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  96
+
+Total memory usage is 223496 kilobytes
+
+Writing NGD file "ALU.ngd" ...
+Total REAL time to NGDBUILD completion:  28 sec
+Total CPU time to NGDBUILD completion:   26 sec
+
+Writing NGDBUILD log file "ALU.bld"...

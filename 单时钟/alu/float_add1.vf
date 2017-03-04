@@ -1,0 +1,611 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : float_add1.vf
+// /___/   /\     Timestamp : 04/07/2016 15:42:57
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/Richard/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog C:/Users/Richard/Desktop/ADD/float_add1.vf -w C:/Users/Richard/Desktop/ADD/float_add1.sch
+//Design Name: float_add1
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module mux_8_MUSER_float_add1(A, 
+                              B, 
+                              S, 
+                              C);
+
+    input [7:0] A;
+    input [7:0] B;
+    input S;
+   output [7:0] C;
+   
+   wire XLXN_15;
+   wire XLXN_39;
+   wire XLXN_40;
+   wire XLXN_41;
+   wire XLXN_42;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire XLXN_45;
+   wire XLXN_46;
+   wire XLXN_47;
+   wire XLXN_48;
+   wire XLXN_49;
+   wire XLXN_50;
+   wire XLXN_51;
+   wire XLXN_52;
+   wire XLXN_53;
+   wire XLXN_54;
+   
+   AND2  XLXI_1 (.I0(XLXN_15), 
+                .I1(B[0]), 
+                .O(XLXN_39));
+   AND2  XLXI_2 (.I0(XLXN_15), 
+                .I1(B[1]), 
+                .O(XLXN_40));
+   AND2  XLXI_3 (.I0(XLXN_15), 
+                .I1(B[2]), 
+                .O(XLXN_41));
+   AND2  XLXI_4 (.I0(XLXN_15), 
+                .I1(B[3]), 
+                .O(XLXN_42));
+   AND2  XLXI_5 (.I0(XLXN_15), 
+                .I1(B[4]), 
+                .O(XLXN_43));
+   AND2  XLXI_6 (.I0(XLXN_15), 
+                .I1(B[5]), 
+                .O(XLXN_44));
+   AND2  XLXI_7 (.I0(XLXN_15), 
+                .I1(B[6]), 
+                .O(XLXN_45));
+   AND2  XLXI_8 (.I0(XLXN_15), 
+                .I1(B[7]), 
+                .O(XLXN_46));
+   AND2  XLXI_9 (.I0(S), 
+                .I1(A[0]), 
+                .O(XLXN_47));
+   AND2  XLXI_10 (.I0(S), 
+                 .I1(A[1]), 
+                 .O(XLXN_48));
+   AND2  XLXI_11 (.I0(S), 
+                 .I1(A[2]), 
+                 .O(XLXN_49));
+   AND2  XLXI_12 (.I0(S), 
+                 .I1(A[3]), 
+                 .O(XLXN_50));
+   AND2  XLXI_13 (.I0(S), 
+                 .I1(A[4]), 
+                 .O(XLXN_51));
+   AND2  XLXI_14 (.I0(S), 
+                 .I1(A[5]), 
+                 .O(XLXN_52));
+   AND2  XLXI_15 (.I0(S), 
+                 .I1(A[6]), 
+                 .O(XLXN_53));
+   AND2  XLXI_16 (.I0(S), 
+                 .I1(A[7]), 
+                 .O(XLXN_54));
+   INV  XLXI_17 (.I(S), 
+                .O(XLXN_15));
+   OR2  XLXI_18 (.I0(XLXN_39), 
+                .I1(XLXN_47), 
+                .O(C[0]));
+   OR2  XLXI_19 (.I0(XLXN_40), 
+                .I1(XLXN_48), 
+                .O(C[1]));
+   OR2  XLXI_20 (.I0(XLXN_41), 
+                .I1(XLXN_49), 
+                .O(C[2]));
+   OR2  XLXI_21 (.I0(XLXN_42), 
+                .I1(XLXN_50), 
+                .O(C[3]));
+   OR2  XLXI_22 (.I0(XLXN_43), 
+                .I1(XLXN_51), 
+                .O(C[4]));
+   OR2  XLXI_23 (.I0(XLXN_44), 
+                .I1(XLXN_52), 
+                .O(C[5]));
+   OR2  XLXI_24 (.I0(XLXN_45), 
+                .I1(XLXN_53), 
+                .O(C[6]));
+   OR2  XLXI_25 (.I0(XLXN_46), 
+                .I1(XLXN_54), 
+                .O(C[7]));
+endmodule
+`timescale 1ns / 1ps
+
+module mux_32_MUSER_float_add1(A, 
+                               B, 
+                               S, 
+                               C);
+
+    input [31:0] A;
+    input [31:0] B;
+    input S;
+   output [31:0] C;
+   
+   
+   mux_8_MUSER_float_add1  XLXI_1 (.A(A[7:0]), 
+                                  .B(B[7:0]), 
+                                  .S(S), 
+                                  .C(C[7:0]));
+   mux_8_MUSER_float_add1  XLXI_2 (.A(A[15:8]), 
+                                  .B(B[15:8]), 
+                                  .S(S), 
+                                  .C(C[15:8]));
+   mux_8_MUSER_float_add1  XLXI_3 (.A(A[23:16]), 
+                                  .B(B[23:16]), 
+                                  .S(S), 
+                                  .C(C[23:16]));
+   mux_8_MUSER_float_add1  XLXI_4 (.A(A[31:24]), 
+                                  .B(B[31:24]), 
+                                  .S(S), 
+                                  .C(C[31:24]));
+endmodule
+`timescale 1ns / 1ps
+
+module shift_left_MUSER_float_add1(A, 
+                                   N, 
+                                   B, 
+                                   E);
+
+    input [31:0] A;
+    input [31:0] N;
+   output [31:0] B;
+   output [31:0] E;
+   
+   wire XLXN_5;
+   wire [31:0] XLXN_6;
+   wire [31:0] XLXN_9;
+   wire XLXN_11;
+   
+   INV  XLXI_1 (.I(A[27]), 
+               .O(XLXN_5));
+   shift_left1  XLXI_2 (.A(A[31:0]), 
+                       .B(XLXN_6[31:0]));
+   mux_32_MUSER_float_add1  XLXI_3 (.A(XLXN_6[31:0]), 
+                                   .B(A[31:0]), 
+                                   .S(XLXN_5), 
+                                   .C(B[31:0]));
+   bit1to32  XLXI_4 (.A(XLXN_5), 
+                    .B(XLXN_9[31:0]));
+   adder32  XLXI_5 (.A(N[31:0]), 
+                   .B(XLXN_9[31:0]), 
+                   .mode(XLXN_11), 
+                   .CF(), 
+                   .overflow(), 
+                   .S(E[31:0]), 
+                   .SF(), 
+                   .ZF());
+   VCC  XLXI_7 (.P(XLXN_11));
+endmodule
+`timescale 1ns / 1ps
+
+module shift_leftist_MUSER_float_add1(A, 
+                                      N, 
+                                      B, 
+                                      E);
+
+    input [31:0] A;
+    input [31:0] N;
+   output [31:0] B;
+   output [31:0] E;
+   
+   wire [31:0] XLXN_4;
+   wire [31:0] XLXN_5;
+   wire [31:0] XLXN_6;
+   wire [31:0] XLXN_7;
+   wire [31:0] XLXN_8;
+   wire [31:0] XLXN_9;
+   wire [31:0] XLXN_10;
+   wire [31:0] XLXN_11;
+   wire [31:0] XLXN_12;
+   wire [31:0] XLXN_13;
+   wire [31:0] XLXN_14;
+   wire [31:0] XLXN_15;
+   wire [31:0] XLXN_16;
+   wire [31:0] XLXN_17;
+   wire [31:0] XLXN_18;
+   wire [31:0] XLXN_19;
+   wire [31:0] XLXN_20;
+   wire [31:0] XLXN_21;
+   wire [31:0] XLXN_22;
+   wire [31:0] XLXN_23;
+   wire [31:0] XLXN_24;
+   wire [31:0] XLXN_25;
+   wire [31:0] XLXN_26;
+   wire [31:0] XLXN_27;
+   wire [31:0] XLXN_28;
+   wire [31:0] XLXN_29;
+   wire [31:0] XLXN_30;
+   wire [31:0] XLXN_31;
+   wire [31:0] XLXN_32;
+   wire [31:0] XLXN_33;
+   wire [31:0] XLXN_34;
+   wire [31:0] XLXN_35;
+   wire [31:0] XLXN_36;
+   wire [31:0] XLXN_37;
+   wire [31:0] XLXN_38;
+   wire [31:0] XLXN_39;
+   wire [31:0] XLXN_40;
+   wire [31:0] XLXN_41;
+   wire [31:0] XLXN_42;
+   wire [31:0] XLXN_43;
+   wire [31:0] XLXN_44;
+   wire [31:0] XLXN_45;
+   wire [31:0] XLXN_46;
+   wire [31:0] XLXN_47;
+   wire [31:0] XLXN_48;
+   wire [31:0] XLXN_49;
+   wire [31:0] XLXN_50;
+   wire [31:0] XLXN_51;
+   wire [31:0] XLXN_52;
+   wire [31:0] XLXN_53;
+   wire [31:0] XLXN_54;
+   wire [31:0] XLXN_55;
+   
+   shift_left_MUSER_float_add1  XLXI_1 (.A(A[31:0]), 
+                                       .N(N[31:0]), 
+                                       .B(XLXN_4[31:0]), 
+                                       .E(XLXN_5[31:0]));
+   shift_left_MUSER_float_add1  XLXI_2 (.A(XLXN_4[31:0]), 
+                                       .N(XLXN_5[31:0]), 
+                                       .B(XLXN_6[31:0]), 
+                                       .E(XLXN_7[31:0]));
+   shift_left_MUSER_float_add1  XLXI_3 (.A(XLXN_6[31:0]), 
+                                       .N(XLXN_7[31:0]), 
+                                       .B(XLXN_8[31:0]), 
+                                       .E(XLXN_9[31:0]));
+   shift_left_MUSER_float_add1  XLXI_4 (.A(XLXN_8[31:0]), 
+                                       .N(XLXN_9[31:0]), 
+                                       .B(XLXN_10[31:0]), 
+                                       .E(XLXN_11[31:0]));
+   shift_left_MUSER_float_add1  XLXI_5 (.A(XLXN_10[31:0]), 
+                                       .N(XLXN_11[31:0]), 
+                                       .B(XLXN_12[31:0]), 
+                                       .E(XLXN_13[31:0]));
+   shift_left_MUSER_float_add1  XLXI_6 (.A(XLXN_12[31:0]), 
+                                       .N(XLXN_13[31:0]), 
+                                       .B(XLXN_14[31:0]), 
+                                       .E(XLXN_15[31:0]));
+   shift_left_MUSER_float_add1  XLXI_7 (.A(XLXN_14[31:0]), 
+                                       .N(XLXN_15[31:0]), 
+                                       .B(XLXN_16[31:0]), 
+                                       .E(XLXN_17[31:0]));
+   shift_left_MUSER_float_add1  XLXI_8 (.A(XLXN_16[31:0]), 
+                                       .N(XLXN_17[31:0]), 
+                                       .B(XLXN_18[31:0]), 
+                                       .E(XLXN_19[31:0]));
+   shift_left_MUSER_float_add1  XLXI_9 (.A(XLXN_18[31:0]), 
+                                       .N(XLXN_19[31:0]), 
+                                       .B(XLXN_22[31:0]), 
+                                       .E(XLXN_23[31:0]));
+   shift_left_MUSER_float_add1  XLXI_10 (.A(XLXN_22[31:0]), 
+                                        .N(XLXN_23[31:0]), 
+                                        .B(XLXN_24[31:0]), 
+                                        .E(XLXN_25[31:0]));
+   shift_left_MUSER_float_add1  XLXI_11 (.A(XLXN_24[31:0]), 
+                                        .N(XLXN_25[31:0]), 
+                                        .B(XLXN_26[31:0]), 
+                                        .E(XLXN_29[31:0]));
+   shift_left_MUSER_float_add1  XLXI_12 (.A(XLXN_26[31:0]), 
+                                        .N(XLXN_29[31:0]), 
+                                        .B(XLXN_27[31:0]), 
+                                        .E(XLXN_28[31:0]));
+   shift_left_MUSER_float_add1  XLXI_13 (.A(XLXN_27[31:0]), 
+                                        .N(XLXN_28[31:0]), 
+                                        .B(XLXN_30[31:0]), 
+                                        .E(XLXN_31[31:0]));
+   shift_left_MUSER_float_add1  XLXI_14 (.A(XLXN_30[31:0]), 
+                                        .N(XLXN_31[31:0]), 
+                                        .B(XLXN_32[31:0]), 
+                                        .E(XLXN_33[31:0]));
+   shift_left_MUSER_float_add1  XLXI_15 (.A(XLXN_32[31:0]), 
+                                        .N(XLXN_33[31:0]), 
+                                        .B(XLXN_20[31:0]), 
+                                        .E(XLXN_21[31:0]));
+   shift_left_MUSER_float_add1  XLXI_16 (.A(XLXN_20[31:0]), 
+                                        .N(XLXN_21[31:0]), 
+                                        .B(XLXN_34[31:0]), 
+                                        .E(XLXN_35[31:0]));
+   shift_left_MUSER_float_add1  XLXI_17 (.A(XLXN_34[31:0]), 
+                                        .N(XLXN_35[31:0]), 
+                                        .B(XLXN_36[31:0]), 
+                                        .E(XLXN_37[31:0]));
+   shift_left_MUSER_float_add1  XLXI_18 (.A(XLXN_36[31:0]), 
+                                        .N(XLXN_37[31:0]), 
+                                        .B(XLXN_38[31:0]), 
+                                        .E(XLXN_39[31:0]));
+   shift_left_MUSER_float_add1  XLXI_19 (.A(XLXN_38[31:0]), 
+                                        .N(XLXN_39[31:0]), 
+                                        .B(XLXN_40[31:0]), 
+                                        .E(XLXN_41[31:0]));
+   shift_left_MUSER_float_add1  XLXI_20 (.A(XLXN_44[31:0]), 
+                                        .N(XLXN_45[31:0]), 
+                                        .B(XLXN_46[31:0]), 
+                                        .E(XLXN_47[31:0]));
+   shift_left_MUSER_float_add1  XLXI_21 (.A(XLXN_46[31:0]), 
+                                        .N(XLXN_47[31:0]), 
+                                        .B(XLXN_48[31:0]), 
+                                        .E(XLXN_49[31:0]));
+   shift_left_MUSER_float_add1  XLXI_22 (.A(XLXN_48[31:0]), 
+                                        .N(XLXN_49[31:0]), 
+                                        .B(XLXN_50[31:0]), 
+                                        .E(XLXN_51[31:0]));
+   shift_left_MUSER_float_add1  XLXI_23 (.A(XLXN_50[31:0]), 
+                                        .N(XLXN_51[31:0]), 
+                                        .B(XLXN_52[31:0]), 
+                                        .E(XLXN_53[31:0]));
+   shift_left_MUSER_float_add1  XLXI_24 (.A(XLXN_52[31:0]), 
+                                        .N(XLXN_53[31:0]), 
+                                        .B(XLXN_54[31:0]), 
+                                        .E(XLXN_55[31:0]));
+   shift_left_MUSER_float_add1  XLXI_25 (.A(XLXN_40[31:0]), 
+                                        .N(XLXN_41[31:0]), 
+                                        .B(XLXN_42[31:0]), 
+                                        .E(XLXN_43[31:0]));
+   shift_left_MUSER_float_add1  XLXI_26 (.A(XLXN_54[31:0]), 
+                                        .N(XLXN_55[31:0]), 
+                                        .B(B[31:0]), 
+                                        .E(E[31:0]));
+   shift_left_MUSER_float_add1  XLXI_27 (.A(XLXN_42[31:0]), 
+                                        .N(XLXN_43[31:0]), 
+                                        .B(XLXN_44[31:0]), 
+                                        .E(XLXN_45[31:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module check_cin_MUSER_float_add1(A, 
+                                  CIN, 
+                                  n, 
+                                  TE, 
+                                  TM);
+
+    input [31:0] A;
+    input CIN;
+    input [31:0] n;
+   output [31:0] TE;
+   output [31:0] TM;
+   
+   wire [31:0] XLXN_6;
+   wire XLXN_8;
+   wire [31:0] XLXN_9;
+   wire [31:0] XLXN_11;
+   
+   mux_32_MUSER_float_add1  XLXI_1 (.A(XLXN_9[31:0]), 
+                                   .B(n[31:0]), 
+                                   .S(CIN), 
+                                   .C(TE[31:0]));
+   mux_32_MUSER_float_add1  XLXI_2 (.A(XLXN_11[31:0]), 
+                                   .B(A[31:0]), 
+                                   .S(CIN), 
+                                   .C(TM[31:0]));
+   bit1to32  XLXI_5 (.A(CIN), 
+                    .B(XLXN_6[31:0]));
+   adder32  XLXI_6 (.A(XLXN_6[31:0]), 
+                   .B(n[31:0]), 
+                   .mode(XLXN_8), 
+                   .CF(), 
+                   .overflow(), 
+                   .S(XLXN_9[31:0]), 
+                   .SF(), 
+                   .ZF());
+   GND  XLXI_7 (.G(XLXN_8));
+   shift_rignt1  XLXI_8 (.A(A[31:0]), 
+                        .B(XLXN_11[31:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module shift_right_MUSER_float_add1(A, 
+                                    n, 
+                                    B);
+
+    input [31:0] A;
+    input [7:0] n;
+   output [31:0] B;
+   
+   wire [31:0] XLXN_14;
+   wire [31:0] XLXN_16;
+   wire [31:0] XLXN_17;
+   wire [31:0] XLXN_20;
+   wire [31:0] XLXN_21;
+   wire [31:0] XLXN_23;
+   wire [31:0] XLXN_24;
+   wire [31:0] XLXN_26;
+   wire [31:0] XLXN_27;
+   wire [31:0] XLXN_29;
+   wire [31:0] XLXN_30;
+   wire XLXN_35;
+   
+   mux_32_MUSER_float_add1  XLXI_5 (.A(XLXN_17[31:0]), 
+                                   .B(XLXN_16[31:0]), 
+                                   .S(n[1]), 
+                                   .C(XLXN_20[31:0]));
+   mux_32_MUSER_float_add1  XLXI_6 (.A(XLXN_21[31:0]), 
+                                   .B(XLXN_20[31:0]), 
+                                   .S(n[2]), 
+                                   .C(XLXN_23[31:0]));
+   mux_32_MUSER_float_add1  XLXI_7 (.A(XLXN_24[31:0]), 
+                                   .B(XLXN_23[31:0]), 
+                                   .S(n[3]), 
+                                   .C(XLXN_27[31:0]));
+   mux_32_MUSER_float_add1  XLXI_9 (.A(XLXN_14[31:0]), 
+                                   .B(A[31:0]), 
+                                   .S(n[0]), 
+                                   .C(XLXN_16[31:0]));
+   mux_32_MUSER_float_add1  XLXI_14 (.A(XLXN_26[31:0]), 
+                                    .B(XLXN_27[31:0]), 
+                                    .S(n[4]), 
+                                    .C(XLXN_29[31:0]));
+   mux_32_MUSER_float_add1  XLXI_15 (.A(XLXN_30[31:0]), 
+                                    .B(XLXN_29[31:0]), 
+                                    .S(XLXN_35), 
+                                    .C(B[31:0]));
+   OR3  XLXI_16 (.I0(n[5]), 
+                .I1(n[6]), 
+                .I2(n[7]), 
+                .O(XLXN_35));
+   shift_rignt1  XLXI_17 (.A(A[31:0]), 
+                         .B(XLXN_14[31:0]));
+   shift_right2  XLXI_18 (.A(XLXN_16[31:0]), 
+                         .B(XLXN_17[31:0]));
+   shift_rignt4  XLXI_19 (.A(XLXN_20[31:0]), 
+                         .B(XLXN_21[31:0]));
+   shift_right8  XLXI_20 (.A(XLXN_23[31:0]), 
+                         .B(XLXN_24[31:0]));
+   shift_right16  XLXI_21 (.A(XLXN_27[31:0]), 
+                          .B(XLXN_26[31:0]));
+   shift_right32  XLXI_22 (.A(XLXN_29[31:0]), 
+                          .B(XLXN_30[31:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module float_add1(A, 
+                  B, 
+                  D);
+
+    input [31:0] A;
+    input [31:0] B;
+   output [31:0] D;
+   
+   wire [31:0] G;
+   wire [31:0] l;
+   wire q;
+   wire [31:0] XLXN_13;
+   wire [31:0] XLXN_14;
+   wire XLXN_19;
+   wire XLXN_21;
+   wire XLXN_22;
+   wire XLXN_32;
+   wire [7:0] XLXN_35;
+   wire [7:0] XLXN_37;
+   wire [31:0] XLXN_40;
+   wire XLXN_41;
+   wire [31:0] XLXN_42;
+   wire [31:0] XLXN_46;
+   wire [31:0] XLXN_48;
+   wire [7:0] XLXN_50;
+   wire [31:0] XLXN_52;
+   wire [31:0] XLXN_54;
+   wire [31:0] XLXN_55;
+   wire XLXN_57;
+   wire XLXN_59;
+   wire [31:0] XLXN_68;
+   wire [31:0] XLXN_69;
+   wire XLXN_71;
+   wire [31:0] XLXN_77;
+   wire [31:0] XLXN_78;
+   wire [31:0] XLXN_79;
+   wire [31:0] XLXN_82;
+   wire [31:0] XLXN_84;
+   wire [31:0] XLXN_85;
+   wire [31:0] XLXN_87;
+   
+   bit31to32  XLXI_1 (.A(A[30:0]), 
+                     .B(XLXN_13[31:0]));
+   bit31to32  XLXI_2 (.A(B[30:0]), 
+                     .B(XLXN_14[31:0]));
+   comparer32  XLXI_3 (.A(XLXN_13[31:0]), 
+                      .B(XLXN_14[31:0]), 
+                      .C(XLXN_32));
+   AND2  XLXI_4 (.I0(B[31]), 
+                .I1(XLXN_19), 
+                .O(XLXN_21));
+   AND2  XLXI_5 (.I0(A[31]), 
+                .I1(XLXN_32), 
+                .O(XLXN_22));
+   INV  XLXI_6 (.I(XLXN_32), 
+               .O(XLXN_19));
+   OR2  XLXI_7 (.I0(XLXN_22), 
+               .I1(XLXN_21), 
+               .O(q));
+   prepare32  XLXI_8 (.I(A[22:0]), 
+                     .O(XLXN_46[31:0]));
+   prepare32  XLXI_9 (.I(B[22:0]), 
+                     .O(XLXN_48[31:0]));
+   mux_8_MUSER_float_add1  XLXI_12 (.A(A[30:23]), 
+                                   .B(B[30:23]), 
+                                   .S(XLXN_32), 
+                                   .C(XLXN_35[7:0]));
+   mux_8_MUSER_float_add1  XLXI_13 (.A(B[30:23]), 
+                                   .B(A[30:23]), 
+                                   .S(XLXN_32), 
+                                   .C(XLXN_37[7:0]));
+   bit8to32  XLXI_16 (.A(XLXN_35[7:0]), 
+                     .B(XLXN_82[31:0]));
+   bit8to32  XLXI_17 (.A(XLXN_37[7:0]), 
+                     .B(XLXN_40[31:0]));
+   adder32  XLXI_18 (.A(XLXN_82[31:0]), 
+                    .B(XLXN_40[31:0]), 
+                    .mode(XLXN_41), 
+                    .CF(), 
+                    .overflow(), 
+                    .S(XLXN_42[31:0]), 
+                    .SF(), 
+                    .ZF());
+   VCC  XLXI_19 (.P(XLXN_41));
+   mux_32_MUSER_float_add1  XLXI_20 (.A(XLXN_46[31:0]), 
+                                    .B(XLXN_48[31:0]), 
+                                    .S(XLXN_32), 
+                                    .C(XLXN_54[31:0]));
+   mux_32_MUSER_float_add1  XLXI_21 (.A(XLXN_48[31:0]), 
+                                    .B(XLXN_46[31:0]), 
+                                    .S(XLXN_32), 
+                                    .C(XLXN_52[31:0]));
+   bit32to8  XLXI_22 (.A(XLXN_42[31:0]), 
+                     .B(XLXN_50[7:0]));
+   shift_right_MUSER_float_add1  XLXI_23 (.A(XLXN_52[31:0]), 
+                                         .n(XLXN_50[7:0]), 
+                                         .B(XLXN_55[31:0]));
+   adder32  XLXI_24 (.A(XLXN_54[31:0]), 
+                    .B(XLXN_55[31:0]), 
+                    .mode(XLXN_57), 
+                    .CF(), 
+                    .overflow(), 
+                    .S(XLXN_79[31:0]), 
+                    .SF(), 
+                    .ZF(XLXN_59));
+   VCC  XLXI_25 (.P(XLXN_57));
+   shift_rignt4  XLXI_27 (.A(G[31:0]), 
+                         .B(XLXN_69[31:0]));
+   bit1to32  XLXI_31 (.A(G[3]), 
+                     .B(XLXN_68[31:0]));
+   adder32  XLXI_32 (.A(XLXN_68[31:0]), 
+                    .B(XLXN_69[31:0]), 
+                    .mode(XLXN_71), 
+                    .CF(), 
+                    .overflow(), 
+                    .S(l[31:0]), 
+                    .SF(), 
+                    .ZF());
+   GND  XLXI_33 (.G(XLXN_71));
+   check_cin_MUSER_float_add1  XLXI_34 (.A(l[31:0]), 
+                                       .CIN(l[24]), 
+                                       .n(XLXN_84[31:0]), 
+                                       .TE(XLXN_77[31:0]), 
+                                       .TM(XLXN_78[31:0]));
+   zhenghe  XLXI_35 (.FE(XLXN_77[31:0]), 
+                    .FM(XLXN_78[31:0]), 
+                    .FU(q), 
+                    .O(XLXN_85[31:0]));
+   shift_leftist_MUSER_float_add1  XLXI_36 (.A(XLXN_79[31:0]), 
+                                           .N(XLXN_82[31:0]), 
+                                           .B(G[31:0]), 
+                                           .E(XLXN_84[31:0]));
+   zero  XLXI_37 (.B(XLXN_87[31:0]));
+   mux_32_MUSER_float_add1  XLXI_38 (.A(XLXN_87[31:0]), 
+                                    .B(XLXN_85[31:0]), 
+                                    .S(XLXN_59), 
+                                    .C(D[31:0]));
+endmodule

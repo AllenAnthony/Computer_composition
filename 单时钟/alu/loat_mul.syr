@@ -1,0 +1,368 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: loat_mul.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "loat_mul.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "loat_mul"
+Output Format                      : NGC
+Target Device                      : xc7k160t-2L-ffg676
+
+---- Source Options
+Top Module Name                    : loat_mul
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : No
+Global Optimization                : Max_Delay
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 20
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\mux_8.vf" into library work
+Parsing module <mux_8>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\adder32b.v" into library work
+Parsing module <AND8_HXILINX_adder32>.
+Parsing module <add1_MUSER_add4>.
+Parsing module <add4b>.
+Parsing module <zero_4_MUSER_adder32>.
+Parsing module <xor_4bit_MUSER_adder32>.
+Parsing module <adder32b>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\shift_rignt1.v" into library work
+Parsing module <shift_rignt1>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\mux_32.vf" into library work
+Parsing module <mux_8_MUSER_mux_32>.
+Parsing module <mux_32>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\bit1to32.v" into library work
+Parsing module <bit1to32>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\adder32.v" into library work
+Parsing module <add4_MUSER_adder32>.
+Parsing module <adder32>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\zhenghe.v" into library work
+Parsing module <zhenghe>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\num_7F.v" into library work
+Parsing module <num_7F>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\numinf.v" into library work
+Parsing module <numinf>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\num0.v" into library work
+Parsing module <num0>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\mut_u.v" into library work
+Parsing module <mut_u>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\ifinf.v" into library work
+Parsing module <ifinf>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\if0.v" into library work
+Parsing module <if0>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\check_cin.vf" into library work
+Parsing module <mux_8_MUSER_check_cin>.
+Parsing module <mux_32_MUSER_check_cin>.
+Parsing module <check_cin>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\bit8to32.v" into library work
+Parsing module <bit8to32>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\bit23to32.v" into library work
+Parsing module <bit23to32>.
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf" into library work
+Parsing module <mux_8_MUSER_loat_mul>.
+Parsing module <mux_32_MUSER_loat_mul>.
+Parsing module <check_cin_MUSER_loat_mul>.
+Parsing module <loat_mul>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <loat_mul>.
+
+Elaborating module <XOR2>.
+
+Elaborating module <bit8to32>.
+
+Elaborating module <num_7F>.
+
+Elaborating module <adder32>.
+
+Elaborating module <xor_4bit_MUSER_adder32>.
+
+Elaborating module <BUF>.
+
+Elaborating module <zero_4_MUSER_adder32>.
+
+Elaborating module <OR4>.
+
+Elaborating module <INV>.
+
+Elaborating module <AND8_HXILINX_adder32>.
+
+Elaborating module <add4_MUSER_adder32>.
+
+Elaborating module <add1_MUSER_add4>.
+
+Elaborating module <AND2>.
+
+Elaborating module <OR3>.
+
+Elaborating module <GND>.
+
+Elaborating module <VCC>.
+
+Elaborating module <bit23to32>.
+
+Elaborating module <check_cin_MUSER_loat_mul>.
+
+Elaborating module <mux_32_MUSER_loat_mul>.
+
+Elaborating module <mux_8_MUSER_loat_mul>.
+
+Elaborating module <OR2>.
+
+Elaborating module <bit1to32>.
+
+Elaborating module <shift_rignt1>.
+
+Elaborating module <zhenghe>.
+
+Elaborating module <ifinf>.
+
+Elaborating module <numinf>.
+
+Elaborating module <if0>.
+
+Elaborating module <num0>.
+
+Elaborating module <mut_u>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <loat_mul>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf".
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf" line 239: Output port <CF> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf" line 239: Output port <overflow> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf" line 239: Output port <SF> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf" line 239: Output port <ZF> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf" line 248: Output port <CF> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf" line 248: Output port <overflow> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf" line 248: Output port <SF> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf" line 248: Output port <ZF> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf" line 294: Output port <done> of the instance <XLXI_35> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <loat_mul> synthesized.
+
+Synthesizing Unit <bit8to32>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\bit8to32.v".
+    Summary:
+	no macro.
+Unit <bit8to32> synthesized.
+
+Synthesizing Unit <num_7F>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\num_7F.v".
+    Summary:
+	no macro.
+Unit <num_7F> synthesized.
+
+Synthesizing Unit <adder32>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\adder32.v".
+    Set property "HU_SET = XLXI_35_0" for instance <XLXI_35>.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\adder32.v" line 173: Output port <overflow> of the instance <XLXI_36> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\adder32.v" line 179: Output port <overflow> of the instance <XLXI_37> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\adder32.v" line 185: Output port <overflow> of the instance <XLXI_38> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\adder32.v" line 191: Output port <overflow> of the instance <XLXI_39> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\adder32.v" line 203: Output port <overflow> of the instance <XLXI_41> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\adder32.v" line 209: Output port <overflow> of the instance <XLXI_42> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\adder32.v" line 215: Output port <overflow> of the instance <XLXI_43> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <adder32> synthesized.
+
+Synthesizing Unit <xor_4bit_MUSER_adder32>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\adder32b.v".
+    Summary:
+	no macro.
+Unit <xor_4bit_MUSER_adder32> synthesized.
+
+Synthesizing Unit <zero_4_MUSER_adder32>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\adder32b.v".
+    Summary:
+	no macro.
+Unit <zero_4_MUSER_adder32> synthesized.
+
+Synthesizing Unit <AND8_HXILINX_adder32>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\adder32b.v".
+    Summary:
+	no macro.
+Unit <AND8_HXILINX_adder32> synthesized.
+
+Synthesizing Unit <add4_MUSER_adder32>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\adder32.v".
+    Summary:
+	no macro.
+Unit <add4_MUSER_adder32> synthesized.
+
+Synthesizing Unit <add1_MUSER_add4>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\adder32b.v".
+    Summary:
+	no macro.
+Unit <add1_MUSER_add4> synthesized.
+
+Synthesizing Unit <bit23to32>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\bit23to32.v".
+    Summary:
+	no macro.
+Unit <bit23to32> synthesized.
+
+Synthesizing Unit <check_cin_MUSER_loat_mul>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf".
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf" line 185: Output port <CF> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf" line 185: Output port <overflow> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf" line 185: Output port <SF> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf" line 185: Output port <ZF> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <check_cin_MUSER_loat_mul> synthesized.
+
+Synthesizing Unit <mux_32_MUSER_loat_mul>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf".
+    Summary:
+	no macro.
+Unit <mux_32_MUSER_loat_mul> synthesized.
+
+Synthesizing Unit <mux_8_MUSER_loat_mul>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\loat_mul.vf".
+    Summary:
+	no macro.
+Unit <mux_8_MUSER_loat_mul> synthesized.
+
+Synthesizing Unit <bit1to32>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\bit1to32.v".
+    Summary:
+	no macro.
+Unit <bit1to32> synthesized.
+
+Synthesizing Unit <shift_rignt1>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\shift_rignt1.v".
+WARNING:Xst:647 - Input <A<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <shift_rignt1> synthesized.
+
+Synthesizing Unit <zhenghe>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\zhenghe.v".
+WARNING:Xst:647 - Input <FE<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <FM<31:23>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <zhenghe> synthesized.
+
+Synthesizing Unit <ifinf>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\ifinf.v".
+    Summary:
+	no macro.
+Unit <ifinf> synthesized.
+
+Synthesizing Unit <numinf>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\numinf.v".
+    Summary:
+	no macro.
+Unit <numinf> synthesized.
+
+Synthesizing Unit <if0>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\if0.v".
+    Summary:
+	no macro.
+Unit <if0> synthesized.
+
+Synthesizing Unit <num0>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\num0.v".
+    Summary:
+	no macro.
+Unit <num0> synthesized.

@@ -1,0 +1,71 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : MUX3_8.vf
+// /___/   /\     Timestamp : 03/30/2016 18:44:51
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/asus/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog C:/Users/asus/Desktop/ADD/MUX3_8.vf -w C:/Users/asus/Desktop/ADD/MUX3_8.sch
+//Design Name: MUX3_8
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module MUX3_8(IM, 
+              OT);
+
+    input [2:0] IM;
+   output [7:0] OT;
+   
+   wire XLXN_16;
+   wire XLXN_17;
+   wire XLXN_25;
+   
+   AND3  XLXI_1 (.I0(IM[0]), 
+                .I1(IM[1]), 
+                .I2(IM[2]), 
+                .O(OT[7]));
+   AND3  XLXI_2 (.I0(XLXN_17), 
+                .I1(IM[1]), 
+                .I2(IM[2]), 
+                .O(OT[6]));
+   AND3  XLXI_3 (.I0(IM[0]), 
+                .I1(XLXN_16), 
+                .I2(IM[2]), 
+                .O(OT[5]));
+   AND3  XLXI_4 (.I0(XLXN_17), 
+                .I1(XLXN_16), 
+                .I2(IM[2]), 
+                .O(OT[4]));
+   AND3  XLXI_5 (.I0(IM[0]), 
+                .I1(IM[1]), 
+                .I2(XLXN_25), 
+                .O(OT[3]));
+   AND3  XLXI_6 (.I0(XLXN_17), 
+                .I1(IM[1]), 
+                .I2(XLXN_25), 
+                .O(OT[2]));
+   AND3  XLXI_7 (.I0(IM[0]), 
+                .I1(XLXN_16), 
+                .I2(XLXN_25), 
+                .O(OT[1]));
+   AND3  XLXI_8 (.I0(XLXN_17), 
+                .I1(XLXN_16), 
+                .I2(XLXN_25), 
+                .O(OT[0]));
+   INV  XLXI_9 (.I(IM[2]), 
+               .O(XLXN_25));
+   INV  XLXI_10 (.I(IM[1]), 
+                .O(XLXN_16));
+   INV  XLXI_11 (.I(IM[0]), 
+                .O(XLXN_17));
+endmodule

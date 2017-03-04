@@ -1,0 +1,6 @@
+vhdtdtfi -lib work C:/Users/Richard/Desktop/alu_new/alu/controlunit.v -lang verilog -prj ADD -o control_unit.spl -module control_unit -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 control_unit.spl C:/Users/Richard/Desktop/alu_new/alu/control_unit.sym 
+vhdtdtfi -lib work F:/MyDocuments/alu_new/alu/controlunit.v -lang verilog -prj ADD -o control_unit.spl -module control_unit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 control_unit.spl F:/MyDocuments/alu_new/alu/control_unit.sym 
+vhdtdtfi -lib work C:/Users/CST/Desktop/alu_new/alu/controlunit.v -lang verilog -prj ADD -o control_unit.spl -module control_unit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 control_unit.spl C:/Users/CST/Desktop/alu_new/alu/control_unit.sym 

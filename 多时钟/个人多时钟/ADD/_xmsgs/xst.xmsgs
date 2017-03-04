@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\asus\Desktop\ADD\SSeg7_Dev_IO.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">SSeg7_Dev</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\asus\Desktop\ADD\SEnter_2_32_IO.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">SEnter_2_32</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\asus\Desktop\ADD\SAnti_jitter_IO.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">SAnti_jitter</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\asus\Desktop\ADD\ALU.vf" Line 321: Assignment to <arg fmt="%s" index="1">Pluse</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\asus\Desktop\ADD\ALU.vf" Line 328: Assignment to <arg fmt="%s" index="1">clk_cpu</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\asus\Desktop\ADD\Multi_8CH32.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">Multi_8CH32</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\asus\Desktop\ADD\Seg7_Dev_IO.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">Seg7_Dev</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\asus\Desktop\ADD\alu32.v" Line 75: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\asus\Desktop\ADD\ipcore_dir\mem1.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">mem1</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\asus\Desktop\ADD\ipcore_dir\mem2.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">mem2</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\asus\Desktop\ADD\ipcore_dir\mem3.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">mem3</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\asus\Desktop\ADD\ipcore_dir\mem4.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">mem4</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\asus\Desktop\ADD\ALU.vf" Line 271: Net &lt;<arg fmt="%s" index="1">LE_out[7]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\asus\Desktop\ADD\ALU.vf" Line 275: Net &lt;<arg fmt="%s" index="1">point_out[7]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\asus\Desktop\ADD\ALU.vf" Line 280: Net &lt;<arg fmt="%s" index="1">XLXN_114[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\asus\Desktop\ADD\ALU.vf" Line 331: Input port <arg fmt="%s" index="1">data4[31]</arg> is not connected on this instance
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\asus\Desktop\ADD\ALU.vf</arg>&quot; line <arg fmt="%s" index="2">311</arg>: Output port &lt;<arg fmt="%s" index="3">pulse_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\asus\Desktop\ADD\ALU.vf</arg>&quot; line <arg fmt="%s" index="2">324</arg>: Output port &lt;<arg fmt="%s" index="3">Clk_CPU</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">LE_out</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">point_out</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXN_114</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\asus\Desktop\ADD\alu32.v</arg>&quot; line <arg fmt="%s" index="2">36</arg>: Output port &lt;<arg fmt="%s" index="3">CF</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">m1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\asus\Desktop\ADD\alu32.v</arg>&quot; line <arg fmt="%s" index="2">36</arg>: Output port &lt;<arg fmt="%s" index="3">SF</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">m1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\asus\Desktop\ADD\alu32.v</arg>&quot; line <arg fmt="%s" index="2">36</arg>: Output port &lt;<arg fmt="%s" index="3">ZF</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">m1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;30&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;29&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;28&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;27&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;26&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;25&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;24&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;23&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;22&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;21&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;20&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;19&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;18&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;17&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;16&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;15&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;14&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;13&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;12&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;11&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;10&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;9&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;8&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;7&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;6&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;5&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">mode</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">O&lt;31&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\asus\Desktop\ADD\adder32b.v</arg>&quot; line <arg fmt="%s" index="2">135</arg>: Output port &lt;<arg fmt="%s" index="3">C1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\asus\Desktop\ADD\adder32b.v</arg>&quot; line <arg fmt="%s" index="2">140</arg>: Output port &lt;<arg fmt="%s" index="3">C1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\asus\Desktop\ADD\adder32b.v</arg>&quot; line <arg fmt="%s" index="2">145</arg>: Output port &lt;<arg fmt="%s" index="3">C1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\asus\Desktop\ADD\adder32b.v</arg>&quot; line <arg fmt="%s" index="2">150</arg>: Output port &lt;<arg fmt="%s" index="3">C1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Instruction&lt;25:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;30&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;29&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;28&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;27&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;26&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;25&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;24&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;23&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;22&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;21&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;20&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;19&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;18&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;17&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;16&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;15&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;14&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;13&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;12&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;11&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;10&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;9&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;8&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;7&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;6&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;5&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Qreg&lt;31&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">addr&lt;14:14&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;30&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;29&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;28&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;27&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;26&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;25&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;24&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;23&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;22&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;21&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;20&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;19&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;18&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;17&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;16&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;15&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;14&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;13&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;12&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;11&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;10&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;9&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;8&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;7&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;6&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;5&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">done&lt;31&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Func&lt;5:4&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">A&lt;31:30&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_35</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">m1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_m</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_m1</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_m2</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">value_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">control</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;value_2&gt; &lt;value_4&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_53/ALU/m1/XLXI_35</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ALU</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8183/XLXI_512/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8183/XLXI_512/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8183/XLXI_511/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8183/XLXI_511/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8183/XLXI_372/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8183/XLXI_372/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8183/XLXI_371/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8183/XLXI_371/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8183/XLXI_370/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8183/XLXI_370/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8183/XLXI_369/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8183/XLXI_369/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_514/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_514/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_513/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_513/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_512/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_512/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_511/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_511/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_372/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_372/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_371/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_371/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_370/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_370/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_369/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8182/XLXI_369/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_514/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_514/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_513/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_513/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_512/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_512/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_511/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_511/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_372/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_372/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_371/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_371/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_370/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_370/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_369/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8181/XLXI_369/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_514/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_514/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_513/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_513/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_512/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_512/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_511/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_511/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_372/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_372/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_371/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_371/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_370/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_370/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_369/O_DUMMY</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="new" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">XLXI_15/MUX1_DispData/MUX8180/XLXI_369/S1</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

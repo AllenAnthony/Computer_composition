@@ -1,0 +1,7 @@
+sch2sym -intstyle ise -family kintex7 -refsym compa C:/Users/asus/Desktop/ADD/compa.sch C:/Users/asus/Desktop/ADD/compa.sym 
+sch2hdl -sympath C:/Users/asus/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog compa_drc.vf -w C:/Users/asus/Desktop/ADD/compa.sch 
+sch2sym -intstyle ise -family kintex7 -refsym compa C:/Users/asus/Desktop/ADD/compa.sch C:/Users/asus/Desktop/ADD/compa.sym 
+sch2hdl -sympath C:/Users/asus/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog compa_drc.vf -w C:/Users/asus/Desktop/ADD/compa.sch 
+sch2sym -intstyle ise -family kintex7 -refsym compa C:/Users/asus/Desktop/ADD/compa.sch C:/Users/asus/Desktop/ADD/compa.sym 
+sch2hdl -sympath C:/Users/asus/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog compa_drc.vf -w C:/Users/asus/Desktop/ADD/compa.sch 
+sch2sym -intstyle ise -family kintex7 -refsym compa C:/Users/asus/Desktop/ADD/compa.sch C:/Users/asus/Desktop/ADD/compa.sym 

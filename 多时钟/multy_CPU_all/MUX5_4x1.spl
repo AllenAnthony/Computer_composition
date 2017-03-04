@@ -1,0 +1,11 @@
+[Inputs]
+=sel[1:0]=
+=A[4:0]=
+=B[4:0]=
+=C[4:0]=
+[Outputs]
+=R[4:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel MUX5_4x1
+

@@ -1,0 +1,12 @@
+[Inputs]
+=s[1:0]=
+=I0[4:0]=
+=I1[4:0]=
+=I2[4:0]=
+=I3[4:0]=
+[Outputs]
+=o[4:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel MUX4T1_5
+

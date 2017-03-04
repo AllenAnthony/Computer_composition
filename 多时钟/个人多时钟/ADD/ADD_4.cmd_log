@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3 -refsym ADD_4 E:/ADD/ADD_4.sch E:/ADD/ADD_4.sym 
+sch2hdl -intstyle ise -family spartan3 -verilog ADD_4_drc.vf -w E:/ADD/ADD_4.sch 

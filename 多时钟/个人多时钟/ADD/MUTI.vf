@@ -1,0 +1,97 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : MUTI.vf
+// /___/   /\     Timestamp : 03/30/2016 18:45:34
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/asus/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog C:/Users/asus/Desktop/ADD/MUTI.vf -w C:/Users/asus/Desktop/ADD/MUTI.sch
+//Design Name: MUTI
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module mut_1_MUSER_MUTI(a0, 
+                        a1, 
+                        b0, 
+                        b1, 
+                        C0, 
+                        C1, 
+                        C2, 
+                        C3);
+
+    input a0;
+    input a1;
+    input b0;
+    input b1;
+   output C0;
+   output C1;
+   output C2;
+   output C3;
+   
+   wire XLXN_1;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire C0_DUMMY;
+   
+   assign C0 = C0_DUMMY;
+   AND2  XLXI_1 (.I0(b0), 
+                .I1(a0), 
+                .O(C0_DUMMY));
+   AND2  XLXI_2 (.I0(b1), 
+                .I1(a1), 
+                .O(XLXN_11));
+   AND2  XLXI_3 (.I0(XLXN_11), 
+                .I1(C0_DUMMY), 
+                .O(C3));
+   AND2  XLXI_4 (.I0(XLXN_11), 
+                .I1(XLXN_1), 
+                .O(C2));
+   AND2  XLXI_5 (.I0(b1), 
+                .I1(a0), 
+                .O(XLXN_12));
+   AND2  XLXI_6 (.I0(b0), 
+                .I1(a1), 
+                .O(XLXN_13));
+   INV  XLXI_7 (.I(C0_DUMMY), 
+               .O(XLXN_1));
+   XOR2  XLXI_8 (.I0(XLXN_13), 
+                .I1(XLXN_12), 
+                .O(C1));
+endmodule
+`timescale 1ns / 1ps
+
+module MUTI(A, 
+            O);
+
+    input [3:0] A;
+   output [7:0] O;
+   
+   
+   mut_1_MUSER_MUTI  XLXI_1 (.a0(A[2]), 
+                            .a1(A[3]), 
+                            .b0(A[0]), 
+                            .b1(A[1]), 
+                            .C0(O[4]), 
+                            .C1(O[5]), 
+                            .C2(O[6]), 
+                            .C3(O[7]));
+   mut_2  XLXI_2 (.a0(A[2]), 
+                 .a1(A[3]), 
+                 .b0(A[0]), 
+                 .b1(A[1]), 
+                 .c0(O[0]), 
+                 .c1(O[1]), 
+                 .c2(O[2]), 
+                 .c3(O[3]));
+endmodule

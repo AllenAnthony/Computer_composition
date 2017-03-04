@@ -1,0 +1,8 @@
+[Inputs]
+clk
+[Outputs]
+clk_10
+[BiDir]
+[ATTRIBUTES]
+VeriModel slower1to10
+

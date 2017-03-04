@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/ISE/multy_CPU_all/number_11111.v -lang verilog -prj multy_CPU -o number_11111.spl -module number_11111 -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 number_11111.spl E:/ISE/multy_CPU_all/number_11111.sym 

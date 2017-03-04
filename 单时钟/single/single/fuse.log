@@ -1,0 +1,103 @@
+Running: E:\ISE14-4\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/asus/Desktop/single/single/top_for_single_top_for_single_sch_tb_isim_beh.exe -prj C:/Users/asus/Desktop/single/single/top_for_single_top_for_single_sch_tb_beh.prj work.top_for_single_top_for_single_sch_tb work.glbl 
+ISim P.49d (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/or32.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/ipcore_dir/mem8.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/ipcore_dir/mem7.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/ipcore_dir/mem6.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/ipcore_dir/mem5.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/ipcore_dir/mem4.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/ipcore_dir/mem3.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/ipcore_dir/mem2.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/ipcore_dir/mem1.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/and32.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/adder32b.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/SignExtend.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/shiftleft2.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/regfile.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/pcreg.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/number_4.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/number_110.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/null.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/MUX5_2x1.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/MUX3_2x1.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/MUX32_2x1.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/mem_for_data.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/memory.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/extend26to32.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/disp.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/Control.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/catch_28_4.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/ALUcontrol.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/alu32.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/top_for_single.vf" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/single/single/test_top.v" into library work
+Analyzing Verilog file "E:/ISE14-4/14.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module Control
+Compiling module extend26to28_shift2
+Compiling module shiftleft2
+Compiling module MUX5_2x1
+Compiling module MUX32_2x1
+Compiling module SignExtend
+Compiling module XOR2
+Compiling module xor_4bit_MUSER_adder32
+Compiling module BUF
+Compiling module OR4
+Compiling module INV
+Compiling module zero_4_MUSER_adder32
+Compiling module AND8_HXILINX_adder32
+Compiling module AND2
+Compiling module OR3
+Compiling module add1_MUSER_add4
+Compiling module OR2
+Compiling module AND3
+Compiling module AND4
+Compiling module AND5
+Compiling module OR5
+Compiling module add4b
+Compiling module adder32b
+Compiling module and32
+Compiling module or32
+Compiling module alu32
+Compiling module GND
+Compiling module catch_28_4
+Compiling module number_4
+Compiling module pcreg
+Compiling module ALUcontrol
+Compiling module regfile
+Compiling module VCC
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem5
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem6
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem7
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem8
+Compiling module mem_for_data
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem1
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem2
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem3
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem4
+Compiling module memory
+Compiling module disp_control
+Compiling module null
+Compiling module number_110
+Compiling module MUX3_2x1
+Compiling module top_for_single
+Compiling module top_for_single_top_for_single_sc...
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 48 sub-compilation(s) to finish...
+Compiled 58 Verilog Units
+Built simulation executable C:/Users/asus/Desktop/single/single/top_for_single_top_for_single_sch_tb_isim_beh.exe
+Fuse Memory Usage: 32420 KB
+Fuse CPU Usage: 2667 ms

@@ -1,0 +1,11 @@
+[Inputs]
+clk
+=a[31:0]=
+=b[31:0]=
+[Outputs]
+done
+=c[63:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel comple32
+

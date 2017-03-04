@@ -1,0 +1,83 @@
+Running: E:\ISE14-4\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/asus/Desktop/ADD/Multiple_CPU_TOP_Multiple_CPU_TOP_sch_tb_isim_beh.exe -prj C:/Users/asus/Desktop/ADD/Multiple_CPU_TOP_Multiple_CPU_TOP_sch_tb_beh.prj work.Multiple_CPU_TOP_Multiple_CPU_TOP_sch_tb work.glbl 
+ISim P.49d (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/or32.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/ipcore_dir/mem4.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/ipcore_dir/mem3.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/ipcore_dir/mem2.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/ipcore_dir/mem1.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/and32.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/adder32b.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/SignExtend.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/shiftleft2.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/regfile.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/REG32.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/MUX4T1_32.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/MUX2T1_32.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/Memory.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/extend26to32.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/control.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/catch_28_4.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/ALUcontrol.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/alu32.v" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/Multiple_CPU_TOP.vf" into library work
+Analyzing Verilog file "C:/Users/asus/Desktop/ADD/Multiple_CPU_TOP_test.v" into library work
+Analyzing Verilog file "E:/ISE14-4/14.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module REG32_N
+Compiling module XOR2
+Compiling module xor_4bit_MUSER_adder32
+Compiling module BUF
+Compiling module OR4
+Compiling module INV
+Compiling module zero_4_MUSER_adder32
+Compiling module AND8_HXILINX_adder32
+Compiling module AND2
+Compiling module OR3
+Compiling module add1_MUSER_add4
+Compiling module OR2
+Compiling module AND3
+Compiling module AND4
+Compiling module AND5
+Compiling module OR5
+Compiling module add4b
+Compiling module adder32b
+Compiling module and32
+Compiling module or32
+Compiling module alu32
+Compiling module control
+Compiling module REG32_NC
+Compiling module REG32_N_NC
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem1
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem2
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem3
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem4
+Compiling module Memory
+Compiling module REG32
+Compiling module regfile
+Compiling module MUX2T1_32
+Compiling module MUX2T1_5
+Compiling module MUX4T1_32
+Compiling module ALUcontrol
+Compiling module shiftleft2
+Compiling module SignExtend
+Compiling module VCC
+Compiling module GND
+Compiling module extend26to28_shift2
+Compiling module catch_28_4
+Compiling module Multiple_CPU_TOP
+Compiling module Multiple_CPU_TOP_Multiple_CPU_TO...
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 41 sub-compilation(s) to finish...
+Compiled 48 Verilog Units
+Built simulation executable C:/Users/asus/Desktop/ADD/Multiple_CPU_TOP_Multiple_CPU_TOP_sch_tb_isim_beh.exe
+Fuse Memory Usage: 31560 KB
+Fuse CPU Usage: 3790 ms

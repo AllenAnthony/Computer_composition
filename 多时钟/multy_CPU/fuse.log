@@ -1,0 +1,98 @@
+Running: E:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/ISE/work/multy_CPU/top_for_multy_CPU_top_for_multy_CPU_sch_tb_isim_beh.exe -prj E:/ISE/work/multy_CPU/top_for_multy_CPU_top_for_multy_CPU_sch_tb_beh.prj work.top_for_multy_CPU_top_for_multy_CPU_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/ISE/work/multy_CPU/or32.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/MUX32_2x1.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/ipcore_dir/mem4.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/ipcore_dir/mem3.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/ipcore_dir/mem2.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/ipcore_dir/mem1.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/and32.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/adder32b.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/state_control.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/SignExtend.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/shiftleft2.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/regfile.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/read_mem.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/pcreg.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/number_4.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/null.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/MUX5_2x1.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/MUX32_4x1.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/memory.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/MDR.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/IR.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/extend26to32.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/disp.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/catch_28_4.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/BR.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/AR.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/ALUout.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/ALUcontrol.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/alu32.v" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/top_for_multy_CPU.vf" into library work
+Analyzing Verilog file "E:/ISE/work/multy_CPU/test.v" into library work
+Analyzing Verilog file "E:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module MUX32_2x1
+Compiling module MDR
+Compiling module regfile
+Compiling module MUX5_2x1
+Compiling module extend26to28_shift2
+Compiling module catch_28_4
+Compiling module AR
+Compiling module BR
+Compiling module MUX32_4x1
+Compiling module number_4
+Compiling module SignExtend
+Compiling module shiftleft2
+Compiling module XOR2
+Compiling module xor_4bit_MUSER_adder32
+Compiling module BUF
+Compiling module OR4
+Compiling module INV
+Compiling module zero_4_MUSER_adder32
+Compiling module AND8_HXILINX_adder32
+Compiling module AND2
+Compiling module OR3
+Compiling module add1_MUSER_add4
+Compiling module OR2
+Compiling module AND3
+Compiling module AND4
+Compiling module AND5
+Compiling module OR5
+Compiling module add4b
+Compiling module adder32b
+Compiling module and32
+Compiling module or32
+Compiling module alu32
+Compiling module ALUcontrol
+Compiling module pcreg
+Compiling module ALUout
+Compiling module state_control
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem1
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem2
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem3
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem4
+Compiling module memory
+Compiling module read_mem
+Compiling module IR
+Compiling module disp_control
+Compiling module null
+Compiling module GND
+Compiling module top_for_multy_CPU
+Compiling module top_for_multy_CPU_top_for_multy_...
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 46 sub-compilation(s) to finish...
+Compiled 53 Verilog Units
+Built simulation executable E:/ISE/work/multy_CPU/top_for_multy_CPU_top_for_multy_CPU_sch_tb_isim_beh.exe
+Fuse Memory Usage: 31060 KB
+Fuse CPU Usage: 1668 ms

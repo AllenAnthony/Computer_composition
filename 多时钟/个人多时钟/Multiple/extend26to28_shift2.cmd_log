@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/asus/Desktop/Multiple/extend26to32.v -lang verilog -prj Multiple -o extend26to28_shift2.spl -module extend26to28_shift2 -template E:/ISE14-4/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 extend26to28_shift2.spl C:/Users/asus/Desktop/Multiple/extend26to28_shift2.sym 

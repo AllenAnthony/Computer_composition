@@ -1,0 +1,8 @@
+vhdtdtfi -lib work C:/Users/Richard/Desktop/123/ADD/mut_u.v -lang verilog -prj ADD -o mut_u.spl -module mut_u -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 mut_u.spl C:/Users/Richard/Desktop/123/ADD/mut_u.sym 
+xst -intstyle ise -ifn "C:/Users/codeff/Documents/Tencent Files/756184751/FileRecv/1234/alu/mut_u.xst" -ofn "C:/Users/codeff/Documents/Tencent Files/756184751/FileRecv/1234/alu/mut_u.syr" 
+xst -intstyle ise -ifn "C:/Users/codeff/Documents/Tencent Files/756184751/FileRecv/1234/alu/mut_u.xst" -ofn "C:/Users/codeff/Documents/Tencent Files/756184751/FileRecv/1234/alu/mut_u.syr" 
+vhdtdtfi -lib work C:/Users/Richard/Desktop/alu/alu/mut_u.v -lang verilog -prj ADD -o mut_u.spl -module mut_u -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 mut_u.spl C:/Users/Richard/Desktop/alu/alu/mut_u.sym 
+vhdtdtfi -lib work C:/Users/CST/Desktop/alu_new/alu/mut_u.v -lang verilog -prj ADD -o mut_u.spl -module mut_u -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 mut_u.spl C:/Users/CST/Desktop/alu_new/alu/mut_u.sym 

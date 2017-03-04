@@ -1,0 +1,257 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ADD_4_plus_drc.vf
+// /___/   /\     Timestamp : 03/09/2016 20:40:25
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: E:\ISE14-4\14.4\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan3 -verilog ADD_4_plus_drc.vf -w E:/ADD/ADD_4_plus.sch
+//Design Name: ADD_4_plus
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module XOR_bit_MUSER_ADD_4_plus(A, 
+                                B, 
+                                C, 
+                                S);
+
+    input A;
+    input B;
+    input C;
+   output S;
+   
+   
+   XOR3  XLXI_1 (.I0(C), 
+                .I1(B), 
+                .I2(A), 
+                .O(S));
+endmodule
+`timescale 1ns / 1ps
+
+module ADD_4_MUSER_ADD_4_plus(A0, 
+                              A1, 
+                              A2, 
+                              A3, 
+                              B0, 
+                              B1, 
+                              B2, 
+                              B3, 
+                              C0, 
+                              C3, 
+                              C4, 
+                              S0, 
+                              S1, 
+                              S2, 
+                              S3);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+    input B0;
+    input B1;
+    input B2;
+    input B3;
+    input C0;
+   output C3;
+   output C4;
+   output S0;
+   output S1;
+   output S2;
+   output S3;
+   
+   wire AND_2;
+   wire AND_3;
+   wire AND0;
+   wire AND1;
+   wire C1;
+   wire C2;
+   wire OR_2;
+   wire OR_3;
+   wire OR0;
+   wire OR1;
+   wire XLXN_10;
+   wire XLXN_38;
+   wire XLXN_39;
+   wire XLXN_54;
+   wire XLXN_55;
+   wire XLXN_56;
+   wire XLXN_112;
+   wire XLXN_113;
+   wire XLXN_114;
+   wire XLXN_115;
+   wire C3_DUMMY;
+   
+   assign C3 = C3_DUMMY;
+   XOR_bit_MUSER_ADD_4_plus  XLXI_1 (.A(A0), 
+                                    .B(B0), 
+                                    .C(C0), 
+                                    .S(S0));
+   AND2  XLXI_2 (.I0(B0), 
+                .I1(A0), 
+                .O(AND0));
+   OR2  XLXI_3 (.I0(B0), 
+               .I1(A0), 
+               .O(OR0));
+   OR2  XLXI_4 (.I0(AND0), 
+               .I1(XLXN_10), 
+               .O(C1));
+   AND2  XLXI_5 (.I0(OR0), 
+                .I1(C0), 
+                .O(XLXN_10));
+   XOR_bit_MUSER_ADD_4_plus  XLXI_6 (.A(A1), 
+                                    .B(B1), 
+                                    .C(C1), 
+                                    .S(S1));
+   AND2  XLXI_7 (.I0(B1), 
+                .I1(A1), 
+                .O(AND1));
+   AND2  XLXI_8 (.I0(OR1), 
+                .I1(AND0), 
+                .O(XLXN_38));
+   OR2  XLXI_10 (.I0(B1), 
+                .I1(A1), 
+                .O(OR1));
+   OR3  XLXI_11 (.I0(AND1), 
+                .I1(XLXN_38), 
+                .I2(XLXN_39), 
+                .O(C2));
+   AND3  XLXI_23 (.I0(OR1), 
+                 .I1(OR0), 
+                 .I2(C0), 
+                 .O(XLXN_39));
+   XOR_bit_MUSER_ADD_4_plus  XLXI_24 (.A(A2), 
+                                     .B(B2), 
+                                     .C(C2), 
+                                     .S(S2));
+   AND2  XLXI_25 (.I0(B2), 
+                 .I1(A2), 
+                 .O(AND_2));
+   AND2  XLXI_26 (.I0(OR_2), 
+                 .I1(AND1), 
+                 .O(XLXN_54));
+   AND3  XLXI_27 (.I0(OR_2), 
+                 .I1(OR1), 
+                 .I2(AND0), 
+                 .O(XLXN_55));
+   AND4  XLXI_28 (.I0(OR_2), 
+                 .I1(OR1), 
+                 .I2(OR0), 
+                 .I3(C0), 
+                 .O(XLXN_56));
+   OR2  XLXI_29 (.I0(B2), 
+                .I1(A2), 
+                .O(OR_2));
+   OR4  XLXI_30 (.I0(XLXN_54), 
+                .I1(XLXN_55), 
+                .I2(XLXN_56), 
+                .I3(AND_2), 
+                .O(C3_DUMMY));
+   XOR_bit_MUSER_ADD_4_plus  XLXI_49 (.A(A3), 
+                                     .B(B3), 
+                                     .C(C3_DUMMY), 
+                                     .S(S3));
+   AND2  XLXI_50 (.I0(B3), 
+                 .I1(A3), 
+                 .O(AND_3));
+   AND2  XLXI_51 (.I0(OR_3), 
+                 .I1(AND_2), 
+                 .O(XLXN_112));
+   AND3  XLXI_52 (.I0(OR_3), 
+                 .I1(OR_2), 
+                 .I2(AND1), 
+                 .O(XLXN_113));
+   AND4  XLXI_53 (.I0(OR_3), 
+                 .I1(OR_2), 
+                 .I2(OR1), 
+                 .I3(AND0), 
+                 .O(XLXN_115));
+   AND5  XLXI_54 (.I0(OR_2), 
+                 .I1(OR1), 
+                 .I2(OR0), 
+                 .I3(C0), 
+                 .I4(OR_3), 
+                 .O(XLXN_114));
+   OR2  XLXI_55 (.I0(B3), 
+                .I1(A3), 
+                .O(OR_3));
+   OR5  XLXI_56 (.I0(AND_3), 
+                .I1(XLXN_112), 
+                .I2(XLXN_113), 
+                .I3(XLXN_115), 
+                .I4(XLXN_114), 
+                .O(C4));
+endmodule
+`timescale 1ns / 1ps
+
+module ADD_4_plus(A, 
+                  B, 
+                  C0, 
+                  CF, 
+                  C3, 
+                  C4, 
+                  O_F, 
+                  PF, 
+                  S, 
+                  ZF);
+
+    input [3:0] A;
+    input [3:0] B;
+    input C0;
+   output CF;
+   output C3;
+   output C4;
+   output O_F;
+   output PF;
+   output [3:0] S;
+   output ZF;
+   
+   wire [3:0] S_DUMMY;
+   wire C3_DUMMY;
+   wire C4_DUMMY;
+   
+   assign C3 = C3_DUMMY;
+   assign C4 = C4_DUMMY;
+   assign S[3:0] = S_DUMMY[3:0];
+   ADD_4_MUSER_ADD_4_plus  XLXI_2 (.A0(A[0]), 
+                                  .A1(A[1]), 
+                                  .A2(A[2]), 
+                                  .A3(A[3]), 
+                                  .B0(B[0]), 
+                                  .B1(B[1]), 
+                                  .B2(B[2]), 
+                                  .B3(B[3]), 
+                                  .C0(C0), 
+                                  .C3(C3_DUMMY), 
+                                  .C4(C4_DUMMY), 
+                                  .S0(S_DUMMY[0]), 
+                                  .S1(S_DUMMY[1]), 
+                                  .S2(S_DUMMY[2]), 
+                                  .S3(S_DUMMY[3]));
+   NOR4  XLXI_3 (.I0(S_DUMMY[3]), 
+                .I1(S_DUMMY[2]), 
+                .I2(S_DUMMY[1]), 
+                .I3(S_DUMMY[0]), 
+                .O(ZF));
+   XOR4  XLXI_4 (.I0(S_DUMMY[3]), 
+                .I1(S_DUMMY[2]), 
+                .I2(S_DUMMY[1]), 
+                .I3(S_DUMMY[0]), 
+                .O(PF));
+   XOR2  XLXI_5 (.I0(C3_DUMMY), 
+                .I1(C4_DUMMY), 
+                .O(O_F));
+   XOR2  XLXI_6 (.I0(C4_DUMMY), 
+                .I1(C0), 
+                .O(CF));
+endmodule

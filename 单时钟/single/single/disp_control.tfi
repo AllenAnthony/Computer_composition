@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+disp_control instance_name (
+    .clk(clk), 
+    .pc(pc), 
+    .ch(ch), 
+    .d(d), 
+    .node(node), 
+    .segment(segment), 
+    .pcd(pcd)
+    );
+
+

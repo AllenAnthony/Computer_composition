@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/CST/Desktop/alu_new/alu_new/alu/comple32_test_isim_beh.exe" -prj "C:/Users/CST/Desktop/alu_new/alu_new/alu/comple32_test_beh.prj" "work.comple32_test" "work.glbl" 

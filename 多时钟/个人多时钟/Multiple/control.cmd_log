@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/asus/Desktop/Multiple/control.v -lang verilog -prj Multiple -o control.spl -module control -template E:/ISE14-4/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 control.spl C:/Users/asus/Desktop/Multiple/control.sym 

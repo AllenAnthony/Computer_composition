@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/asus/Desktop/Multiple/MUX2T1_32.v -lang verilog -prj Multiple -o MUX2T1_32.spl -module MUX2T1_32 -template E:/ISE14-4/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 MUX2T1_32.spl C:/Users/asus/Desktop/Multiple/MUX2T1_32.sym 

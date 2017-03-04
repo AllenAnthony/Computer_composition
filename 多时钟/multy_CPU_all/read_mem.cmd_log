@@ -1,0 +1,4 @@
+vhdtdtfi -lib work E:/ISE/work/multy_CPU/read_mem.v -lang verilog -prj multy_CPU -o read_mem.spl -module read_mem -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 read_mem.spl E:/ISE/work/multy_CPU/read_mem.sym 
+vhdtdtfi -lib work E:/ISE/work/multy_CPU/read_mem.v -lang verilog -prj multy_CPU -o read_mem.spl -module read_mem -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 read_mem.spl E:/ISE/work/multy_CPU/read_mem.sym 

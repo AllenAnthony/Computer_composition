@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/ISE/work/multy_CPU/pcreg.v -lang verilog -prj multy_CPU -o pcreg.spl -module pcreg -template E:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 pcreg.spl E:/ISE/work/multy_CPU/pcreg.sym 

@@ -1,0 +1,21 @@
+[Inputs]
+clk
+=op[5:0]=
+[Outputs]
+PCWriteCond
+PCWrite
+lorD
+MemWrite
+MemtoReg
+IRWrite
+ALUSrcA
+RegWrite
+RegDst
+MemRead
+=PCSource[1:0]=
+=ALUop[1:0]=
+=ALUSrcB[1:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel state_control
+

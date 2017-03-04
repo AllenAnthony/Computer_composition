@@ -1,0 +1,108 @@
+Running: E:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/ISE/work/single_all/top_for_single_top_for_single_sch_tb_isim_beh.exe -prj E:/ISE/work/single_all/top_for_single_top_for_single_sch_tb_beh.prj work.top_for_single_top_for_single_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/ISE/work/single_all/or32.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/MUX32_2x1.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/ipcore_dir/mem8.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/ipcore_dir/mem7.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/ipcore_dir/mem6.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/ipcore_dir/mem5.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/ipcore_dir/mem4.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/ipcore_dir/mem3.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/ipcore_dir/mem2.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/ipcore_dir/mem1.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/and32.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/adder32b.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/slower1to10.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/SignExtend.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/shift_left16.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/shiftleft2.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/regfile.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/pcreg.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/number_4.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/number_11111.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/number_111.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/number_110.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/MUX5_2x1.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/MUX3_2x1.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/MUX32_4x1.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/mem_for_data.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/memory.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/extend26to32.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/disp.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/Control.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/catch_28_4.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/ALUcontrol.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/alu32.v" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/top_for_single.vf" into library work
+Analyzing Verilog file "E:/ISE/work/single_all/test_for_top.v" into library work
+Analyzing Verilog file "E:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module extend26to28_shift2
+Compiling module shiftleft2
+Compiling module regfile
+Compiling module MUX32_2x1
+Compiling module SignExtend
+Compiling module XOR2
+Compiling module xor_4bit_MUSER_adder32
+Compiling module BUF
+Compiling module OR4
+Compiling module INV
+Compiling module zero_4_MUSER_adder32
+Compiling module AND8_HXILINX_adder32
+Compiling module AND2
+Compiling module OR3
+Compiling module add1_MUSER_add4
+Compiling module OR2
+Compiling module AND3
+Compiling module AND4
+Compiling module AND5
+Compiling module OR5
+Compiling module add4b
+Compiling module adder32b
+Compiling module GND
+Compiling module catch_28_4
+Compiling module number_4
+Compiling module MUX32_4x1
+Compiling module MUX3_2x1
+Compiling module number_111
+Compiling module number_11111
+Compiling module Control
+Compiling module MUX5_2x1
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem5
+Compiling module mem6
+Compiling module mem7
+Compiling module mem8
+Compiling module mem_for_data
+Compiling module shift_left16
+Compiling module disp_control
+Compiling module VCC
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem1
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem2
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem3
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="kint...
+Compiling module mem4
+Compiling module memory
+Compiling module and32
+Compiling module or32
+Compiling module alu32
+Compiling module slower1to10
+Compiling module pcreg
+Compiling module number_110
+Compiling module ALUcontrol
+Compiling module top_for_single
+Compiling module top_for_single_top_for_single_sc...
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 52 sub-compilation(s) to finish...
+Compiled 59 Verilog Units
+Built simulation executable E:/ISE/work/single_all/top_for_single_top_for_single_sch_tb_isim_beh.exe
+Fuse Memory Usage: 31124 KB
+Fuse CPU Usage: 1856 ms

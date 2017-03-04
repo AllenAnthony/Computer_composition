@@ -1,0 +1,440 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: mut_u.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mut_u.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mut_u"
+Output Format                      : NGC
+Target Device                      : xc7k160t-2L-ffg676
+
+---- Source Options
+Top Module Name                    : mut_u
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : No
+Global Optimization                : Max_Delay
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 20
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\mut_u.v" into library work
+Parsing module <mut_u>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mut_u>.
+WARNING:HDLCompiler:872 - "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\mut_u.v" Line 18: Using initial value of clk since it is never assigned
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mut_u>.
+    Related source file is "C:\Users\codeff\Documents\Tencent Files\756184751\FileRecv\1234\alu\mut_u.v".
+    Found 32-bit register for signal <areg>.
+    Found 33-bit register for signal <breg>.
+    Found 65-bit register for signal <yout_r>.
+    Found 6-bit register for signal <i>.
+    Found 33-bit adder for signal <yout_r[64]_breg[32]_add_11_OUT> created at line 67.
+    Found 5-bit subtractor for signal <GND_1_o_GND_1_o_sub_10_OUT<4:0>> created at line 64.
+    Found 1-bit 32-to-1 multiplexer for signal <GND_1_o_areg[31]_Mux_10_o> created at line 64.
+    Found 6-bit comparator lessequal for signal <n0011> created at line 62
+    Found 6-bit comparator lessequal for signal <n0013> created at line 62
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 136 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  34 Multiplexer(s).
+Unit <mut_u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 33-bit adder                                          : 1
+ 5-bit subtractor                                      : 1
+# Registers                                            : 4
+ 32-bit register                                       : 1
+ 33-bit register                                       : 1
+ 6-bit register                                        : 1
+ 65-bit register                                       : 1
+# Comparators                                          : 2
+ 6-bit comparator lessequal                            : 2
+# Multiplexers                                         : 34
+ 1-bit 2-to-1 multiplexer                              : 33
+ 1-bit 32-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2404 -  FFs/Latches <yout_r<64:64>> (without init value) have a constant value of 0 in block <mut_u>.
+WARNING:Xst:2404 -  FFs/Latches <breg<32:32>> (without init value) have a constant value of 0 in block <mut_u>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 33-bit adder                                          : 1
+ 5-bit subtractor                                      : 1
+# Registers                                            : 134
+ Flip-Flops                                            : 134
+# Comparators                                          : 2
+ 6-bit comparator lessequal                            : 2
+# Multiplexers                                         : 34
+ 1-bit 2-to-1 multiplexer                              : 33
+ 1-bit 32-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <yout_r_43> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_42> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_41> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_40> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_39> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_38> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_37> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_36> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_35> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_34> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_33> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_32> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_0> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_1> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_2> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_3> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_4> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_5> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_31> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_63> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_62> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_61> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_60> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_59> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_58> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_57> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_56> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_55> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_54> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_44> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_45> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_46> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_47> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_48> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_49> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_50> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_51> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_52> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <yout_r_53> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_17> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_18> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_19> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_20> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_21> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_22> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_23> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_24> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_25> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_26> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_27> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_28> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_29> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_30> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_31> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_30> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_17> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_18> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_19> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_20> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_21> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_22> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_23> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_24> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_25> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_26> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_27> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_28> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_29> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_30> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_31> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_0> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_1> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_0> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_1> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_2> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_3> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_4> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_5> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_6> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_7> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_8> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_9> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_10> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_11> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_12> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_13> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_14> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_15> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <areg_16> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_2> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_3> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_4> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_5> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_6> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_7> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_8> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_9> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_10> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_11> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_12> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_13> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_14> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_15> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <breg_16> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_29> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_28> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_27> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_26> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_25> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_24> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_23> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_22> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_21> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_20> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_19> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_18> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_17> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_16> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_15> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_14> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_13> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_12> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_11> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_10> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_9> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_8> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_7> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_6> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_5> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_4> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_3> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_2> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_1> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <yout_r_0> (without init value) has a constant value of 0 in block <mut_u>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <mut_u> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mut_u, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mut_u.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2
+#      GND                         : 1
+#      VCC                         : 1
+# IO Buffers                       : 65
+#      OBUF                        : 65
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-2l 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         129
+ Number of bonded IOBs:                  65  out of    400    16%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.35 secs
+ 
+--> 
+
+Total memory usage is 467456 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  137 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

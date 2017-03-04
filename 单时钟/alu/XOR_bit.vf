@@ -1,0 +1,38 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : XOR_bit.vf
+// /___/   /\     Timestamp : 04/07/2016 15:42:14
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/Richard/Desktop/ADD/ipcore_dir -intstyle ise -family kintex7 -verilog C:/Users/Richard/Desktop/ADD/XOR_bit.vf -w C:/Users/Richard/Desktop/ADD/XOR_bit.sch
+//Design Name: XOR_bit
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module XOR_bit(A, 
+               B, 
+               C, 
+               S);
+
+    input A;
+    input B;
+    input C;
+   output S;
+   
+   
+   XOR3  XLXI_1 (.I0(C), 
+                .I1(B), 
+                .I2(A), 
+                .O(S));
+endmodule

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">XLXI_6/Mram_m261/SPO</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">69</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">XLXI_6/Mram_m72/SPO,
+XLXI_6/Mram_m262/SPO,
+XLXI_6/Mram_m71/SPO,
+XLXI_6/Mram_m162/SPO,
+XLXI_6/Mram_m161/SPO</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl&quot; (output signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m1/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1&quot; (output signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m1/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2&quot; (output signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m1/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3&quot; (output signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m1/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl&quot; (output signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m2/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1&quot; (output signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m2/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2&quot; (output signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m2/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3&quot; (output signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m2/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl&quot; (output signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m3/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1&quot; (output signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m3/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2&quot; (output signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m3/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3&quot; (output signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m3/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl&quot; (output signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m4/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1&quot; (output signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m4/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2&quot; (output signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m4/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="979" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3&quot; (output signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3)</arg> has input signal &quot;<arg fmt="%s" index="2">XLXI_69/m4/we</arg>&quot; which will be trimmed. See Section 5 of the Map Report File for details about why the input signal will become undriven.
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl&quot; (output signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I0</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1&quot; (output signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I2</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2&quot; (output signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I2</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3&quot; (output signal=XLXI_69/m1/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I2</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl&quot; (output signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I0</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1&quot; (output signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I2</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2&quot; (output signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I2</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3&quot; (output signal=XLXI_69/m2/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I2</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl&quot; (output signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I0</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1&quot; (output signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I2</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2&quot; (output signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I2</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3&quot; (output signal=XLXI_69/m3/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I2</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl&quot; (output signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I0</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1&quot; (output signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl1)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I2</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2&quot; (output signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl2)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I2</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+<msg type="error" file="MapLib" num="978" delta="new" ><arg fmt="%s" index="1">LUT3 symbol &quot;XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3&quot; (output signal=XLXI_69/m4/U0/xst_options.dist_mem_inst/gen_sp_ram.spram_inst/write_ctrl3)</arg> has an equation that uses input pin <arg fmt="%s" index="2">I2</arg>, which no longer has a connected signal. Please ensure that all the pins used in the equation for this LUT have signals that are not trimmed (see Section 5 of the Map Report File for details on which signals were trimmed).
+</msg>
+
+</messages>
+

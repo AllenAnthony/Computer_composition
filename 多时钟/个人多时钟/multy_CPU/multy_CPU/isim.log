@@ -1,0 +1,48 @@
+ISim log file
+Running: C:\Users\asus\Desktop\multy_CPU\multy_CPU\top_for_multy_CPU_top_for_multy_CPU_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/asus/Desktop/multy_CPU/multy_CPU/top_for_multy_CPU_top_for_multy_CPU_sch_tb_isim_beh.wdb 
+ISim P.49d (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Finished circuit initialization process.
+WARNING in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m1.inst at time               900000 ns: 
+Reading from out-of-range address. Max address in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m1.inst is        1023
+WARNING in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m2.inst at time               900000 ns: 
+Reading from out-of-range address. Max address in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m2.inst is        1023
+WARNING in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m3.inst at time               900000 ns: 
+Reading from out-of-range address. Max address in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m3.inst is        1023
+WARNING in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m4.inst at time               900000 ns: 
+Reading from out-of-range address. Max address in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m4.inst is        1023
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+Finished circuit initialization process.
+WARNING in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m1.inst at time               900000 ns: 
+Reading from out-of-range address. Max address in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m1.inst is        1023
+WARNING in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m2.inst at time               900000 ns: 
+Reading from out-of-range address. Max address in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m2.inst is        1023
+WARNING in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m3.inst at time               900000 ns: 
+Reading from out-of-range address. Max address in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m3.inst is        1023
+WARNING in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m4.inst at time               900000 ns: 
+Reading from out-of-range address. Max address in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m4.inst is        1023
+# run all
+WARNING in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m1.inst at time              1900000 ns: 
+Reading from out-of-range address. Max address in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m1.inst is        1023
+WARNING in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m2.inst at time              1900000 ns: 
+Reading from out-of-range address. Max address in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m2.inst is        1023
+WARNING in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m3.inst at time              1900000 ns: 
+Reading from out-of-range address. Max address in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m3.inst is        1023
+WARNING in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m4.inst at time              1900000 ns: 
+Reading from out-of-range address. Max address in top_for_multy_CPU_top_for_multy_CPU_sch_tb.UUT.XLXI_41.m4.inst is        1023
+Stopped at time : 11518500 ns : File "C:/Users/asus/Desktop/multy_CPU/multy_CPU/MUX32_2x1.v" Line 29

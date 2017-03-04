@@ -1,0 +1,239 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : top_for_multy_CPU.vf
+// /___/   /\     Timestamp : 06/18/2016 20:43:07
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath E:/ISE/multy_CPU_all/ipcore_dir -intstyle ise -family kintex7 -verilog E:/ISE/multy_CPU_all/top_for_multy_CPU.vf -w E:/ISE/multy_CPU_all/top_for_multy_CPU.sch
+//Design Name: top_for_multy_CPU
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module top_for_multy_CPU(ch, 
+                         clk_100mhz, 
+                         pc, 
+                         SW, 
+                         AN, 
+                         Buzzer, 
+                         SEGMENT);
+
+    input ch;
+    input clk_100mhz;
+    input pc;
+    input [4:0] SW;
+   output [3:0] AN;
+   output Buzzer;
+   output [7:0] SEGMENT;
+   
+   wire [31:0] addr;
+   wire [1:0] ALUop;
+   wire ALUSrcA;
+   wire [1:0] ALUSrcB;
+   wire clk;
+   wire [31:0] data;
+   wire ifbeq;
+   wire [31:0] instr;
+   wire IRWrite;
+   wire lorD;
+   wire [1:0] lwsh;
+   wire MemRead;
+   wire [1:0] MemtoReg;
+   wire MemWrite;
+   wire [1:0] PCSource;
+   wire PCWrite;
+   wire PCWriteCond;
+   wire [1:0] RegDst;
+   wire RegWrite;
+   wire [31:0] XLXN_1;
+   wire [31:0] XLXN_31;
+   wire [31:0] XLXN_32;
+   wire [4:0] XLXN_34;
+   wire [27:0] XLXN_42;
+   wire [31:0] XLXN_44;
+   wire [31:0] XLXN_45;
+   wire [31:0] XLXN_48;
+   wire [31:0] XLXN_52;
+   wire [31:0] XLXN_55;
+   wire [31:0] XLXN_56;
+   wire [31:0] XLXN_57;
+   wire [31:0] XLXN_58;
+   wire [2:0] XLXN_59;
+   wire XLXN_64;
+   wire XLXN_68;
+   wire [31:0] XLXN_69;
+   wire [31:0] XLXN_70;
+   wire [31:0] XLXN_71;
+   wire [31:0] XLXN_76;
+   wire [31:0] XLXN_104;
+   wire [31:0] XLXN_105;
+   wire [31:0] XLXN_112;
+   wire [31:0] XLXN_115;
+   wire [31:0] XLXN_117;
+   wire [31:0] XLXN_119;
+   wire XLXN_124;
+   wire XLXN_125;
+   wire XLXN_126;
+   wire XLXN_128;
+   wire XLXN_129;
+   wire XLXN_130;
+   wire [31:0] XLXN_136;
+   wire [31:0] XLXN_138;
+   wire [4:0] XLXN_140;
+   
+   MUX32_2x1  XLXI_2 (.A(XLXN_1[31:0]), 
+                     .B(XLXN_71[31:0]), 
+                     .sel(lorD), 
+                     .C(addr[31:0]));
+   MDR  XLXI_6 (.A(XLXN_117[31:0]), 
+               .clk(clk), 
+               .B(XLXN_31[31:0]));
+   regfile  XLXI_7 (.a1(instr[25:21]), 
+                   .a2(instr[20:16]), 
+                   .a3(SW[4:0]), 
+                   .clk(clk), 
+                   .wdata(XLXN_32[31:0]), 
+                   .wr(RegWrite), 
+                   .wreg(XLXN_34[4:0]), 
+                   .d1(XLXN_44[31:0]), 
+                   .d2(XLXN_45[31:0]), 
+                   .d3(data[31:0]));
+   extend26to28_shift2  XLXI_21 (.A(instr[25:0]), 
+                                .B(XLXN_42[27:0]));
+   catch_28_4  XLXI_22 (.A(XLXN_42[27:0]), 
+                       .B(addr[31:28]), 
+                       .C(XLXN_70[31:0]));
+   AR  XLXI_23 (.A(XLXN_44[31:0]), 
+               .clk(clk), 
+               .B(XLXN_48[31:0]));
+   BR  XLXI_24 (.A(XLXN_45[31:0]), 
+               .clk(clk), 
+               .B(XLXN_104[31:0]));
+   MUX32_2x1  XLXI_25 (.A(addr[31:0]), 
+                      .B(XLXN_48[31:0]), 
+                      .sel(ALUSrcA), 
+                      .C(XLXN_58[31:0]));
+   MUX32_4x1  XLXI_26 (.A(XLXN_104[31:0]), 
+                      .B(XLXN_52[31:0]), 
+                      .C(XLXN_55[31:0]), 
+                      .D(XLXN_56[31:0]), 
+                      .sel(ALUSrcB[1:0]), 
+                      .E(XLXN_57[31:0]));
+   number_4  XLXI_27 (.num(XLXN_52[31:0]));
+   SignExtend  XLXI_28 (.A(instr[15:0]), 
+                       .B(XLXN_55[31:0]));
+   shiftleft2  XLXI_29 (.A(XLXN_55[31:0]), 
+                       .B(XLXN_56[31:0]));
+   alu32  XLXI_30 (.A(XLXN_58[31:0]), 
+                  .B(XLXN_57[31:0]), 
+                  .ins(XLXN_59[2:0]), 
+                  .O(XLXN_69[31:0]), 
+                  .Z(XLXN_130));
+   pcreg  XLXI_32 (.clk(clk), 
+                  .npc(XLXN_76[31:0]), 
+                  .wr(XLXN_68), 
+                  .pc(XLXN_1[31:0]));
+   AND2  XLXI_33 (.I0(XLXN_124), 
+                 .I1(PCWriteCond), 
+                 .O(XLXN_64));
+   OR2  XLXI_34 (.I0(XLXN_64), 
+                .I1(PCWrite), 
+                .O(XLXN_68));
+   MUX32_4x1  XLXI_35 (.A(XLXN_69[31:0]), 
+                      .B(XLXN_71[31:0]), 
+                      .C(XLXN_70[31:0]), 
+                      .D(XLXN_48[31:0]), 
+                      .sel(PCSource[1:0]), 
+                      .E(XLXN_76[31:0]));
+   ALUout  XLXI_36 (.A(XLXN_69[31:0]), 
+                   .clk(clk), 
+                   .B(XLXN_71[31:0]));
+   read_mem  XLXI_42 (.MemRead(MemRead), 
+                     .ninst(XLXN_105[31:0]), 
+                     .inst(XLXN_115[31:0]));
+   IR  XLXI_43 (.A(XLXN_117[31:0]), 
+               .ctr(IRWrite), 
+               .B(instr[31:0]));
+   disp_control  XLXI_44 (.ch(ch), 
+                         .clk(clk_100mhz), 
+                         .d(data[31:0]), 
+                         .pc(pc), 
+                         .pcd(XLXN_112[31:0]), 
+                         .node(AN[3:0]), 
+                         .segment(SEGMENT[7:0]));
+   null  XLXI_45 (.A(XLXN_112[31:0]));
+   VCC  XLXI_48 (.P(Buzzer));
+   lwbh_cnt  XLXI_50 (.cnt(lwsh[1:0]), 
+                     .data(XLXN_115[31:0]), 
+                     .result(XLXN_117[31:0]));
+   memory  XLXI_51 (.a(addr[11:0]), 
+                   .clk(clk), 
+                   .di(XLXN_119[31:0]), 
+                   .wr(MemWrite), 
+                   .done(XLXN_105[31:0]));
+   lwbh_cnt  XLXI_52 (.cnt(lwsh[1:0]), 
+                     .data(XLXN_104[31:0]), 
+                     .result(XLXN_119[31:0]));
+   OR2  XLXI_54 (.I0(XLXN_125), 
+                .I1(XLXN_126), 
+                .O(XLXN_124));
+   AND2  XLXI_55 (.I0(XLXN_129), 
+                 .I1(XLXN_128), 
+                 .O(XLXN_126));
+   AND2  XLXI_56 (.I0(ifbeq), 
+                 .I1(XLXN_130), 
+                 .O(XLXN_125));
+   INV  XLXI_57 (.I(XLXN_130), 
+                .O(XLXN_128));
+   INV  XLXI_58 (.I(ifbeq), 
+                .O(XLXN_129));
+   ALUctrl  XLXI_60 (.ALUop(ALUop[1:0]), 
+                    .Func(instr[5:0]), 
+                    .Imme(instr[31:26]), 
+                    .ALUoper(XLXN_59[2:0]));
+   lui  XLXI_61 (.imme(instr[15:0]), 
+                .Bimme(XLXN_136[31:0]));
+   MUX32_4x1  XLXI_62 (.A(XLXN_71[31:0]), 
+                      .B(XLXN_31[31:0]), 
+                      .C(XLXN_136[31:0]), 
+                      .D(XLXN_138[31:0]), 
+                      .sel(MemtoReg[1:0]), 
+                      .E(XLXN_32[31:0]));
+   null  XLXI_63 (.A(XLXN_138[31:0]));
+   MUX5_4x1  XLXI_64 (.A(instr[20:16]), 
+                     .B(instr[15:11]), 
+                     .C(XLXN_140[4:0]), 
+                     .sel(RegDst[1:0]), 
+                     .R(XLXN_34[4:0]));
+   number_11111  XLXI_65 (.A(XLXN_140[4:0]));
+   state_control  XLXI_67 (.clk(clk), 
+                          .ed(instr[5:0]), 
+                          .op(instr[31:26]), 
+                          .ALUop(ALUop[1:0]), 
+                          .ALUSrcA(ALUSrcA), 
+                          .ALUSrcB(ALUSrcB[1:0]), 
+                          .ifbeq(ifbeq), 
+                          .IRWrite(IRWrite), 
+                          .lorD(lorD), 
+                          .lwsh(lwsh[1:0]), 
+                          .MemRead(MemRead), 
+                          .MemtoReg(MemtoReg[1:0]), 
+                          .MemWrite(MemWrite), 
+                          .PCSource(PCSource[1:0]), 
+                          .PCWrite(PCWrite), 
+                          .PCWriteCond(PCWriteCond), 
+                          .RegDst(RegDst[1:0]), 
+                          .RegWrite(RegWrite));
+   freq  XLXI_69 (.clk(clk_100mhz), 
+                 .Clk_CPU(clk));
+endmodule
